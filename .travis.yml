@@ -22,7 +22,6 @@ install:
 
 script:
   - Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
-  - cp _redirects _book/_redirects
 
 before_cache:
 - nvm install stable
