@@ -4,7 +4,7 @@ repo: https://github.com/NicholasDow/BookMakingGuide
 rmd_files: ["index.Rmd", 
   "01-Introduction.Rmd", 
   "02-Setup.Rmd", 
-  "03-Basic Book",
+  "03-From-Scratch",
   "04-Copying",
   "05-Two-Source-Github",
   "06-Maintenance"]
