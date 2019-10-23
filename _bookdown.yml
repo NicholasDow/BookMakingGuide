@@ -1,6 +1,10 @@
 book_filename: "bookdown-guide"
 chapter_name: "Chapter "
 repo: https://github.com/NicholasDow/BookMakingGuide
-rmd_files: ["index.Rmd", "01-Introduction.Rmd", "02-Diving-In.Rmd"]
+rmd_files:
+  - index.Rmd
+  - Introduction.Rmd
+  - Diving-In.Rmd
+  - Work-In-Progress.Rmd
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
