@@ -4,9 +4,9 @@ repo: https://github.com/NicholasDow/BookMakingGuide
 rmd_files: ["index.Rmd", 
   "01-Introduction.Rmd", 
   "02-Setup.Rmd", 
-  "03-From-Scratch",
-  "04-Copying",
-  "05-Two-Source-Github",
-  "06-Maintenance"]
+  "03-From-Scratch.Rmd",
+  "04-Copying.Rmd",
+  "05-Two-Source-Github.Rmd",
+  "06-Maintenance.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
