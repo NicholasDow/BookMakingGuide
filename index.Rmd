@@ -17,6 +17,7 @@ description: "Everything you need (and nothing more) to start a bookdown book."
 The text displayed in this file is from index.Rmd.
 
 This book will show you
+
 1. How to make a website using netifly and a domain
 2. How to make a bookdown book using the bare minimum boiler plate code
 3. How to integrate travis into a netifly bookdown book and how to create a static website using netifly

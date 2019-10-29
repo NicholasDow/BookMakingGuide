@@ -2,28 +2,40 @@
 I use a windows computer so these tricks will have to be modified for mac
 ## Tricks
 ### How to paste into the rstudio terminal
+
 `Shift + Insert`
+
 ### Making Lazy Git
 
-`function lazygit() {
+```
+function lazygit() {
     git add .
     git commit -a -m "$1"
     git push
 }
-`
+```
 You can copy and paste this command into your terminal to get a command that allows you to add commit and push all in one line. However your terminal will not remember everytime you reload. Thankfully there is a file where all your commands can be saved. 
 
 
 
-<!-- How we include images -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', fig.cap="Analogy of difference between R and RStudio.", out.width='95%', purl=FALSE} -->
-<!-- knitr::include_graphics("images/shutterstock/R_vs_RStudio_1.png") -->
-<!-- ``` -->
-<!-- how we include code -->
-<!-- ```{r echo = T, results = 'hide'} -->
-<!-- code -->
-<!-- ``` -->
+How we include images
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', fig.cap="Analogy of difference between R and RStudio.", out.width='95%', purl=FALSE}
+knitr::include_graphics("images/shutterstock/R_vs_RStudio_1.png")
+```
+how we include code
+```{r echo = T, results = 'hide'}
+code
+```
+### How to take a screenshot and put it into a bookdown book
 
+1. `Window Key + Shift and then press S` to take a screenshot 
+2. Open paint and paste into the file
+3. Save image into a `~/images` folder inside of the project
+4. 
+```.{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
+knitr::include_graphics("images/Example_Screenshot.png")
+```
 ### Useful resources and links
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+https://bookdown.org/yihui/bookdown/#
