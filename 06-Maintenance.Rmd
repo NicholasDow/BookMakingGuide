@@ -1,5 +1,8 @@
 # Maintenance
+
+
 I use a windows computer so these tricks will have to be modified for mac
+
 ### How to get sub chapter in bookdown
 
 In the markdown file type `###` before the name of your subchapter. `##` Will not work.
@@ -8,6 +11,11 @@ In the markdown file type `###` before the name of your subchapter. `##` Will no
 ### How to paste into the rstudio terminal
 
 `Shift + Insert`
+
+
+### How to emmbed a link
+
+`[a link](https://i.imgur.com/jwTC9EH.jpg)`: [a link](https://i.imgur.com/jwTC9EH.jpg)
 
 ### Making Lazy Git
 
@@ -51,13 +59,13 @@ knitr::include_graphics("images/Example_Screenshot.png")
 
 ### Useful resources and links
 
-https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-https://bookdown.org/yihui/bookdown/#
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://bookdown.org/yihui/bookdown/#
 
 ### Why We Use Travis
 
 It takes a long time for the computer to compile a bookdown book, so we use travis so that that compilation can happen independently on the travis servers. Basically what happens is travis will take your code and the compilation language and run your files in an indpendent enviroment that is displayed through netifly. This is called **continuos integration** and is what the the ci in travis stands for. Travis also lets you check for mistakes via tests, most developers use it for this purpose alone.
 
-You can read about travis more here: https://stackoverflow.com/questions/22587148/trying-to-understand-what-travis-ci-does-and-when-it-should-be-used
+You can read about travis more here: [Travis Stackoverflow](https://stackoverflow.com/questions/22587148/trying-to-understand-what-travis-ci-does-and-when-it-should-be-used
 
 ### Adding Stickers to github
