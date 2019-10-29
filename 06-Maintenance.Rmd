@@ -18,24 +18,33 @@ You can copy and paste this command into your terminal to get a command that all
 
 
 
-How we include images
-```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', fig.cap="Analogy of difference between R and RStudio.", out.width='95%', purl=FALSE}
-knitr::include_graphics("images/shutterstock/R_vs_RStudio_1.png")
-```
-how we include code
-```{r echo = T, results = 'hide'}
-code
-```
+<!-- How we include images -->
+<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', fig.cap="Analogy of difference between R and RStudio.", out.width='95%', purl=FALSE} -->
+<!-- knitr::include_graphics("images/shutterstock/R_vs_RStudio_1.png") -->
+<!-- ``` -->
+<!-- how we include code -->
+<!-- ```{r echo = T, results = 'hide'} -->
+<!-- code -->
+<!-- ``` -->
 ### How to take a screenshot and put it into a bookdown book
 
 1. `Window Key + Shift and then press S` to take a screenshot 
 2. Open paint and paste into the file
 3. Save image into a `~/images` folder inside of the project
-4. 
-```.{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
+4. We type this command into the markdown file, without the quotation marks around the curly brackets
+```"{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}"
+knitr::include_graphics("images/Example_Screenshot.png")
+```
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 knitr::include_graphics("images/Example_Screenshot.png")
 ```
 ### Useful resources and links
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://bookdown.org/yihui/bookdown/#
+
+### Why we use travis
+
+It takes a long time for the computer to compile a bookdown book, so we use travis so that that compilation can happen independently on the travis servers. Basically what happens is travis will take your code and the compilation language and run your files in an indpendent enviroment that is displayed through netifly. This is called **continuos integration** and is what the the ci in travis stands for.
+
+You can read about travis more here: https://stackoverflow.com/questions/22587148/trying-to-understand-what-travis-ci-does-and-when-it-should-be-used
