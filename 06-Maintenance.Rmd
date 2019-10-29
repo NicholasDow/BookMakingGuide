@@ -1,12 +1,29 @@
 # Maintenance
+## How to get new lines in markdown
+
+# test 1
+No spaces used   
+
+line1
+line2
 
 
-I use a windows computer so these tricks will have to be modified for mac
+# test 2
+2spaces at the end of line1  
+
+line1  
+line2
+
+As we can see you must type two spaces at the end of the line to get a new line, otherwise it will be continuous
+
 
 ### How to get sub chapter in bookdown
 
-In the markdown file type `###` before the name of your subchapter. `##` Will not work.
-`### How to get sub chapter in bookdown` will produce 6.0.1 Making Lazy Git
+In the markdown file type `##` before the name of your subchapter. `###` give you sub sub chapters.  
+`## How to get sub chapter in bookdown` will produce 6.1 How to get sub chapter in bookdown  
+`### How to get sub chapter in bookdown` will produce 6.0.1 How to get sub chapter in bookdown  
+
+If you have writing 
 
 ### How to paste into the rstudio terminal
 
