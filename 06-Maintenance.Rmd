@@ -1,6 +1,10 @@
 # Maintenance
 I use a windows computer so these tricks will have to be modified for mac
-## Tricks
+### How to get sub chapter in bookdown
+
+In the markdown file type `###` before the name of your subchapter. `##` Will not work.
+`### How to get sub chapter in bookdown` will produce 6.0.1 Making Lazy Git
+
 ### How to paste into the rstudio terminal
 
 `Shift + Insert`
@@ -31,20 +35,29 @@ You can copy and paste this command into your terminal to get a command that all
 1. `Window Key + Shift and then press S` to take a screenshot 
 2. Open paint and paste into the file
 3. Save image into a `~/images` folder inside of the project
-4. We type this command into the markdown file, without the quotation marks around the curly brackets
-```"{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}"
+4. We type this command into the markdown file code chunk, without the quotation marks around the curly brackets
+
+```
+"{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}"
+
 knitr::include_graphics("images/Example_Screenshot.png")
 ```
+
+To produce this example
+
 ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 knitr::include_graphics("images/Example_Screenshot.png")
 ```
+
 ### Useful resources and links
 
 https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 https://bookdown.org/yihui/bookdown/#
 
-### Why we use travis
+### Why We Use Travis
 
-It takes a long time for the computer to compile a bookdown book, so we use travis so that that compilation can happen independently on the travis servers. Basically what happens is travis will take your code and the compilation language and run your files in an indpendent enviroment that is displayed through netifly. This is called **continuos integration** and is what the the ci in travis stands for.
+It takes a long time for the computer to compile a bookdown book, so we use travis so that that compilation can happen independently on the travis servers. Basically what happens is travis will take your code and the compilation language and run your files in an indpendent enviroment that is displayed through netifly. This is called **continuos integration** and is what the the ci in travis stands for. Travis also lets you check for mistakes via tests, most developers use it for this purpose alone.
 
 You can read about travis more here: https://stackoverflow.com/questions/22587148/trying-to-understand-what-travis-ci-does-and-when-it-should-be-used
+
+### Adding Stickers to github
