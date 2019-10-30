@@ -18,10 +18,11 @@ knitr::include_graphics("images/Github_fork.png")
 ```
 3.Go to your copy of stat 545  
 4.Hit clone or download
-```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-knitr::include_graphics("images/Github_link.png")
+```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
+knitr::include_graphics("images/github_link.png")
 ```
+
 5.Go into Rstudio and create a new github project
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
