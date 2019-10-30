@@ -16,7 +16,7 @@ knitr::include_graphics("images/Github.png")
 
 knitr::include_graphics("images/Github_fork.png")
 ```
-3.Go to your copy of stat 545
+3.Go to your copy of stat 545  
 4.Hit clone or download
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
@@ -27,14 +27,17 @@ knitr::include_graphics("images/Github_link.png")
 
 knitr::include_graphics("images/New_project.png")
 ```
+  
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
 knitr::include_graphics("images/Version_Control.png")
 ```
+  
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
 knitr::include_graphics("images/R_git.png")
 ```
+
 6.paste the link from your github fork into the Repository URL and hit create project.
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
