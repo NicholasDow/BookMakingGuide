@@ -1,14 +1,15 @@
 # Tips and Tricks
-## How to get new lines in markdown
 
-## test 1
+### How to get new lines in markdown
+
+### test 1
 No spaces used   
 
 line1
 line2
 
 
-## test 2
+### test 2
 2spaces at the end of line1  
 
 line1  
@@ -70,7 +71,7 @@ You can copy and paste this command into your terminal to get a command that all
 knitr::include_graphics("images/Example_Screenshot.png")
 ```
 
-To produce this example
+To produce this picture
 
 ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 knitr::include_graphics("images/Example_Screenshot.png")
