@@ -82,4 +82,15 @@ You can read about travis more here: [Travis Stackoverflow](https://stackoverflo
 ### How to comment code in R studio
 
 highlight some code and type `Ctrl + Shift + C` 
+
+### How to reference another chapter
+
+\@ref(how-to-reference-another-chapter)
 ### Adding Stickers to github
+
+### Things that need to be added in the future
+How to make a bookdown book from scratch like this one
+
+A github that has the boiler coat code for a netifly travis. Explain that they use github pages for the default bookdown book
+
+

@@ -4,26 +4,21 @@ library(knitr)
 ```
 ## Github
 
-### Forking the Stat 545 Book
 We are going to copy the stat 545 book
-1. Goto the [stat 545](https://github.com/rstudio-education/stat545) page
-```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
-
-knitr::include_graphics("images/Github.png")
-```
-2.Hit the button in the upper right corner, that says fork
+1. Goto the [stat 545](https://github.com/rstudio-education/stat545) page  
+2.Hit the button in the upper right corner, that says fork  
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
 knitr::include_graphics("images/Github_fork.png")
 ```
-3.Go to your copy of stat 545  
-4.Hit clone or download
+3.Go to your copy of stat 545    
+4.Hit clone or download  
 
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 knitr::include_graphics("images/github_link.png")
 ```
 
-5.Go into Rstudio and create a new github project
+5.Go into Rstudio and create a new github project  
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
 knitr::include_graphics("images/New_project.png")
@@ -44,8 +39,72 @@ knitr::include_graphics("images/R_git.png")
 
 knitr::include_graphics("images/R_git_url.png")
 ```
-7. At the bottom of your screen there should be a terminal and console, the console speaks R, and the terminal spearks Linux. This means that the terminal can run github commands
+7. At the bottom of your screen there should be a terminal and console, the console speaks R, and the terminal spearks Linux. This means that the terminal can run github commands. Click on this button if you havent already
 ```{r echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
 knitr::include_graphics("images/Terminal.png")
 ```
+8. Type in the command `git remote upstream https://github.com/rstudio-education/stat545` into the terminal prompt. This will create an upstream remote repo that can be updated and merged with our modified version.  
+**Warning** If you want to create new chapaters and also want to be able to continue to update files, then you cannot change chapter orders by modifying the names of the files. You must instead use `#` to denote a new chapter inside of the closest chapter, which bookdown will be able to automatically add with correct numbering.
+8. Type in teh command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be reprompted with the same merge conflicts that you have already addressed
+
+## Getting a free url
+
+We are getting a url name from [freenom](https://www.freenom.com/). 
+
+**Warning**This website just provides free domains for one year. The only catch is that these domains will only last for one year before expiring or costing money. Being free for one year is a gimmick to get you paying for a domain once you rely on people returning to that specific domain. You should probably find some other hosting if you plan on doing anything other than making a temp website. You should not circulate the website publically using freenom hosting. Luckily the proccess should be similar if you use other hosting.
+
+1. Enter a url name
+2. Check availability and find a url that is free
+3. Click “Get it Now!”
+4. Click Checkout
+5. Select 12 Months @ FREE
+6. Login or create an account
+7. Complete the order
+
+## Netlify
+This part of the tutorial has many working parts and won't work until the very end.
+
+1. Hit new site from git
+2. Login to your github account
+3. Select the repo you forked
+
+This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials nessisary to make travis-ci work.
+
+## Travis
+
+Travis allows for continuous integration, the section on why we use travis can be read about in the maintenance section: \@ref(why-we-use-travis)
+
+1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
+2. Find pre-existing .travis.yml file
+3. Delete it manually, commit the change, and push  
+4. Undo the manual delete, commit the change, and push
+
+This must be done because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
+
+5. Find API ID in netlify (under site information) and copy that into NETLIFY_SITE_ID in the travis file
+
+6. Create Netlify authentication token by going to this link: https://app.netlify.com/user/applications#personal-access-tokens 
+7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
+**Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github
+
+## Adding the Custom Domain
+
+1. Go to netlify 
+  - enter the url of your custom domain into step 2 “adding a custom domain”
+2. Go to freenom
+  - Goto my domains
+  - Click on manage domain next to your domain of interest
+  - Go to management tools
+3. Goto netlify
+  - Goto check dns configuration
+  - Goto setup dns for x domain
+  - Skip records
+  - Copy all the name servers
+4. Goto freenom
+  - Goto management tools 
+  - Goto name servers
+  - Click on custom name servers
+  - Copy and paste in all the name servers
+
+
