@@ -33,3 +33,9 @@ knitr::include_graphics("images/Version_Control.png")
 
 knitr::include_graphics("images/R_git.png")
 ```
+6.paste the link from your github fork into the Repository URL and hit create project.
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
+
+knitr::include_graphics("images/R_git_url.png")
+```
+7. At the bottom of your screen there should be 
