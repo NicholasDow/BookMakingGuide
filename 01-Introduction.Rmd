@@ -1,41 +1,47 @@
 # Introduction
-
+```{r, echo=FALSE, warning=FALSE}
+library(knitr)
+```
 ## Github
 
 ### Forking the Stat 545 Book
-There must be a source for the files, in this case we are going to just copy a specific bookdown book. 
-<!-- 1. Goto the [stat 545](https://github.com/rstudio-education/stat545) page -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+We are going to copy the stat 545 book
+1. Goto the [stat 545](https://github.com/rstudio-education/stat545) page
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/Github.png") -->
-<!-- ``` -->
-<!-- 2.Hit the button in the upper right corner, that says fork -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/Github.png")
+```
+2.Hit the button in the upper right corner, that says fork
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/Github_fork.png") -->
-<!-- ``` -->
-<!-- 3.Go to your copy of stat 545 -->
-<!-- 4.Hit clone or download -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/Github_fork.png")
+```
+3.Go to your copy of stat 545
+4.Hit clone or download
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/Github_link.png") -->
-<!-- ``` -->
-<!-- 5.Go into Rstudio and create a new github project -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/Github_link.png")
+```
+5.Go into Rstudio and create a new github project
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/New_project.png") -->
-<!-- ``` -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/New_project.png")
+```
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/Version_Control.png") -->
-<!-- ``` -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/Version_Control.png")
+```
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/R_git.png") -->
-<!-- ``` -->
-<!-- 6.paste the link from your github fork into the Repository URL and hit create project. -->
-<!-- ```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE} -->
+knitr::include_graphics("images/R_git.png")
+```
+6.paste the link from your github fork into the Repository URL and hit create project.
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
 
-<!-- knitr::include_graphics("images/R_git_url.png") -->
-<!-- ``` -->
-<!-- 7. At the bottom of your screen there should be a terminal and console, the console speaks R, and the terminal spearks Linux. This means that the terminal can run github commands -->
+knitr::include_graphics("images/R_git_url.png")
+```
+7. At the bottom of your screen there should be a terminal and console, the console speaks R, and the terminal spearks Linux. This means that the terminal can run github commands
+```{r R-vs-RStudio-1, echo=FALSE, fig.align='center', out.width='95%', purl=FALSE}
+
+knitr::include_graphics("images/Terminal.png")
+```
