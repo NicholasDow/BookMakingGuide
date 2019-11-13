@@ -2,6 +2,74 @@
 ```{r, echo=FALSE, warning=FALSE}
 library(knitr)
 ```
+## Stat 545
+
+you actually need to run `renv::restore()` or else you will have issues in the future
+
+renv.lock has all of teh packages it will install
+
+you need to make a git file with the basic files and explain what every file does
+### How to make a kindle version of your bookdown book
+
+first open up the bookdown file you are interested in R studio
+
+download kindlegen: 
+
+depending on whether you have a pc or a mac
+the installation of kindlegen to your PATH ( which just means that it can be run from your terminal)
+
+For PC: 
+
+I used something called chocolatey to install programs to my path. I would used this video: https://www.youtube.com/watch?v=KTUO1g_Btfk
+
+once you have that installed, you have to open command prompt as an administrator. What that means is you have to search for command prompt, right click, and select the option to run as administrator.
+
+then type `choco install kindlegen`
+
+For Mac:
+
+you have brew pre installed, which works the same way that choco does. 
+
+open a terminal and type `brew cask install kindlegen`
+
+-----
+there is no pc mac difference past this point
+
+in the terminal of R studio  
+install bookdown: `install.packages("bookdown")`  
+open the library: `library(bookdown)`
+
+This is insane: https://github.com/rstudio/bookdown/issues/440
+
+install webshot and phantomjs:
+```
+install.packages("webshot")
+webshot::install_phantomjs()
+```
+load all of the libraries you will use in any r markdown file into the console
+
+in your index.rmd add `always_allow_html: yes`
+in _output.yml make sure you have a line that says:
+`bookdown::epub_book: default`
+
+also go into if you get a files2[[format]] error, (yihui needs to fix this bug) go into _bookdown.yml and delete everything under rmd_files.
+if you want to know why look at this: https://github.com/jrnold/bookdown-1/blob/master/R/utils.R
+
+yihui is not clear about this: 
+run the command: 
+```
+render_book("index.Rmd", bookdown::epub_book())
+```
+then run
+```
+kindlegen()
+```
+or use calibre to convert: https://calibre-ebook.com/
+ 
+ 
+https://rdrr.io/cran/bookdown/man/kindlegen.html
+
+reference: 3.3.2 MOBI of https://bookdown.org/yihui/bookdown/e-books.html
 ### How to get new lines in markdown
 
 No spaces used   

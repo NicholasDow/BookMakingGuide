@@ -1,3 +1,36 @@
 # From Scratch
 
-98ji
+## From My template
+If you fork or clone from the repository of this book you should be able to pick up from the 6th step of the introduction
+
+https://github.com/NicholasDow/BookMakingGuide
+
+I need to update the read me.
+
+Here is what each of the files does:
+
+Docs- where all rendered files will be placed
+
+Images- where all images are stored
+
+renv- where a local library that runs on travis is located. You must update this library with `renv::restore()`
+
+.Rprofile- I don't really know not relevent to us. I think it keeps track of the Rstudio instance
+
+.gitignore- contains a list of all the files that need to be ignored when interacting with github
+
+.travis.yml- controls how travis is run when the repo is pushed to github and ultimately run with continuous integration
+
+chapter.Rmd- These files are your chapters
+
+Readme.md- text for github
+
+_bookdown.yml- where chapters are ordered
+
+_output.yml- how the rendering of different file types is defined
+
+index.rmd- the main markdown file, render this one to render the whole book
+
+renv.lock- contains all the names of the libraries that are run on travis and are nessisary to run all of the rmd files.
+
+style.css- how do you want to define your html. this file does that
