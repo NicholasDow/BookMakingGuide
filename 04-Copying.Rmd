@@ -1,3 +1,6 @@
 # Copying
 
-Now l
+Other methods of hosting bookdown
+static method. you must run all the files and get a bunch of html files that you can host from netifly just by having it look at that specific folder
+
+Talk about yihui's method of making the book from scratch

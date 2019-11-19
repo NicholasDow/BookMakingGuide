@@ -67,6 +67,7 @@ This must be done because travis does not activate until it sees you push a .tra
 5. Find API ID in netlify (under site information) and copy that into NETLIFY_SITE_ID in the travis file
 
 6. Create Netlify authentication token by going to this link: https://app.netlify.com/user/applications#personal-access-tokens 
+
 7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
 **Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github
 
