@@ -1,3 +1,101 @@
 # Two-Source Github
 
 Start by making a copy of this repository: https://github.com/NicholasDow/BookMakingGuide
+
+type `renv::restore()` in the command line to update all of yoru packages.
+
+type `git submodule add https://github.com/rstudio-education/stat545`
+to add a folder full of the files that make the stat545 book
+
+
+type `git submodule add https://github.com/NicholasDow/ModernDive_book` to 
+to add a folder full of the files that make the ModernDive book
+
+<!-- When ever you want to update type `git submodule foreach git pull origin master` see this stackoverflow [post](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin) -->
+
+<!-- Then make a fork of MD and Stat545 -->
+
+<!-- within those two respective repositories -->
+<!-- run the command `git remote upstream <url>` -->
+<!-- I use -->
+<!-- `git remote add upstream https://github.com/moderndive/ModernDive_book` in the MD repo and -->
+<!-- `git remote add upstream https://github.com/rstudio-education/stat545` in the stat545 repo   -->
+
+
+
+<!-- every time you want to update the files from these repositories with material that the authors of these books may have wanted to add you will -->
+<!-- 1. `git fetch upstream` which will update the repository -->
+<!-- 2. `git checkout master` which will put your head on the master branch -->
+<!-- 3. `git merge upstream/master` which will merge the master branch of your upstream into your current master branch -->
+<!-- 4. `git push origin master` to finalize changes after a merge -->
+<!-- You can update this remote repostiory  -->
+
+## Getting a free url
+
+We are getting a url name from [freenom](https://www.freenom.com/). 
+
+**Warning**: The only catch with freenom is that these domains will only last for one year before expiring or costing money. Being free for one year is a gimmick to get you paying for a domain once you rely on people returning to that specific domain. You should probably find some other hosting if you plan on doing anything other than making a temp website. You should not circulate the website publically using freenom hosting. Luckily the proccess should be similar if you use other hosting.
+
+1. Enter a url name
+2. Check availability and find a url that is free
+3. Click “Get it Now!”
+4. Click Checkout
+5. Select 12 Months @ FREE
+6. Login or create an account
+7. Complete the order
+
+## Netlify
+This part of the tutorial has many working parts and won't work until the very end.
+
+1. Hit new site from git
+2. Login to your github account
+3. Select the repo you forked
+
+This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials nessisary to make travis-ci work.
+
+## Travis
+
+Travis allows for continuous integration, the section on why we use travis can be read about in the maintenance section: \@ref(why-we-use-travis)
+
+1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
+2. Find pre-existing .travis.yml file
+3. Delete it manually, commit the change, and push  
+4. Undo the manual delete, commit the change, and push
+
+This must be done because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
+
+5. Find API ID in netlify (under site information) and copy that into NETLIFY_SITE_ID in the travis file
+
+6. Create Netlify authentication token by going to this link: https://app.netlify.com/user/applications#personal-access-tokens 
+7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
+**Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github
+
+## Adding the Custom Domain
+
+1. Go to netlify 
+  - enter the url of your custom domain into step 2 “adding a custom domain”
+2. Go to freenom
+  - Goto my domains
+  - Click on manage domain next to your domain of interest
+  - Go to management tools
+3. Goto netlify
+  - Goto check dns configuration
+  - Goto setup dns for x domain
+  - Skip records
+  - Copy all the name servers
+4. Goto freenom
+  - Goto management tools 
+  - Goto name servers
+  - Click on custom name servers
+  - Copy and paste in all the name servers
+  
+
+##How to update the submodules
+If we want to update any of the files inside of the submodule we must run this command to specifically merge the files, otherwise all of our work wil be overwritten.
+
+First go into the submodule folder `cd \stat545` or `cd \ModernDive_book`. then checkout the stable branch with `git checkout stable`. While you are in each submodule enable rerere with the command `git config rerere.enable true`. This will make it so that you don't have to resolve the same merge conflict twice.
+
+once in the submodule you can run the command:`git submodule update --remote --merge` to update and merge the submodule.
+
+
+
