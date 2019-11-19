@@ -6,7 +6,6 @@ rmd_files: ["index.Rmd",
   "02-Setup.Rmd", 
   "03-From-Scratch.Rmd",
   "04-Copying.Rmd",
-  "05-Two-Source-Github.Rmd",
-  "06-Maintenance.Rmd"]
+  "05-Two-Source-Github.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
