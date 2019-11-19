@@ -29,8 +29,8 @@ to add a folder full of the files that make the ModernDive book
 <!-- 3. `git merge upstream/master` which will merge the master branch of your upstream into your current master branch -->
 <!-- 4. `git push origin master` to finalize changes after a merge -->
 <!-- You can update this remote repostiory  -->
-
-## Getting a free url
+##Setting up the Website
+### Getting a Free Url
 
 We are getting a url name from [freenom](https://www.freenom.com/). 
 
@@ -44,7 +44,7 @@ We are getting a url name from [freenom](https://www.freenom.com/).
 6. Login or create an account
 7. Complete the order
 
-## Netlify
+### Connecting the Github Repository to Netlify
 This part of the tutorial has many working parts and won't work until the very end.
 
 1. Hit new site from git
@@ -53,9 +53,11 @@ This part of the tutorial has many working parts and won't work until the very e
 
 This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials nessisary to make travis-ci work.
 
-## Travis
+### Adding Travis to Your Repo
 
 Travis allows for continuous integration, the section on why we use travis can be read about in the maintenance section: \@ref(why-we-use-travis)
+
+In this section we will setup the .travis.yml file so that it works in conjunction with freenom and netlify
 
 1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
 2. Find pre-existing .travis.yml file
@@ -71,7 +73,7 @@ This must be done because travis does not activate until it sees you push a .tra
 7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
 **Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github
 
-## Adding the Custom Domain
+### Adding the Custom Domain
 
 1. Go to netlify 
   - enter the url of your custom domain into step 2 “adding a custom domain”
@@ -90,8 +92,29 @@ This must be done because travis does not activate until it sees you push a .tra
   - Click on custom name servers
   - Copy and paste in all the name servers
   
+## Using Stat545 and Moderndive Pages
+You will have two folders with all the files from Stat545 and Moderndive. You can add the .Rmd files to your main bookdown book by going into the `_bookdown.yml` file and adding the paths of the .Rmd files from these third parties to the rmd_files section. 
 
-##How to update the submodules
+First add `rmd_subdir: ["stat545/", "ModernDive_book/"]` so that these directories are searchable. 
+
+Then add the name of the file you want to add to the chapter to the list of rmd_files.
+
+For example to add the file on installing from stat545 we would add the line between >>> and <<< to the rmd_files item:
+
+```
+rmd_files: ["index.Rmd", 
+  "01-Introduction.Rmd", 
+  "02-Setup.Rmd", 
+  "03-From-Scratch.Rmd",
+  "04-Copying.Rmd",
+  "05-Two-Source-Github.Rmd",
+  "06-Maintenance.Rmd",
+  >>>
+  "stat545/01_install.Rmd"]
+  <<<
+```
+
+## How to update the submodules
 If we want to update any of the files inside of the submodule we must run this command to specifically merge the files, otherwise all of our work wil be overwritten.
 
 First go into the submodule folder `cd \stat545` or `cd \ModernDive_book`. then checkout the stable branch with `git checkout stable`. While you are in each submodule enable rerere with the command `git config rerere.enable true`. This will make it so that you don't have to resolve the same merge conflict twice.

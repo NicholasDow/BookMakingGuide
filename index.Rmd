@@ -24,3 +24,8 @@ This book will show you
 4. How to maintain the bookdown book should you copy from another source
 5. Tricks to make all of this easier
 
+^^^ need to rewrite this part
+Should talk about how every time you push changes to github you will be able to see those changes after a while because of travis
+
+should also explain how travis lets you check for errors in your code when it doesn't run correctly. Should also talk about how it takes some time
+

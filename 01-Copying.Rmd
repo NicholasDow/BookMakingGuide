@@ -87,6 +87,8 @@ This must be done because travis does not activate until it sees you push a .tra
   - Click on custom name servers
   - Copy and paste in all the name servers
 
+### Last Push
+Once you have finished everything above you can push your changes and see them unfold on the travis homepage. It will take some time to run your code on travis, but once it is done you should see your changes on your website. If there are any errors you will be able easily spot those errors in the travis logs
 
 ## ModernDive
 Setting up moderndive is similar to setting up stat545. Moderndive does not use netlify, and instead uses github pages. Because we use netlify we must modify moderndive to work correctly with our tools. I will be taking files from stat545 and using them to host the website. I also think that it is worth mentioning that by using the netlify approach we will avoid using a more complicated system that relys on bash files and other odd dependencies.
