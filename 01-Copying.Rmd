@@ -3,7 +3,8 @@
 library(knitr)
 ```
 
-##Copying the Stat 545 Book
+## Copying the Stat 545 Book
+
 We are going to copy the stat545 book which can be found here: https://stat545.com/
 
 ### Github and Rstudio Setup
