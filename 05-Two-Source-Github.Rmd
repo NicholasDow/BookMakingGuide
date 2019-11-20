@@ -11,6 +11,15 @@ to add a folder full of the files that make the stat545 book
 type `git submodule add https://github.com/NicholasDow/ModernDive_book` to 
 to add a folder full of the files that make the ModernDive book
 
+if you want to make changes to the submodule then you must go into the submodule with `cd name/of/dir` then type `git checkout master`
+
+you will also want to go into `.travis.yml` and add:
+```
+git:
+  submodules: false
+```
+so that travis does not clone the submodules.
+
 <!-- When ever you want to update type `git submodule foreach git pull origin master` see this stackoverflow [post](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin) -->
 
 <!-- Then make a fork of MD and Stat545 -->
