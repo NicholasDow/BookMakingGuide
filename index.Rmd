@@ -14,6 +14,15 @@ description: "Everything you need (and nothing more) to start a bookdown book."
 
 # Preface {-}
 
+This book will show you how to make and maintain a bookdown book made out of [stat545](https://stat545.com/),[ModernDive](https://moderndive.com/), and your own **.Rmd** files.
+
+
+If you have any issues my email is [dow@college.harvard.edu](mailto:dow@college.harvar), I will try to fix those issues as soone as possible.
+
+Make something here about what each chapter does
+
+Delete below
+
 The text displayed in this file is from index.Rmd.
 
 This book will show you
