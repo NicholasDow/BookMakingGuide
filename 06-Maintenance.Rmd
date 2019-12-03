@@ -114,7 +114,9 @@ function lazygit() {
     git push
 }
 ```
-You can copy and paste this command into your terminal to get a command that allows you to add commit and push all in one line. However your terminal will not remember everytime you reload. Thankfully there is a file where all your commands can be saved. 
+You can copy and paste this command into your terminal to get a command that allows you to add commit and push all in one line. We can also add this function to your `.bashrc`
+
+I usually try to include a `_lazygit.sh` bash script that contains this code, so you should be able to type `bash _lazygit.sh "some message"` into your terminal to submit easily.
 
 =
 ### How to take a screenshot and put it into a bookdown book
@@ -154,6 +156,7 @@ highlight some code and type `Ctrl + Shift + C`
 ### How to reference another chapter
 
 \@ref(how-to-reference-another-chapter)
+
 ### Adding Stickers to github
 
 ### Things that need to be added in the future

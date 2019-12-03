@@ -1,4 +1,12 @@
-# Setup
+# Examples
+
+Copy of MD
+
+Copy of Stat545
+
+Copy of a combination of both
+
+Copy of boilerplate netlify travis textbook
 
 I need to changed the chapter and order of this file to be a file on the workflow.
 

@@ -1,14 +1,15 @@
 # Two-Source Github
 
+## Submodule Setup
+
 Start by making a copy of this repository: https://github.com/NicholasDow/BookMakingGuide
 
-type `renv::restore()` in the command line to update all of yoru packages.
+Type `renv::restore()` in the command line to update all of your packages.
 
-type `git submodule add https://github.com/rstudio-education/stat545`
+Type `git submodule add https://github.com/rstudio-education/stat545`
 to add a folder full of the files that make the stat545 book
 
-
-type `git submodule add https://github.com/NicholasDow/ModernDive_book` to 
+Type `git submodule add https://github.com/moderndive/ModernDive_book` to 
 to add a folder full of the files that make the ModernDive book
 
 if you want to make changes to the submodule then you must go into the submodule with `cd name/of/dir` then type `git checkout master`
@@ -18,26 +19,11 @@ you will also want to go into `.travis.yml` and add:
 git:
   submodules: false
 ```
-so that travis does not clone the submodules.
+so that travis does not clone the submodules every time it runs in the command line.
 
-<!-- When ever you want to update type `git submodule foreach git pull origin master` see this stackoverflow [post](https://stackoverflow.com/questions/5828324/update-git-submodule-to-latest-commit-on-origin) -->
+### Making Changes in the submodules
+In order to track changes that are made in the submodule, cannot just add, commit, and push the change. You must first `cd nameofdir`, then commit the changes with: `git commit -am "commit message"` or its equivalent. After you have committed the change within the submodule, you can exit the submodule with `cd ..` and make the commit normally.
 
-<!-- Then make a fork of MD and Stat545 -->
-
-<!-- within those two respective repositories -->
-<!-- run the command `git remote upstream <url>` -->
-<!-- I use -->
-<!-- `git remote add upstream https://github.com/moderndive/ModernDive_book` in the MD repo and -->
-<!-- `git remote add upstream https://github.com/rstudio-education/stat545` in the stat545 repo   -->
-
-
-
-<!-- every time you want to update the files from these repositories with material that the authors of these books may have wanted to add you will -->
-<!-- 1. `git fetch upstream` which will update the repository -->
-<!-- 2. `git checkout master` which will put your head on the master branch -->
-<!-- 3. `git merge upstream/master` which will merge the master branch of your upstream into your current master branch -->
-<!-- 4. `git push origin master` to finalize changes after a merge -->
-<!-- You can update this remote repostiory  -->
 ##Setting up the Website
 ### Getting a Free Url
 
@@ -104,9 +90,9 @@ This must be done because travis does not activate until it sees you push a .tra
 ## Using Stat545 and Moderndive Pages
 You will have two folders with all the files from Stat545 and Moderndive. You can add the .Rmd files to your main bookdown book by going into the `_bookdown.yml` file and adding the paths of the .Rmd files from these third parties to the rmd_files section. 
 
-First add `rmd_subdir: ["stat545/", "ModernDive_book/"]` so that these directories are searchable. 
+First add `rmd_subdir: ["stat545", "ModernDive_book"]` so that these directories are searchable. You will not be able to use subdirectories unless you set `new_session: no` inside of your `_bookdown.yml`. This is because of rendering differences that you can read about here: https://bookdown.org/yihui/bookdown/new-session.html
 
-Then add the name of the file you want to add to the chapter to the list of rmd_files.
+You can also add the name of the file you want to add to the chapter to the list of rmd_files.
 
 For example to add the file on installing from stat545 we would add the line between >>> and <<< to the rmd_files item:
 
@@ -122,6 +108,14 @@ rmd_files: ["index.Rmd",
   "stat545/01_install.Rmd"]
   <<<
 ```
+
+**Warning** In order to run files from a subdirectory you must have all of the support files in the same directory as the `index.Rmd` this will hopefully be fixed in the future, but for now it is an inconvenient feature of how the bookdown code is written. In order to make this easier to deal with you can create this bash script to get all of the support files:
+```
+```
+
+Please note that if there are new support files added to the modderndive or stat545 texts, you will have to manually add them to the bash script or manually move them into the directory with the `index.rmd` file. 
+
+Another thing that you must do is add all the names of the packages that 
 
 ## How to update the submodules
 If we want to update any of the files inside of the submodule we must run this command to specifically merge the files, otherwise all of our work wil be overwritten.
