@@ -1,7 +1,6 @@
 --- 
 title: "Nick's Bookmaking Guide"
 author: "Nicholas Dow"
-date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib]
@@ -12,9 +11,9 @@ url: 'http\://bookdown.ml/bookdown-guide/'
 description: "Everything you need (and nothing more) to start a bookdown book."
 ---
 
-# Preface {-}
+# Welcome {-}
 
-This book will show you how to make and maintain a bookdown book made out of [stat545](https://stat545.com/),[ModernDive](https://moderndive.com/), and your own **.Rmd** files.
+This book will show you how to make and maintain a bookdown book made out of [stat545](https://stat545.com/), [ModernDive](https://moderndive.com/), and your own **.Rmd** files.
 
 
 If you have any issues my email is [dow@college.harvard.edu](mailto:dow@college.harvar), I will try to fix those issues as soone as possible.
