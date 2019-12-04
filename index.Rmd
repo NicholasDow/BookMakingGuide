@@ -25,6 +25,9 @@ also mention, that it is very important to understand that you need to run the c
 Note. Need Images folder
 need supporting docs
 
+Also mention troubleshooting method. When you run into an error when adding a .rmd file into your _bookdown.yml file. Manually delete things starting from the bottom and push the changes until something actually shows up. Once you have narrowed down the code that actually breaks the .rmd file read it and first see if there is anything that in that code that is referenced in the submodule. You will need to add that too the main direcotry if it is not already there. The second most likely issue is a library issue, in this case you will need to find the library of interest and add it to your renv file.
+
+
 also need to delete renv folder
 
 
