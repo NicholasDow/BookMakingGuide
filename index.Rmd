@@ -24,6 +24,9 @@ Make something here about what each chapter does
 also mention, that it is very important to understand that you need to run the copy bash file everytime there is an update to the files in the submodule. you must reference the static directory that was copied in the bookdown file. you must make changes in the submodule if you want to merge the changes.
 
 Note. Need Images folder
+need supporting docs
+
+also need to delete renv folder
 
 
 Delete below
