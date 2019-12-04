@@ -30,6 +30,7 @@ Also mention troubleshooting method. When you run into an error when adding a .r
 
 also need to delete renv folder
 
+Also note: you should write down what you are doing before every test
 
 Delete below
 
