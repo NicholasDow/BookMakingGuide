@@ -2,7 +2,7 @@
 
 
 
-`r include_image("hell")`
+```r include_image("hell")```
 
 
 
