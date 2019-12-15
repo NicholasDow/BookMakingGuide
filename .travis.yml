@@ -8,6 +8,9 @@ cache:
 
 pandoc_version: 2.1.1
 
+r_packages:
+  - devtools
+
 env:
   global:
     - NETLIFY_SITE_ID=2690c16e-4eb9-4414-9c7a-20f663760cc6

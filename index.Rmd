@@ -18,12 +18,21 @@ This book will show you how to make and maintain a bookdown book made out of [st
 
 If you have any issues my email is [dow@college.harvard.edu](mailto:dow@college.harvar), I will try to fix those issues as soone as possible.
 
-Make something here about what each chapter does
+The main goal of this guide is to give you the resources to manage bookdown as you use bookdown to make the textbook. Bookdown can have some frustrating quirks, and I try to explain how to deal with these quirks. 
+
+I will explain how to make a bookdown website using freenom, netlify, and travis, using the system that stat545 uses. 
+
+I will explain the system that I use to let you use chapters from other bookdown books while being able to continuously update from the source material even if you have made small changes to the chapters you use. I try to justfiy why everything needs to be the way that it is inorder for the book to function under the constraints. If I have missed any you are welcome reachout at any time to get an explaination.
+
+It is very difficult to get different resources to behave nicely with eachother. Having continuous updates as a constraint makes this an especially challenging problem.
+
+I also try to include some tips and tricks that have made my life easier.
+
 
 also mention, that it is very important to understand that you need to run the copy bash file everytime there is an update to the files in the submodule. you must reference the static directory that was copied in the bookdown file. you must make changes in the submodule if you want to merge the changes.
 
 Note. Need Images folder
-need supporting docs
+need supporting docs- note supporting docs actually not work without other files to do with foo factors
 
 Also mention troubleshooting method. When you run into an error when adding a .rmd file into your _bookdown.yml file. Manually delete things starting from the bottom and push the changes until something actually shows up. Once you have narrowed down the code that actually breaks the .rmd file read it and first see if there is anything that in that code that is referenced in the submodule. You will need to add that too the main direcotry if it is not already there. The second most likely issue is a library issue, in this case you will need to find the library of interest and add it to your renv file.
 
@@ -48,4 +57,12 @@ This book will show you
 Should talk about how every time you push changes to github you will be able to see those changes after a while because of travis
 
 should also explain how travis lets you check for errors in your code when it doesn't run correctly. Should also talk about how it takes some time
+
+
+```{r images, include=FALSE}
+include_image <- function(path){
+    return(path)
+}
+```
+
 
