@@ -24,7 +24,7 @@ install:
   - Rscript -e 'old.packages(repos = Sys.getenv("RENV_CONFIG_REPOS_OVERRIDE"), lib.loc = .libPaths()[1])'
 
 script:
-  - Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
+  - Rscript -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')""
 
 
 before_cache:
