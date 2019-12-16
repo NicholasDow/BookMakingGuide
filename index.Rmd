@@ -3,7 +3,7 @@ title: "Nick's Bookmaking Guide"
 subtitle: "A Guide to Making Books for Gov1005"
 author: "Nicholas Dow"
 site: bookdown::bookdown_site
-cover-image: assets/gov1005.jpg
+cover-image: assets/stat545-logo.png
 documentclass: book
 bibliography: [book.bbit]
 biblio-style: apalike
