@@ -7,7 +7,7 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li class="toc-logo"><a href="./"><img src="assets/gov1005.jpg" style="border-radius: 50%;" ></a></li>
+        <li class="toc-logo"><a href="./"><img src="assets/gov1005.png" style="border-radius: 50%;" ></a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 bookdown::pdf_book:
