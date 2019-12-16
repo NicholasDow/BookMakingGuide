@@ -1,6 +1,21 @@
 # What Every File Does
 
+```{r message=FALSE}
+library(nycflights13)
+library(ggplot2)
+library(dplyr)
+```
 
+```{r message=FALSE, warning=FALSE, echo=FALSE}
+# Packages needed internally, but not in book.
+library(gapminder)
+library(knitr)
+library(kableExtra)
+library(readr)
+library(patchwork)
+library(scales)
+library(stringr)
+```
 
 
 ```{r}
