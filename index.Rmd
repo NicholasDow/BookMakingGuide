@@ -3,9 +3,9 @@ title: "Nick's Bookmaking Guide"
 subtitle: "A Guide to Making Books for Gov1005"
 author: "Nicholas Dow"
 site: bookdown::bookdown_site
-cover-image: assets/stat545-logo.png
+cover-image: assets/gov_1005.jpg
 documentclass: book
-bibliography: [book.bib]
+bibliography: [book.bbi]t
 biblio-style: apalike
 link-citations: yes
 github-repo: NicholasDow/BookMakingGuide
