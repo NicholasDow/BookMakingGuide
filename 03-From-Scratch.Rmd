@@ -21,6 +21,9 @@ renv- where a local library that runs on travis is located. You must update this
 
 .travis.yml- controls how travis is run when the repo is pushed to github and ultimately run with continuous integration
 
+- a note about pandoc, the setting inside travis. Pandoc is a markdown converter
+
+
 chapter.Rmd- These files are your chapters
 
 Readme.md- text for github
