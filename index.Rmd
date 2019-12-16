@@ -8,6 +8,9 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
+lot: false
+lof: false
+always_allow_html: yes
 github-repo: NicholasDow/BookMakingGuide
 url: 'http\://bookdown.ml/bookdown-guide/'
 graphics: yes
