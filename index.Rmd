@@ -5,7 +5,7 @@ author: "Nicholas Dow"
 site: bookdown::bookdown_site
 cover-image: assets/gov_1005.jpg
 documentclass: book
-bibliography: [book.bbi]t
+bibliography: [book.bbit]
 biblio-style: apalike
 link-citations: yes
 github-repo: NicholasDow/BookMakingGuide
