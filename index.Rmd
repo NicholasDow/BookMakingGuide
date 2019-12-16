@@ -65,6 +65,6 @@ include_image <- function(pathe){
 }
 ```
 
-`r include_image("hello")`
+
 
 
