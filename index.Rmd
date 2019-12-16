@@ -10,6 +10,7 @@ biblio-style: apalike
 link-citations: yes
 github-repo: NicholasDow/BookMakingGuide
 url: 'http\://bookdown.ml/bookdown-guide/'
+graphics: yes
 description: "Everything you need (and nothing more) to start a bookdown book."
 ---
 
