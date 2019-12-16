@@ -60,9 +60,11 @@ should also explain how travis lets you check for errors in your code when it do
 
 
 ```{r images, include=FALSE}
-include_image <- function(path){
-    return(path)
+include_image <- function(pathe){
+    print(pathe)
 }
 ```
+
+`r include_image("hello")`
 
 
