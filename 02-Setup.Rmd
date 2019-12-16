@@ -40,4 +40,6 @@ gapminder_2007 <- gapminder %>%
   )
 ```
 
+`r nrow(gapminder_2007)`
+
 
