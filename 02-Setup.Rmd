@@ -5,5 +5,9 @@
 ```r include_image("hell")```
 
 
+```{r}
+x = 5  # radius of a circle
+```
+
 For a circle with the radius `r x`,
 its area is `r pi * x^2`.
