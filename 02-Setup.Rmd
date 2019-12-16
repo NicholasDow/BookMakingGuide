@@ -11,6 +11,7 @@ For a circle with the radius `r x`,
 its area is `r pi * x^2`.
 
 ```{r} 
+source("can_you_read_me.R")
 include_image("hello")
 ```
 

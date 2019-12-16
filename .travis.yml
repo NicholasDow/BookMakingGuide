@@ -24,8 +24,7 @@ install:
   - Rscript -e 'old.packages(repos = Sys.getenv("RENV_CONFIG_REPOS_OVERRIDE"), lib.loc = .libPaths()[1])'
 
 script:
-  - Rscript -e "source('can_you_read_me.R')"
-  - Rscript -e 'source("can_you_read_me.R"); bookdown::render_book("index.Rmd", quiet = TRUE)'
+  - Rscript -e 'bookdown::render_book("index.Rmd", quiet = TRUE)'
 
 before_cache:
 - nvm install stable
