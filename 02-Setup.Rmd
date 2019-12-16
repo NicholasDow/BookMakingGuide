@@ -9,10 +9,8 @@ library(dplyr)
 # Packages needed internally, but not in book.
 library(gapminder)
 library(knitr)
-library(kableExtra)
 library(readr)
-library(patchwork)
-library(scales)
+
 library(stringr)
 ```
 
