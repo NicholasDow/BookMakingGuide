@@ -1,6 +1,24 @@
-# Copying
+# Getting Kane Setup
 
-Other methods of hosting bookdown
-static method. you must run all the files and get a bunch of html files that you can host from netifly just by having it look at that specific folder
+First Make a collaborator
+Download the files
+Add to travis
+run the files by pushing a commit to see if runs and if he can see logs
+Make basic edits and show how to edit and merge
+show how to move around chapters and move chapters in and out
 
-Talk about yihui's method of making the book from scratch
+## Workflow
+### Adding a Chapter
+1. Make a rmd file and put it in your prefered directory. Either the main directory/ the directory that index.rmd is in, or a more specific directory.
+2. Go into `_bookdown.yml` and add the chapter into rmd_files in the position or ordering that you want. Add the directory to `rmd_subdir`, but **beware** all files you put into a directory the `_bookdown.yml` is aware of will be put at the end of bookdown even if they are not named in `rmd_files`.
+
+### Deleting Chapters
+1. Go into the directory or subdirectory and delete the file
+2. Go into `_bookdown.yml` and delete the file from `rmd_files`
+
+### Modifying chapters from other bookds
+for now just edit the static files. In the future you will have a very clean bash file that will let you send files between
+### Updating and merging
+
+1. For now just copy the files you modified
+1. `cd thesubdirectoryyouwanttoupdate

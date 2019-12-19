@@ -3,13 +3,14 @@
 ## Stat545 Support Files
 ### renv
 where all the stat545 libs are stored. I want to get as many libraries into this as possible for faster load times.
+### renv.lock
+contains all the names of the libraries in renv.
 ## MD Support Files
 ## dsbook Support Files
 
 ### _common.R
 Typically common files are supposed to be put at the top of files using the source function to add libraries, functions, and misc that are frequently called
 
-### 
 ## My Files
 
 ### _lazygit.sh
@@ -17,6 +18,8 @@ If you run thsi file with the command `./_lazygit.sh "message"` you will add, co
 
 ### _copy.sh
 Because of how travis doesn't give bookdown the ability to see into submodules when submodules are off, I used this bashfile to move all of the files that would be inside of the submodules to folders that the index file can see while running in travis.
+
+I want you to be able to submit `./copy.sh to_main` to copy from main to static and `./copy.sh to_static` to go the other way
 
 ### Static folders
 These are the folders that _copy.sh moves files to
@@ -31,7 +34,7 @@ This files controls where chapters go and can control scripting before chapters
 
 ### .travis.yml
 This file controls the commands that are run in travis
-
+- a note about pandoc, the setting inside travis. Pandoc is a markdown converter
 ### _output.yml
 This file controls the asthetic of the bookdown output
 
