@@ -24,7 +24,7 @@ We are going to copy the stat545 book which can be found here: https://stat545.c
 
 8. Type in the command `git remote add upstream https://github.com/rstudio-education/stat545` into the terminal prompt. This will create an upstream remote repo that can be updated and merged with our modified version.  
 
-9. Type the command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be reprompted with the same merge conflicts that you have already addressed
+9. Type the command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be re-prompted with the same merge conflicts that you have already addressed
 
 ### Getting a Free Url
 
@@ -47,7 +47,7 @@ This part of the tutorial has many working parts and won't work until the very e
 2. Login to your github account
 3. Select the repo you forked
 
-This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials nessisary to make travis-ci work.
+This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials necessary to make travis-ci work.
 
 ### Adding Travis to Your Repo
 
@@ -91,9 +91,14 @@ This must be done because travis does not activate until it sees you push a .tra
 ### Last Push
 Once you have finished everything above you can push your changes and see them unfold on the travis homepage. It will take some time to run your code on travis, but once it is done you should see your changes on your website. If there are any errors you will be able easily spot those errors in the travis logs
 
-## ModernDive
-Setting up moderndive is similar to setting up stat545. Moderndive does not use netlify, and instead uses github pages. Because we use netlify we must modify moderndive to work correctly with our tools. I will be taking files from stat545 and using them to host the website. I also think that it is worth mentioning that by using the netlify approach we will avoid using a more complicated system that relys on bash files and other odd dependencies.
+## Other Books
 
+I have not explained how to make these two books in detail because they are unlikely to be important to making the textbook
 
+### ModernDive
 
+Running Moderndive in the way that we run stat545 from travis is the best option if you want a copy of MD that you can experiment with. There is little reason to do this when you can just experiment with the combined book by removing directories from the `_bookdown.yml` file. If you just want see the MD textbook you can make a website from the html files in the docs folder. 
 
+### dsbook
+
+I have not made a separate working copy of the dsbook. If you need one email me. 
