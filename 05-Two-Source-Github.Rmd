@@ -12,6 +12,8 @@ to add a folder full of the files that make the stat545 book
 Type `git submodule add https://github.com/moderndive/ModernDive_book` to 
 to add a folder full of the files that make the ModernDive book
 
+Type `git submodule add https://github.com/rafalab/dsbook.git` to add that book.
+
 if you want to make changes to the submodule then you must go into the submodule with `cd name/of/dir` then type `git checkout master`
 
 you will also want to go into `.travis.yml` and add:
@@ -120,9 +122,32 @@ Another thing that you must do is add all the names of the packages that
 ## How to update the submodules
 If we want to update any of the files inside of the submodule we must run this command to specifically merge the files, otherwise all of our work wil be overwritten.
 
-First go into the submodule folder `cd \stat545` or `cd \ModernDive_book`. then checkout the stable branch with `git checkout stable`. While you are in each submodule enable rerere with the command `git config rerere.enable true`. This will make it so that you don't have to resolve the same merge conflict twice.
+First go into the submodule folder `cd \stat545` or `cd \ModernDive_book`. then checkout the stable branch with `git checkout master`. While you are in each submodule enable rerere with the command `git config rerere.enable true`. This will make it so that you don't have to resolve the same merge conflict twice. 
 
-once in the submodule you can run the command:`git submodule update --remote --merge` to update and merge the submodule.
+If you have set all of this the first time all you have to do every time you want to update the submodule is first:
+
+`git submodule update --remote --merge`, this will make the submodule point at the most recent itteration.
+
+`git add .`
+`git commit -m "message"`
+`git merge origin/master`
+
+you might get issues with the length of names, if this is the case
+`git config --system core.longpaths true`
+This is a protected setting so you need to open a seperate terminal with admin permissions and enter the git command.
+
+If you get merge conflicts then either manually resolve the conflicts or use `git mergetool`
+
+then run these commands again
+
+`git add .`
+`git commit -m "message"`
+`git merge origin/master`
+
+
+This is a part of the workflow.
+
+THere should be a chapter on the process of making edits
 
 
 

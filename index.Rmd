@@ -65,12 +65,25 @@ Should talk about how every time you push changes to github you will be able to 
 should also explain how travis lets you check for errors in your code when it doesn't run correctly. Should also talk about how it takes some time
 
 
-```{r images, include=FALSE}
-include_image <- function(pathe){
-    print(pathe)
-}
-```
+Need to note this below:
+The moderndive files dont' work naturally so I am modifying them slightly some of the the rendering problems can be solved using the source function givng the rmd file access to functions wirtten in other files. forexample include_image.
 
+note that when you test new books, and you want to bring them into this one, it is easier to put them at the begining.
+
+you will have to control what files are included in the book through the copy file because everything in the subdirectory will be included at the end if you don't list it
+
+this is how you revert to an old file that you fuckedup 
+
+git reset --hard [previous Commit SHA id here]
+git push origin [branch Name] -f
+
+you have to call the source function on the first rmd file or else you wont get access to those functions
+
+you must delete all the rmd files you don't need or else they will show up at the end.
+
+the best way to trouble shoot errors is to look up the terms in the github repo search
+
+if you need to add a new package you will need to go into renv.lock
 
 
 
