@@ -1,4 +1,4 @@
-# Copying
+# Copying Single Books (Stat545, MD, dsbook)
 ```{r, echo=FALSE, warning=FALSE}
 library(knitr)
 ```

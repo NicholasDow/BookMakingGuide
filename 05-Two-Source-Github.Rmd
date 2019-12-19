@@ -1,4 +1,4 @@
-# Two-Source Github
+# Recreating the three in one textbook
 
 ## Submodule Setup
 
@@ -6,27 +6,26 @@ Start by making a copy of this repository: https://github.com/NicholasDow/BookMa
 
 Type `renv::restore()` in the command line to update all of your packages.
 
-Type `git submodule add https://github.com/rstudio-education/stat545`
-to add a folder full of the files that make the stat545 book
+The process to make a submodule is the same for the three books we use, but I included all the commands for convenience.
 
-Type `git submodule add https://github.com/moderndive/ModernDive_book` to 
-to add a folder full of the files that make the ModernDive book
+Type `git submodule add https://github.com/rstudio-education/stat545.git`
+to add a folder full of the files that make the stat545 book. Go into the submodule with `cd /stat545` and initialize it with `git submodule init`. Then type `git submodule update` to get the submodule to point to the most recent commit.
 
-Type `git submodule add https://github.com/rafalab/dsbook.git` to add that book.
+Type `git submodule add https://github.com/moderndive/ModernDive_book.git` to add MD. Go into the submodule with `cd /ModernDive_book` and initialize it with `git submodule init`.Then type `git submodule update` to get the submodule to point to the most recent commit.
 
-if you want to make changes to the submodule then you must go into the submodule with `cd name/of/dir` then type `git checkout master`
+Type `git submodule add https://github.com/rafalab/dsbook.git` to add dsbook. Go into the submodule with `cd /dsbook` and initialize it with `git submodule init`Then type `git submodule update` to get the submodule to point to the most recent commit.
+
+if you want to make changes to the submodule then you must go into the submodule with `cd name/of/dir`. Each submodule is it's own repository, so anything you can do in a normal repo, you can do inside of a submodule.
 
 you will also want to go into `.travis.yml` and add:
 ```
 git:
   submodules: false
 ```
-so that travis does not clone the submodules every time it runs in the command line.
-
-### Making Changes in the submodules
-In order to track changes that are made in the submodule, cannot just add, commit, and push the change. You must first `cd nameofdir`, then commit the changes with: `git commit -am "commit message"` or its equivalent. After you have committed the change within the submodule, you can exit the submodule with `cd ..` and make the commit normally.
+so that travis does not clone and overwrite the submodules every time it runs in the command line.
 
 ##Setting up the Website
+This process is pretty much the same as in the copying chapter. Feel free to ignore this if you already know how to setup the website. 
 ### Getting a Free Url
 
 We are getting a url name from [freenom](https://www.freenom.com/). 

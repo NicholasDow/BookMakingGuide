@@ -1,47 +1,83 @@
 # What Every File Does
 
-```{r message=FALSE}
-library(ggplot2)
-library(dplyr)
-```
+## Stat545 Support Files
+### renv
+where all the stat545 libs are stored. I want to get as many libraries into this as possible for faster load times.
+## MD Support Files
+## dsbook Support Files
 
-```{r message=FALSE, warning=FALSE, echo=FALSE}
-# Packages needed internally, but not in book.
-library(gapminder)
-library(knitr)
-library(readr)
+### _common.R
+Typically common files are supposed to be put at the top of files using the source function to add libraries, functions, and misc that are frequently called
 
-library(stringr)
-```
+### 
+## My Files
 
+### _lazygit.sh
+If you run thsi file with the command `./_lazygit.sh "message"` you will add, commit, and push all in one line
 
-```{r}
-x = 5  # radius of a circle
-```
+### _copy.sh
+Because of how travis doesn't give bookdown the ability to see into submodules when submodules are off, I used this bashfile to move all of the files that would be inside of the submodules to folders that the index file can see while running in travis.
 
-For a circle with the radius `r x`,
-its area is `r pi * x^2`.
+### Static folders
+These are the folders that _copy.sh moves files to
 
-```{r} 
-source("can_you_read_me.R")
-include_image("hello")
-```
+## Native Files
 
-```{r, echo=FALSE}
-gapminder_2007 <- gapminder %>% 
-  filter(year == 2007) %>% 
-  select(-year) %>% 
-  rename(
-    Country = country,
-    Continent = continent,
-    `Life Expectancy` = lifeExp,
-    `Population` = pop,
-    `GDP per Capita` = gdpPercap
-  )
-```
+### index.Rmd
+This is the first file in bookdown and it has many settings at the top that control how the book is made
 
-In February 2006, a Swedish physician and data advocate named Hans Rosling gave a TED talk titled ["The best stats you've ever seen"](https://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen) where he presented global economic, health, and development data from the website [gapminder.org](http://www.gapminder.org/tools/#_locale_id=en;&chart-type=bubbles). For example, for data on `r nrow(gapminder_2007)` countries in 2007, let's consider only only a few countries in Table \@ref(tab:gapminder-2007) as a peak into the data.
+### _bookdown.yml
+This files controls where chapters go and can control scripting before chapters
 
-`r nrow(gapminder_2007)`
+### .travis.yml
+This file controls the commands that are run in travis
 
+### _output.yml
+This file controls the asthetic of the bookdown output
 
+### style.css
+Your typical css
+
+### functions.R
+This file contains a bunch of commonly used functions that need to run before the rest of the book runs
+
+### GovImages
+has images for gov logo
+
+## Need to check
+
+### _includes
+### _redirects
+### bib
+this is probably the bib folder for MD, I don't think we need it
+### book.bib
+This file is a bibliography
+### CONDUCT.md
+### data
+This is nessisary for something don't delete. I will find out what it is used for later
+### Description
+### docs
+This is a MD file, md uses docs for some reason
+### figure
+folder of figures
+### img
+has images need to figure out for what files dont delete
+### images
+has more images need to figure out
+### krantz.cls
+is a formatting files
+### latex
+formatting
+### labs.html
+### packages.bib
+records what packages were used, need to throw out
+### pdf_build_from_text.R
+too afraid to throw away. I think it is only relevent if you work with pdfs
+### purl.R
+Puts all of your code into scripts. too afraid to delete
+### rds
+data files
+### rds_old
+data files that I shouldn't care about
+### supporting docs
+important need to track down origin

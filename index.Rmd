@@ -62,7 +62,14 @@ This book will show you
 ^^^ need to rewrite this part
 Should talk about how every time you push changes to github you will be able to see those changes after a while because of travis
 
-should also explain how travis lets you check for errors in your code when it doesn't run correctly. Should also talk about how it takes some time
+should also explain how travis lets you check for errors in your code when it doesn't run correctly. Should also talk about how it takes some time.
+
+Need to explain how we collaborate on this project:
+https://docs.travis-ci.com/user/travis-ci-for-private/
+kane can see updates and logs when i push them on the website.
+
+I should offer to do the merging
+
 
 
 Need to note this below:
@@ -85,5 +92,5 @@ the best way to trouble shoot errors is to look up the terms in the github repo 
 
 if you need to add a new package you will need to go into renv.lock
 
-
+This guide is really good at explaining renv even though it isnt super used
 
