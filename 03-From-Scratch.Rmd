@@ -252,6 +252,7 @@ language:
 ### Last Push
 Once you have finished everything above you can push your changes and see them unfold on the travis homepage. It will take some time to run your code on travis, but once it is done you should see your changes on your website. If there are any errors you will be able easily spot those errors in the travis logs
 
-
+### Useful Links:
+https://docs.travis-ci.com/user/tutorial/
 
 
