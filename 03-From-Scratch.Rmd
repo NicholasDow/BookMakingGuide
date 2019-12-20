@@ -37,7 +37,7 @@ Travis allows for continuous integration, the section on why we use travis can b
 
 In this section we will setup the .travis.yml file so that it works in conjunction with freenom and netlify
 
-1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
+1. Sign up for travis ci account.
 2. In terminal type these commands seperately
 `mv .travis.yml _includes`
 
@@ -56,7 +56,7 @@ In this section we will setup the .travis.yml file so that it works in conjuncti
 `git push`
 
 
-You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
+You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. Here is a link for explaination: https://docs.travis-ci.com/user/tutorial/
 
 5. You will have a travis file that intially looks like this
 ```
@@ -250,7 +250,6 @@ language:
 ### Last Push
 Once you have finished everything above you can push your changes and see them unfold on the travis homepage. It will take some time to run your code on travis, but once it is done you should see your changes on your website. If there are any errors you will be able easily spot those errors in the travis logs
 
-### Useful Links:
-https://docs.travis-ci.com/user/tutorial/
+
 
 
