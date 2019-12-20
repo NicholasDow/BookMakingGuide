@@ -40,23 +40,21 @@ In this section we will setup the .travis.yml file so that it works in conjuncti
 1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
 2. In terminal type these commands seperately
 `mv .travis.yml _includes`
+
 `git add .`
+
 `git commit -m "travis setup"`
-`git push`
-`mv _includes/.travis.yml .travis.yml`
-`git add .`
-`git commit -m "travis setup"`
+
 `git push`
 
-You can simplify the git add commit and push to one line with this:
-```
-function lazygit() {
-    git add .
-    git commit -a -m "$1"
-    git push
-}
-```
-Copy this and paste it into your terminal with `Shift + Insert`
+`mv _includes/.travis.yml .travis.yml`
+
+`git add .`
+
+`git commit -m "travis setup"`
+
+`git push`
+
 
 You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
 
