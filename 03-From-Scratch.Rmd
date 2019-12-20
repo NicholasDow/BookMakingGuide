@@ -4,9 +4,9 @@
 
 2. Download the repo to your computer
 
-3. Type in the command `git remote add upstream https://github.com/rstudio-education/stat545` into the terminal prompt. This will create an upstream remote repo that can be updated and merged with our modified version.  
+3. Type in the command `git remote add upstream https://github.com/moderndive/ModernDive_book` into the terminal prompt. This will create an upstream remote repo that can be updated and merged with our modified version. __You don't need to do this step now.__
 
-9. Type the command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be re-prompted with the same merge conflicts that you have already addressed
+4. Type the command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be re-prompted with the same merge conflicts that you have already addressed. __You don't need to do this step now__
 
 ### Getting a Free Url
 
@@ -29,7 +29,7 @@ This part of the tutorial has many working parts and won't work until the very e
 2. Login to your github account
 3. Select the repo you forked
 
-This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials necessary to make travis-ci work.
+This will create a nonfunctioning netlify page. We are only doing this so that we have the netlify credentials necessary to make travis-ci work. We will get back to it.
 
 ### Adding Travis to Your Repo
 
@@ -38,13 +38,27 @@ Travis allows for continuous integration, the section on why we use travis can b
 In this section we will setup the .travis.yml file so that it works in conjunction with freenom and netlify
 
 1. Sign up for travis ci account and activate on page of interest (note need pictures for this)
-2. Find pre-existing .travis.yml file
-3. Delete it manually, commit the change, and push  
-4. Undo the manual delete, commit the change, and push
+2. In terminal type these commands seperately
+`mv .travis.yml _includes`
+`git add .`
+`git commit -m "travis setup"`
+`git push`
+`mv _includes/.travis.yml .travis.yml`
+`git add .`
+`git commit -m "travis setup"`
+`git push`
 
-**Change this part so that you move the file form teh command**
+You can simplify the git add commit and push to one line with this:
+```
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
+```
+Copy this and paste it into your terminal with `Shift + Insert`
 
-This must be done because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
+You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. 
 
 5. You will have a travis file that intially looks like this
 ```
