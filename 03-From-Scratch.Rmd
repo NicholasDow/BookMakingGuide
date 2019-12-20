@@ -131,6 +131,38 @@ deploy:
       condition: $TRAVIS_BRANCH != "master"
 ```
 
+This is what each part I changed does: 
+```
+before_install:
+  - export COMMIT_MSG=$(echo "$TRAVIS_COMMIT_MESSAGE" | head -n1)
+  - export DEPLOY_MSG="${TRAVIS_COMMIT:0:7} ${COMMIT_MSG:0:50}"
+```
+Before installing libraries we run a bash command that just writes out the commit message in travis.
+
+```
+script:
+  - Rscript -e 'bookdown::render_book("index.Rmd")'
+```
+This is just the deployment protocol for netifly. It says take the output of the script and deploy it. 
+```
+deploy:
+  - provider: script
+    script: netlify deploy --dir _book --prod --message "$DEPLOY_MSG"    
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: script
+    script: netlify deploy --dir _book --message "$DEPLOY_MSG"    
+    skip_cleanup: true
+    on:
+      all_branches: true
+      condition: $TRAVIS_BRANCH != "master"
+```
+
+This script part is what is actually running in the command line. If there is something wrong in your code this is where it will error.
+
+
+
 6. Create Netlify authentication token by going to this link: https://app.netlify.com/user/applications#personal-access-tokens 
 
 7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
