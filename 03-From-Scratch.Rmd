@@ -39,6 +39,7 @@ In this section we will setup the .travis.yml file so that it works in conjuncti
 
 1. Sign up for travis ci account.
 2. In terminal type these commands seperately
+
 `mv .travis.yml _includes`
 
 `git add .`
@@ -286,4 +287,9 @@ To see if everything is working this link:
 https://travis-ci.org/davidkane9/ModernDive_book
 
 
+## Resources on setting up bookdown
+
+https://solomonkurz.netlify.com/post/how-bookdown/
+
+http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html
 
