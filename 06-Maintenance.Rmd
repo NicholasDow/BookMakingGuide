@@ -157,6 +157,12 @@ highlight some code and type `Ctrl + Shift + C`
 
 \@ref(how-to-reference-another-chapter)
 
+### How to auto indent
+
+`Ctrl + A` to highlight everything
+
+`Ctrl + I` to auto indent
+
 ### Adding Stickers to github
 
 ### Things that need to be added in the future
