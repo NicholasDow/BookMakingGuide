@@ -1,0 +1,28 @@
+# Making a Book using GitHub Pages
+
+This is a guide to making the simplest possible book while using Github pages to host the result.
+
+First, read [the introduction](https://pages.github.com/) to Github Pages. But don't be in a rush to do anything. In particular, I think the instructions are misleading since they suggest that you can only host a site for which the names match your user (or organization?) name. That is, I thought the only allowed project name for me (davidkane9) was davidkane9.github.io. But that is not true. Even worse, if you use that name then the ability to use the docs/ directory goes away. Very confusing!
+
+Second, read Sean Kross's [guide](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html) to using Bookdown. This is very good, and I think can form the framework of the book.
+
+Steps:
+
+1) Create a new (empty) repo named whatever you like. Let's go with "book_test". This can be in whatever organization you like, I think. (At some point, we might need to create a new organization to hold the book (like [ModernDive](https://github.com/moderndive/moderndive.)), but not today.) 
+
+2) Connect this repo to your computer. 
+
+3) Download a zip file of Kross's [repo](https://github.com/seankross/bookdown-start). At some point, I would like to understand the details about why all these files are necessary. Unzip the contents wherever you downloaded it.
+
+4) Move the contents (which won't include the highest bookdown-start-master/ directory) into your repo on the computer. Something like: `cp -r  ~/Downloads/bookdown-start-master/* .` from the Terminal window inside your new project. In other words, you need (I think) all the files to be at the highest possible level.
+
+4) Edit the _bookdown.yml file to change `repo: https://github.com/seankross/bookdown-start` to your repo. Without this change, the book will not appear. Nor will you get an error.
+
+5) Check everything in and push it. (Feel free to do whatever fussing you usualling like to do. For example, I modify the .gitignore so that the .Rproj file is not pushed.)
+
+6) Go to Settings for this new repo (mine is at GOV-1005-Spring-2020/book) and set Github Pages, Source to use the Master branch docs/ folder. (This is the step that does not work if you used davidkane9/davidkane9.github.io as the instructions seem to suggest you ought to. For some reason, you can't change these setting at all in that case.) 
+
+7) Everything works! Notice that the Kross repo has already populated the docs/ directory with the necessary html files. You now have a book located at https://davidkane9.github.io/book_test/, or whatever user/organization and repo name you used.
+
+8) Now you can edit the book. I recommend you start by making the other edits [recommended by Kross](http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html). Then, you rebuild it using the "Build Book" button from the Build pane (which creates new html files in the docs/ directory) and then push the changes.  They will automatically appear at the Github Pages url. No need for Netifly or any other hosting service. (Note that it seems like you need to close and then open the project in order for the Build pane to appear. Presumably, there is a cooler way of letting R know that you are working on a book.)
+
