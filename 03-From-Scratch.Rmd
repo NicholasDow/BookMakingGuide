@@ -1,5 +1,17 @@
 # Do This Preceptor
 
+
+## Overview
+
+In this chapter we are going to go through making a bookdown book using netlify and travis. 
+
+Within the MD repository that we are copying we will be making modifications to the following files 
+
+- `.travis.yml`
+- `_bookdown.yml`
+
+## Getting Started
+
 1. Start by making a copy of this repository: https://github.com/moderndive/ModernDive_book
 
 2. Download the repo to your computer
@@ -8,22 +20,8 @@
 
 4. Type the command `git config rerere.enable true` into the terminal prompt. This will make it so that you will not be re-prompted with the same merge conflicts that you have already addressed. __You don't need to do this step now__
 
-### Getting a Free Url
-
-We are getting a url name from [freenom](https://www.freenom.com/). 
-
-**Warning**: The only catch with freenom is that these domains will only last for one year before expiring or costing money. Being free for one year is a gimmick to get you paying for a domain once you rely on people returning to that specific domain. You should probably find some other hosting if you plan on doing anything other than making a temp website. You should not circulate the website publically using freenom hosting. Luckily the proccess should be similar if you use other hosting.
-
-1. Enter a url name
-2. Check availability and find a url that is free
-3. Click “Get it Now!”
-4. Click Checkout
-5. Select 12 Months @ FREE
-6. Login or create an account
-7. Complete the order
-
 ### Connecting the Github Repository to Netlify
-This part of the tutorial has many working parts and won't work until the very end.
+___This won't work immediately because it is only initializing a netlify repo, but the travis that run's the website is not yet setup.___
 
 1. Hit new site from git
 2. Login to your github account
@@ -35,7 +33,7 @@ This will create a nonfunctioning netlify page. We are only doing this so that w
 
 Travis allows for continuous integration, the section on why we use travis can be read about in the maintenance section: \@ref(why-we-use-travis)
 
-In this section we will setup the .travis.yml file so that it works in conjunction with freenom and netlify
+In this section we will setup the .travis.yml file so that it works in conjunction with netlify
 
 1. Sign up for travis ci account.
 2. In terminal type these commands seperately
@@ -141,26 +139,7 @@ deploy:
 6. Create Netlify authentication token by going to this link: https://app.netlify.com/user/applications#personal-access-tokens 
 
 7. Go into settings for your travis branch and copy and past your auth key into an environment variable you name NETLIFY_AUTH_TOKEN
-**Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github
-
-### Adding the Custom Domain
-
-1. Go to netlify 
-  - enter the url of your custom domain into step 2 “adding a custom domain”
-2. Go to freenom
-  - Goto my domains
-  - Click on manage domain next to your domain of interest
-  - Go to management tools
-3. Goto netlify
-  - Goto check dns configuration
-  - Goto setup dns for x domain
-  - Skip records
-  - Copy all the name servers
-4. Goto freenom
-  - Goto name servers in management tools
-  - Click on custom name servers
-  - Copy and paste in all the name servers
-
+**Warning** you can set NETLIFY_AUTH_TOKEN in your yml file but this will expose it on github.
 
 ### _bookdown.yml Chapters
 
