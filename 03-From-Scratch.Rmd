@@ -36,7 +36,7 @@ Travis allows for continuous integration, the section on why we use travis can b
 In this section we will setup the .travis.yml file so that it works in conjunction with netlify
 
 1. Sign up for travis ci account.
-2. In terminal type these commands seperately
+2. In terminal type these commands separately
 
 `mv .travis.yml _includes`
 
@@ -55,9 +55,9 @@ In this section we will setup the .travis.yml file so that it works in conjuncti
 `git push`
 
 
-You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. Here is a link for explaination: https://docs.travis-ci.com/user/tutorial/
+You need to do this file manipulation because travis does not activate until it sees you push a .travis.yml file. This is the indicator that the service looks for. Here is a link for explanation: https://docs.travis-ci.com/user/tutorial/
 
-5. You will have a travis file that intially looks like this
+5. You will have a travis file that initially looks like this
 ```
 language: r
 cache: packages
@@ -145,7 +145,7 @@ deploy:
 
 ### _bookdown.yml Chapters
 
-Your `_bookdown.yml` file will look like this initally
+Your `_bookdown.yml` file will look like this initially
 ```
 book_filename: "ModernDive"
 output_dir: "docs"
@@ -247,4 +247,5 @@ https://travis-ci.org/davidkane9/ModernDive_book
 https://solomonkurz.netlify.com/post/how-bookdown/
 
 http://seankross.com/2016/11/17/How-to-Start-a-Bookdown-Book.html
+
 
