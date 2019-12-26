@@ -7,6 +7,7 @@ rmd_files: ["index.Rmd",
   "03-From-Scratch.Rmd",
   "04-Copying.Rmd",
   "05-Two-Source-Github.Rmd",
-  "06-Maintenance.Rmd"]
+  "06-Maintenance.Rmd",
+  "07-Using-gh-Pages.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: no
