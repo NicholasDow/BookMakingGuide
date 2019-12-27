@@ -69,7 +69,7 @@ Nick's Response
   + `rm -r ./ModernDive_book` __This removes the directory__
 
 
-10) Go into `_bookdown.yml` and change the repo line so that it refers to your directory `repo: https://github.com/Nameofuser/nameofrepo`
+10) Go into `_bookdown.yml` and change the repo line so that it refers to your directory `repo: https://github.com/Nameofuser/nameofrepo`. 
 
 11) Run the command `bookdown::clean_book(TRUE); bookdown::render_book('index.Rmd', 'bookdown::gitbook');` to get a version of the book's html files written into your docs folder. This will overwrite the html files that were previously in the docs folder.
 
