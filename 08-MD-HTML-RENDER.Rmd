@@ -1,5 +1,11 @@
 # GH pages docs folder method
 
+1) Create a new (empty) repo named whatever you like. Let's go with "book_test". This can be in whatever organization you like, I think. (At some point, we might need to create a new organization to hold the book (like [ModernDive](https://github.com/moderndive/moderndive.)), but not today.) 
+
+2) Connect this repo to your computer. 
+
+3) Go to Settings for this new repo on github (mine is at GOV-1005-Spring-2020/book) and scroll down to where it says Github Pages. Click on the drop down menu for source and select Master branch docs/ folder. (This is the step that does not work if you used davidkane9/davidkane9.github.io as the instructions seem to suggest you ought to. For some reason, you can't change these setting at all in that case.) (**Note** << I am little confused by the comment here.)
+
 (**Note** `bookdown::render_book('index.Rmd')` to render the whole book)
 
 (**Note** `preview_chapter()` for single chapters) but as Yihui says: 
