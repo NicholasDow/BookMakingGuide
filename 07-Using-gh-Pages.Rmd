@@ -56,25 +56,21 @@ Nick's Response
 (**Note** `preview_chapter()` for single chapters) but as Yihui says: 
 >One downside of previewing a chapter is that the cross-references to other chapters will not work, since bookdown knows nothing about other chapters in this case. That is a reasonably small price to pay for the gain in speed. Since previewing a chapter only renders the output for that specific chapter, you should not expect that the content of other chapters is correctly rendered as well. For example, when you navigate to a different chapter, you are actually viewing the old output of that chapter (which may not even exist).
 
-A lot of MD chapters probably won't work because of how much cross-referencing there is. A solution to this is to add a `common.R` file to each chapter with `source('common.R')`, but this might be more trouble than using travis. Tell me if you want to do this.
+<!-- A lot of MD chapters probably won't work because of how much cross-referencing there is. A solution to this is to add a `common.R` file to each chapter with `source('common.R')`, but this might be more trouble than using travis. Tell me if you want to do this. -->
 
-9)
-This line clones the repository
+9) In this step we are going to copy in the MD Repo, specifically excluding files that we don't need. You should be in the directory with your `index.Rmd` file when issuing these commands
 
-`git clone https://github.com/moderndive/ModernDive_book.git`
+  + `git clone https://github.com/moderndive/ModernDive_book.git` __This line clones the repository__
 
-This line basically enables regular expression in bash.
+  + `shopt -s extglob` __This line enables regular expressions to be used in bash commands__
 
-`shopt -s extglob`
-
-This line copies all the files that are needed into the main directory
-
-`cp -r ./ModernDive_book/!(docs|.DS_store|.git|*.Rproj|previous_versions|.travis.yml|_build.sh|_deploy.sh) .`
+  + `cp -r ./ModernDive_book/!(docs|.DS_store|.git|*.Rproj|previous_versions|.travis.yml|_build.sh|_deploy.sh) .` __This line copies all the files that are needed into the main directory. Without the shopt command we couldn't use !(docs|...) to reference files__
+  
+  + `rm -r ./ModernDive_book` __This removes the directory__
 
 
-Delete the old folder if you want afterwards
+10) Go into `_bookdown.yml` and change the repo line so that it refers to your directory `repo: https://github.com/Nameofuser/nameofrepo`
 
+11) Run the command `bookdown::clean_book(TRUE); bookdown::render_book('index.Rmd', 'bookdown::gitbook');` to get a version of the book's html files written into your docs folder. This will overwrite the html files that were previously in the docs folder.
 
-go into _bookdown.yml and replace or add to repo with `repo: https://github.com/NicholasDow/GHpages-book`
-
-push the changes and you should be able to see them on your website. You can then use `bookdown::clean_book(TRUE); bookdown::render_book('index.Rmd', 'bookdown::gitbook');` to get a version of the book's html files to be written into your docs folder. It is taking a while on my computer, but that might just be because my computer is slow. It takes a LONG time, so i am still waiting for output. If i was wrong use this command instead `bookdown::clean_book(TRUE); bookdown::render_book('index.Rmd', 'bookdown::html');`
+12) Push the new html files, and GH will render a website from them.
