@@ -19,20 +19,20 @@ Steps:
 > At some point, I would like to understand the details about why all these files are necessary. Unzip the contents wherever you downloaded it.
 
 Nick's Response  
-#### docs  
+### docs  
 - Directory where bookdown sends all of it's output files (ie html) for GH to deploy  
-#### .gitignore, .Rmd chapters, README.md, book.bib  
+### .gitignore, .Rmd chapters, README.md, book.bib  
 - Self explainitory  
-#### _bookdown.yml  
+### _bookdown.yml  
 - Controls ordering `rmd_files`, composition `new_session`, and output directory `output_dir` of chapters  
-#### _output.yml  
+### _output.yml  
 - Controls Styling of book  
 - `collapse: subsection` or `collapse: section`  
 - Can control what images and html are in the header. We can add the icon using this  
 - Controls different output formats: `bookdown::pdf_book`, `bookdown::epub_book`, and so on  
-#### index.Rmd  
+### index.Rmd  
 - Top of document has options for appearance and composition in html. See here: https://bookdown.org/yihui/bookdown/html.html  
-#### preamble.tex and style.css  
+### preamble.tex and style.css  
 - For text and html styling  
 
 4) Move the contents (which won't include the highest bookdown-start-master/ directory) into your repo on the computer. Something like: `cp -r  ~/Downloads/bookdown-start-master/* .` from the Terminal window inside your new project. In other words, you need (I think) all the files to be at the highest possible level.
