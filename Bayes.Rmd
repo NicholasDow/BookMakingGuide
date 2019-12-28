@@ -57,7 +57,7 @@ $$p(\text{vanilla | Bowl 1}) = \frac{3}{4}$$
 Sadly, $p(A|B)$ is not the same as $p(B|A)$, but there is a way to get from one
 to the other: Bayes’s theorem.
 
-# Bayes's theorem
+## Bayes's Theorem
 
 At this point we have everything we need to derive Bayes’s theorem. We’ll start with the observation that conjunction is commutative; that is
 $$p(A \cap B) = p(B \cap A)$$
