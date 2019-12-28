@@ -9,6 +9,7 @@ rmd_files: ["index.Rmd",
   "05-Two-Source-Github.Rmd",
   "06-Maintenance.Rmd",
   "07-Using-gh-Pages.Rmd",
-  "08-MD-HTML-RENDER.Rmd"]
+  "08-MD-HTML-RENDER.Rmd",
+  "Bayes.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: no

@@ -1,0 +1,22 @@
+# Bayes's Theorem 
+
+## Conditional probability
+
+The fundamental idea behind all Bayesian statistics is Bayes’s theorem,
+which is surprisingly easy to derive, provided that you understand conditional probability. So we’ll start with probability, then conditional probability, then Bayes’s theorem, and on to Bayesian statistics.
+A probability is a number between 0 and 1 (including both) that represents
+a degree of belief in a fact or prediction. The value 1 represents certainty
+that a fact is true, or that a prediction will come true. The value 0 represents
+certainty that the fact is false.
+Intermediate values represent degrees of certainty. The value 0.5, often written as 50%, means that a predicted outcome is as likely to happen as not.
+For example, the probability that a tossed coin lands face up is very close to
+50%.
+A conditional probability is a probability based on some background information. For example, I want to know the probability that I will have
+a heart attack in the next year. According to the CDC, “Every year about
+785,000 Americans have a first coronary attack. (http://www.cdc.gov/
+heartdisease/facts.htm)”
+The U.S. population is about 311 million, so the probability that a randomly
+chosen American will have a heart attack in the next year is roughly 0.3%.
+But I am not a randomly chosen American. Epidemiologists have identified
+many factors that affect the risk of heart attacks; depending on those factors,
+my risk might be higher or lower than average.
