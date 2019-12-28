@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 9 Bayes’s Theorem | Nick’s Bookmaking Guide</title>
+  <meta name="description" content="Everything you need (and nothing more) to start a bookdown book." />
+  <meta name="generator" content="bookdown 0.15.1 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 9 Bayes’s Theorem | Nick’s Bookmaking Guide" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://bookdown.ml/bookdown-guide/" />
+  <meta property="og:image" content="http://bookdown.ml/bookdown-guide/assets/gov1005.png" />
+  <meta property="og:description" content="Everything you need (and nothing more) to start a bookdown book." />
+  <meta name="github-repo" content="NicholasDow/BookMakingGuide" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 9 Bayes’s Theorem | Nick’s Bookmaking Guide" />
+  
+  <meta name="twitter:description" content="Everything you need (and nothing more) to start a bookdown book." />
+  <meta name="twitter:image" content="http://bookdown.ml/bookdown-guide/assets/gov1005.png" />
+
+<meta name="author" content="Nicholas Dow" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="gh-pages-docs-folder-method.html"/>
+<link rel="next" href="bayess-theorem-1.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<html>
+  
+  <head>
+  <script src="anchor-links.js"></script>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68219208-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68219208-1');
+  </script>
+
+  </head>
+
+</html>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="toc-logo"><a href="./"><img src="assets/gov1005.png" style="border-radius: 50%;" ></a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="1" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html"><i class="fa fa-check"></i><b>1</b> Copying Single Books (Stat545, MD, dsbook)</a><ul>
+<li class="chapter" data-level="1.1" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#copying-the-stat-545-book"><i class="fa fa-check"></i><b>1.1</b> Copying the Stat 545 Book</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#github-and-rstudio-setup"><i class="fa fa-check"></i><b>1.1.1</b> Github and Rstudio Setup</a></li>
+<li class="chapter" data-level="1.1.2" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#getting-a-free-url"><i class="fa fa-check"></i><b>1.1.2</b> Getting a Free Url</a></li>
+<li class="chapter" data-level="1.1.3" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#connecting-the-github-repository-to-netlify"><i class="fa fa-check"></i><b>1.1.3</b> Connecting the Github Repository to Netlify</a></li>
+<li class="chapter" data-level="1.1.4" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#adding-travis-to-your-repo"><i class="fa fa-check"></i><b>1.1.4</b> Adding Travis to Your Repo</a></li>
+<li class="chapter" data-level="1.1.5" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#adding-the-custom-domain"><i class="fa fa-check"></i><b>1.1.5</b> Adding the Custom Domain</a></li>
+<li class="chapter" data-level="1.1.6" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#last-push"><i class="fa fa-check"></i><b>1.1.6</b> Last Push</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#other-books"><i class="fa fa-check"></i><b>1.2</b> Other Books</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#moderndive"><i class="fa fa-check"></i><b>1.2.1</b> ModernDive</a></li>
+<li class="chapter" data-level="1.2.2" data-path="copying-single-books-stat545-md-dsbook.html"><a href="copying-single-books-stat545-md-dsbook.html#dsbook"><i class="fa fa-check"></i><b>1.2.2</b> dsbook</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="what-every-file-does.html"><a href="what-every-file-does.html"><i class="fa fa-check"></i><b>2</b> What Every File Does</a><ul>
+<li class="chapter" data-level="2.1" data-path="what-every-file-does.html"><a href="what-every-file-does.html#stat545-support-files"><i class="fa fa-check"></i><b>2.1</b> Stat545 Support Files</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="what-every-file-does.html"><a href="what-every-file-does.html#renv"><i class="fa fa-check"></i><b>2.1.1</b> renv</a></li>
+<li class="chapter" data-level="2.1.2" data-path="what-every-file-does.html"><a href="what-every-file-does.html#renv.lock"><i class="fa fa-check"></i><b>2.1.2</b> renv.lock</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="what-every-file-does.html"><a href="what-every-file-does.html#md-support-files"><i class="fa fa-check"></i><b>2.2</b> MD Support Files</a></li>
+<li class="chapter" data-level="2.3" data-path="what-every-file-does.html"><a href="what-every-file-does.html#dsbook-support-files"><i class="fa fa-check"></i><b>2.3</b> dsbook Support Files</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="what-every-file-does.html"><a href="what-every-file-does.html#common.r-my-files-_lazygit.sh-_copy.sh-static-folders-native-files-index.rmd-_bookdown.yml-.travis.yml-_output.yml-style.css-functions.r-govimages-need-to-check-_includes-_redirects-bib-book.bib-conduct.md-data-description-docs-figure-img-images-krantz.cls-latex-labs.html-packages.bib-pdf_build_from_text.r-purl.r-rds-rds_old-supporting-docs"><i class="fa fa-check"></i><b>2.3.1</b> _common.R ## My Files ### _lazygit.sh ### _copy.sh ### Static folders ## Native Files ### index.Rmd ### _bookdown.yml ### .travis.yml ### _output.yml ### style.css ### functions.R ### GovImages ## Need to check ### _includes ### _redirects ### bib ### book.bib ### CONDUCT.md ### data ### Description ### docs ### figure ### img ### images ### krantz.cls ### latex ### labs.html ### packages.bib ### pdf_build_from_text.R ### purl.R ### rds ### rds_old ### supporting docs</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html"><i class="fa fa-check"></i><b>3</b> Do This Preceptor</a><ul>
+<li class="chapter" data-level="3.1" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html#overview"><i class="fa fa-check"></i><b>3.1</b> Overview</a></li>
+<li class="chapter" data-level="3.2" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html#getting-started"><i class="fa fa-check"></i><b>3.2</b> Getting Started</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html#connecting-the-github-repository-to-netlify-1"><i class="fa fa-check"></i><b>3.2.1</b> Connecting the Github Repository to Netlify</a></li>
+<li class="chapter" data-level="3.2.2" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html#adding-travis-to-your-repo-1"><i class="fa fa-check"></i><b>3.2.2</b> Adding Travis to Your Repo</a></li>
+<li class="chapter" data-level="3.2.3" data-path="do-this-preceptor.html"><a href="do-this-preceptor.html#bookdown.yml-chapters-checking-if-everything-is-working-resources-on-setting-up-bookdown"><i class="fa fa-check"></i><b>3.2.3</b> _bookdown.yml Chapters ### Checking if everything is working ## Resources on setting up bookdown</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="getting-kane-setup.html"><a href="getting-kane-setup.html"><i class="fa fa-check"></i><b>4</b> Getting Kane Setup</a><ul>
+<li class="chapter" data-level="4.1" data-path="getting-kane-setup.html"><a href="getting-kane-setup.html#workflow"><i class="fa fa-check"></i><b>4.1</b> Workflow</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="getting-kane-setup.html"><a href="getting-kane-setup.html#adding-a-chapter"><i class="fa fa-check"></i><b>4.1.1</b> Adding a Chapter</a></li>
+<li class="chapter" data-level="4.1.2" data-path="getting-kane-setup.html"><a href="getting-kane-setup.html#deleting-chapters"><i class="fa fa-check"></i><b>4.1.2</b> Deleting Chapters</a></li>
+<li class="chapter" data-level="4.1.3" data-path="getting-kane-setup.html"><a href="getting-kane-setup.html#modifying-chapters-from-other-bookds"><i class="fa fa-check"></i><b>4.1.3</b> Modifying chapters from other bookds</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html"><i class="fa fa-check"></i><b>5</b> Recreating the three in one textbook</a><ul>
+<li class="chapter" data-level="5.1" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#submodule-setup"><i class="fa fa-check"></i><b>5.1</b> Submodule Setup</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#getting-a-free-url-1"><i class="fa fa-check"></i><b>5.1.1</b> Getting a Free Url</a></li>
+<li class="chapter" data-level="5.1.2" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#connecting-the-github-repository-to-netlify-2"><i class="fa fa-check"></i><b>5.1.2</b> Connecting the Github Repository to Netlify</a></li>
+<li class="chapter" data-level="5.1.3" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#adding-travis-to-your-repo-2"><i class="fa fa-check"></i><b>5.1.3</b> Adding Travis to Your Repo</a></li>
+<li class="chapter" data-level="5.1.4" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#adding-the-custom-domain-1"><i class="fa fa-check"></i><b>5.1.4</b> Adding the Custom Domain</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#using-stat545-and-moderndive-pages"><i class="fa fa-check"></i><b>5.2</b> Using Stat545 and Moderndive Pages</a></li>
+<li class="chapter" data-level="5.3" data-path="recreating-the-three-in-one-textbook.html"><a href="recreating-the-three-in-one-textbook.html#how-to-update-the-submodules"><i class="fa fa-check"></i><b>5.3</b> How to update the submodules</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html"><i class="fa fa-check"></i><b>6</b> Tips and Tricks</a><ul>
+<li class="chapter" data-level="6.1" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#stat-545"><i class="fa fa-check"></i><b>6.1</b> Stat 545</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-make-a-kindle-version-of-your-bookdown-book"><i class="fa fa-check"></i><b>6.1.1</b> How to make a kindle version of your bookdown book</a></li>
+<li class="chapter" data-level="6.1.2" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-get-new-lines-in-markdown"><i class="fa fa-check"></i><b>6.1.2</b> How to get new lines in markdown</a></li>
+<li class="chapter" data-level="6.1.3" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-get-sub-chapter-in-bookdown"><i class="fa fa-check"></i><b>6.1.3</b> How to get sub chapter in bookdown</a></li>
+<li class="chapter" data-level="6.1.4" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-make-new-chapters-within-the-same-rmd-file"><i class="fa fa-check"></i><b>6.1.4</b> How to make new chapters within the same RMD file</a></li>
+<li class="chapter" data-level="6.1.5" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-paste-into-the-rstudio-terminal"><i class="fa fa-check"></i><b>6.1.5</b> How to paste into the rstudio terminal</a></li>
+<li class="chapter" data-level="6.1.6" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-emmbed-a-link"><i class="fa fa-check"></i><b>6.1.6</b> How to emmbed a link</a></li>
+<li class="chapter" data-level="6.1.7" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#making-lazy-git"><i class="fa fa-check"></i><b>6.1.7</b> Making Lazy Git</a></li>
+<li class="chapter" data-level="6.1.8" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-take-a-screenshot-and-put-it-into-a-bookdown-book"><i class="fa fa-check"></i><b>6.1.8</b> How to take a screenshot and put it into a bookdown book</a></li>
+<li class="chapter" data-level="6.1.9" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#useful-resources-and-links"><i class="fa fa-check"></i><b>6.1.9</b> Useful resources and links</a></li>
+<li class="chapter" data-level="6.1.10" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#why-we-use-travis"><i class="fa fa-check"></i><b>6.1.10</b> Why We Use Travis</a></li>
+<li class="chapter" data-level="6.1.11" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-comment-code-in-r-studio"><i class="fa fa-check"></i><b>6.1.11</b> How to comment code in R studio</a></li>
+<li class="chapter" data-level="6.1.12" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-reference-another-chapter"><i class="fa fa-check"></i><b>6.1.12</b> How to reference another chapter</a></li>
+<li class="chapter" data-level="6.1.13" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#how-to-auto-indent"><i class="fa fa-check"></i><b>6.1.13</b> How to auto indent</a></li>
+<li class="chapter" data-level="6.1.14" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#adding-stickers-to-github"><i class="fa fa-check"></i><b>6.1.14</b> Adding Stickers to github</a></li>
+<li class="chapter" data-level="6.1.15" data-path="tips-and-tricks.html"><a href="tips-and-tricks.html#things-that-need-to-be-added-in-the-future"><i class="fa fa-check"></i><b>6.1.15</b> Things that need to be added in the future</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="making-a-book-using-github-pages.html"><a href="making-a-book-using-github-pages.html"><i class="fa fa-check"></i><b>7</b> Making a Book using GitHub Pages</a></li>
+<li class="chapter" data-level="8" data-path="gh-pages-docs-folder-method.html"><a href="gh-pages-docs-folder-method.html"><i class="fa fa-check"></i><b>8</b> GH pages docs folder method</a></li>
+<li class="chapter" data-level="9" data-path="bayess-theorem.html"><a href="bayess-theorem.html"><i class="fa fa-check"></i><b>9</b> Bayes’s Theorem</a><ul>
+<li class="chapter" data-level="9.1" data-path="bayess-theorem.html"><a href="bayess-theorem.html#conditional-probability"><i class="fa fa-check"></i><b>9.1</b> Conditional probability</a></li>
+<li class="chapter" data-level="9.2" data-path="bayess-theorem.html"><a href="bayess-theorem.html#conjoint-probability"><i class="fa fa-check"></i><b>9.2</b> Conjoint probability</a></li>
+<li class="chapter" data-level="9.3" data-path="bayess-theorem.html"><a href="bayess-theorem.html#the-cookie-problem"><i class="fa fa-check"></i><b>9.3</b> The cookie problem</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="bayess-theorem-1.html"><a href="bayess-theorem-1.html"><i class="fa fa-check"></i><b>10</b> Bayes’s theorem</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Nick’s Bookmaking Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bayess-theorem" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Bayes’s Theorem</h1>
+<div id="conditional-probability" class="section level2">
+<h2><span class="header-section-number">9.1</span> Conditional probability</h2>
+<p>The fundamental idea behind all Bayesian statistics is Bayes’s theorem, which is surprisingly easy to derive, provided that you understand conditional probability. So we’ll start with probability, then conditional probability, then Bayes’s theorem, and on to Bayesian statistics.</p>
+<p>A probability is a number between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span> (including both) that represents a degree of belief in a fact or prediction. The value 1 represents certainty that a fact is true, or that a prediction will come true. The value <span class="math inline">\(0\)</span> represents certainty that the fact is false.</p>
+<p>Intermediate values represent degrees of certainty. The value <span class="math inline">\(0.5\)</span>, often written as <span class="math inline">\(50\%\)</span>, means that a predicted outcome is as likely to happen as not. For example, the probability that a tossed coin lands face up is very close to <span class="math inline">\(50\%\)</span>.</p>
+<p>A conditional probability is a probability based on some background information. For example, I want to know the probability that I will have a heart attack in the next year. According to the CDC, “Every year about <span class="math inline">\(785,000\)</span> Americans have a first coronary attack. (<a href="http://www.cdc.gov/heartdisease/facts.htm" class="uri">http://www.cdc.gov/heartdisease/facts.htm</a>)”</p>
+<p>The U.S. population is about <span class="math inline">\(311\)</span> million, so the probability that a randomly chosen American will have a heart attack in the next year is roughly <span class="math inline">\(0.3\%\)</span>.</p>
+<p>But I am not a randomly chosen American. Epidemiologists have identified many factors that affect the risk of heart attacks; depending on those factors, my risk might be higher or lower than average.</p>
+<p>I am male, 45 years old, and I have borderline high cholesterol. Those factors increase my chances. However, I have low blood pressure and I don’t smoke, and those factors decrease my chances.</p>
+<p>Plugging everything into the online calculator at <a href="http://cvdrisk.nhlbi.nih.gov/calculator.asp" class="uri">http://cvdrisk.nhlbi.nih.gov/calculator.asp</a>, I find that my risk of a heart attack in the next year is about <span class="math inline">\(0.2\%\)</span>, less than the national average. That value is a conditional probability, because it is based on a number of factors that make up my “condition.”</p>
+<p>The usual notation for conditional probability is <span class="math inline">\(p(A|B)\)</span>, which is the probability of <span class="math inline">\(A\)</span> given that <span class="math inline">\(B\)</span> is true. In this example, A represents the prediction that I will have a heart attack in the next year, and B is the set of conditions I listed.</p>
+</div>
+<div id="conjoint-probability" class="section level2">
+<h2><span class="header-section-number">9.2</span> Conjoint probability</h2>
+<p>Conjoint probability is a fancy way to say the probability that two things are true. I write <span class="math inline">\(p(A \cap B)\)</span> to mean the probability that <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are both true.</p>
+<p>If you learned about probability in the context of coin tosses and dice, you might have learned the following formula:</p>
+<p><span class="math display">\[p(A \cap B) = p(A) p(B) \text{    WARNING: Only true when A and B are independent}\]</span> For example, if I toss two coins, and A means the first coin lands face up, and <span class="math inline">\(B\)</span> means the second coin lands face up, then <span class="math inline">\(p(A) = p(B) = 0.5\)</span>, and sure enough, <span class="math inline">\(p(A \cap B) = p(A) p(B) = 0.25\)</span>.</p>
+<p>But this formula only works because in this case <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are independent; that is, knowing the outcome of the first event does not change the probability of the second. Or, more formally, <span class="math inline">\(p(B|A) = p(B)\)</span>.</p>
+<p>Here is a different example where the events are not independent. Suppose that <span class="math inline">\(A\)</span> means that it rains today and <span class="math inline">\(B\)</span> means that it rains tomorrow. If I know that it rained today, it is more likely that it will rain tomorrow, so <span class="math inline">\(p(B|A) &gt; p(B)\)</span>.</p>
+<p>In general, the probability of a conjunction is <span class="math display">\[p(A \cap B) = p(A) p(B|A)\]</span></p>
+<p>for any <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>. So if the chance of rain on any given day is <span class="math inline">\(0.5\)</span>, the chance of rain on two consecutive days is not <span class="math inline">\(0.25\)</span>, but probably a bit higher.</p>
+</div>
+<div id="the-cookie-problem" class="section level2">
+<h2><span class="header-section-number">9.3</span> The cookie problem</h2>
+<p>We’ll get to Bayes’s theorem soon, but I want to motivate it with an example called the cookie problem.1 Suppose there are two bowls of cookies. <span class="math inline">\(\text{Bowl 1}\)</span> contains <span class="math inline">\(30\)</span> vanilla cookies and <span class="math inline">\(10\)</span> chocolate cookies. <span class="math inline">\(\text{Bowl 2}\)</span> contains <span class="math inline">\(20\)</span> of each.</p>
+<p>Now suppose you choose one of the bowls at random and, without looking, select a cookie at random. The cookie is vanilla. What is the probability that it came from <span class="math inline">\(\text{Bowl 1}\)</span>?</p>
+<p>This is a conditional probability; we want <span class="math inline">\(p(\text{Bowl 1 | vanilla})\)</span>, but it is not obvious how to compute it. If I asked a different question—the probability of a vanilla cookie given <span class="math inline">\(\text{Bowl 1}\)</span>—it would be easy:</p>
+<p><span class="math display">\[p(\text{vanilla | Bowl 1}) = \frac{3}{4}\]</span></p>
+<p>Sadly, <span class="math inline">\(p(A|B)\)</span> is not the same as <span class="math inline">\(p(B|A)\)</span>, but there is a way to get from one to the other: Bayes’s theorem.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="gh-pages-docs-folder-method.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bayess-theorem-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
