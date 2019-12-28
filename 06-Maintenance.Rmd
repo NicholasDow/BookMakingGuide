@@ -116,6 +116,8 @@ function lazygit() {
 ```
 You can copy and paste this command into your terminal to get a command that allows you to add commit and push all in one line. We can also add this function to your `.bashrc`
 
+If you choose to use `.bashrc` you need to make a file called `.bashrc` in this directory `C:\Users\puttheusernamehere`. Then in the `.bashrc` file you need to put `aliase brc="source ~/.bashrc"` at the top and then the the function below. Then in your rstudio terminal you need to type `exec $SHELL`(which make the terminal an executive shell) or `source ~/.bashrc`(which just sources functions(it's the same thing as in r)).
+
 I usually try to include a `_lazygit.sh` bash script that contains this code, so you should be able to type `bash _lazygit.sh "some message"` into your terminal to submit easily.
 
 =
