@@ -10,6 +10,7 @@ rmd_files: ["index.Rmd",
   "06-Maintenance.Rmd",
   "07-Using-gh-Pages.Rmd",
   "08-MD-HTML-RENDER.Rmd",
-  "Bayes.Rmd"]
+  "Bayes.Rmd",
+  "prob.Rmd"]
 clean: [packages.bib, bookdown.bbl]
 new_session: no
