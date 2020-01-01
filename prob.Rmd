@@ -619,7 +619,7 @@ uses
  We will estimate this probability using the data. Of the 210 cases
 in this data set where = *used*, 125 represent cases where = *uses*:
 $$\begin{aligned}
-P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
+P(\text{student = uses given parents = used}) = \frac{125}{210} = 0.60\end{aligned}$$
 
 A student is randomly selected from the study and she does not use
 drugs. What is the probability that at least one of her parents
@@ -629,7 +629,7 @@ If the student does not use
 drugs, then she is one of the 226 students in the second row. Of these
 226 students, 85 had at least one parent who used drugs:
 $$\begin{aligned}
-P(\text{\var{parents} = used given \var{student} = not}) = \frac{85}{226} = 0.376\end{aligned}$$
+P(\text{parents = used given student = not}) = \frac{85}{226} = 0.376\end{aligned}$$
 
 ### Marginal and joint probabilities {#marginalAndJointProbabilities}
 
@@ -639,10 +639,10 @@ variable separately in the data set. These totals represent for the
 sample, which are the probabilities based on a single variable without
 conditioning on any other variables. For instance, a probability based
 solely on the variable is a marginal probability: $$\begin{aligned}
-P(\text{\var{student} = uses}) = \frac{219}{445} = 0.492\end{aligned}$$
+P(\text{student = uses}) = \frac{219}{445} = 0.492\end{aligned}$$
 A probability of outcomes for two or more variables or processes is
 called a : $$\begin{aligned}
-P(\text{\var{student} = uses and \var{parents} = not}) = \frac{94}{445} = 0.21\end{aligned}$$
+P(\text{student = uses and parents = not}) = \frac{94}{445} = 0.21\end{aligned}$$
 It is common to substitute a comma for "and" in a joint probability,
 although either is acceptable.
 
@@ -691,9 +691,9 @@ simple cases. For example, the probability a random student from the
 study uses drugs is found by summing the outcomes from
 Table {reference-type="ref"
 reference="drugUseDistribution"} where = *uses*: $$\begin{aligned}
-&&P(\text{\underline{\color{black}\var{student} = uses}}) \\
-&& \quad =  P(\text{\var{parents} = used, \underline{\color{black}\var{student} = uses}}) + \\
-&& \quad \quad \quad \quad P(\text{\var{parents} = not, \underline{\color{black}\var{student} = uses}}) \\
+&&P(\text{student = uses}) \\
+&& \quad =  P(\text{parents = used, student = uses}) + \\
+&& \quad \quad \quad \quad P(\text{parents = not, student = uses}) \\
 && \quad = 0.28 + 0.21 = 0.49\end{aligned}$$
 
 ### Defining conditional probability
@@ -710,7 +710,7 @@ used drugs
  Absolutely. To do so, we limit our view to only those 210
 cases where parents used drugs and look at the fraction where the
 student uses drugs: $$\begin{aligned}
-P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
+P(\text{student = uses given parents = used}) = \frac{125}{210} = 0.60\end{aligned}$$
 We call this a because we computed the probability under a condition: =
 *used*. There are two parts to a conditional probability, and the . It
 is useful to think of the condition as information we know to be true,
@@ -719,8 +719,8 @@ or event.
 
 We separate the text inside our probability notation into the outcome of
 interest and the condition: $$\begin{aligned}
-&& P(\text{\var{student} = uses given \var{parents} = used}) \notag \\
-&& = P(\text{\var{student} = uses } | \text{ \var{parents} = used}) = \frac{125}{210} = 0.60
+&& P(\text{student = uses given parents = used}) \notag \\
+&& = P(\text{student = uses } | \text{ parents = used}) = \frac{125}{210} = 0.60
 \label{probStudentUsedIfParentsUsedInFormalNotation}\end{aligned}$$ The
 vertical bar "$|$" is read as *given*.
 
@@ -729,8 +729,8 @@ Equation ({reference-type="ref"
 reference="probStudentUsedIfParentsUsedInFormalNotation"}), we computed
 the probability a student uses based on the condition that at least one
 parent used as a fraction: $$\begin{aligned}
-&& P(\text{\var{student} = uses } | \text{ \var{parents} = used}) \notag \\
-&&\quad = \frac{\text{\# times \var{student} = uses and \var{parents} = used}}{\text{\# times \var{parents} = used}} \label{ratioOfBothToRatioOfConditionalForParentsAndStudent} \\
+&& P(\text{student = uses } | \text{ parents = used}) \notag \\
+&&\quad = \frac{\text{\# times student = uses and parents = used}}{\text{\# times parents = used}} \label{ratioOfBothToRatioOfConditionalForParentsAndStudent} \\
 &&\quad = \frac{125}{210} = 0.60 \notag\end{aligned}$$ We considered
 only those cases that met the condition, = *used*, and then we computed
 the ratio of those cases that satisfied our outcome of interest, the
@@ -756,17 +756,17 @@ $0.47\times 1000 = 470$ would meet our information criterion. Similarly,
 we would expect about 28% or $0.28\times 1000 = 280$ to meet both the
 information criterion and represent our outcome of interest. Thus, the
 conditional probability could be computed: $$\begin{aligned}
-P(\text{\var{student} = uses } | \text{ \var{parents} = used})
-    &= \frac{\text{\# (\var{student} = uses and \var{parents} = used)}}{\text{\# (\var{parents} = used)}} \notag \\
+P(\text{student = uses } | \text{ parents = used})
+    &= \frac{\text{\# (student = uses and parents = used)}}{\text{\# (parents = used)}} \notag \\
     &= \frac{280}{470} = \frac{0.28}{0.47} = 0.60
 \label{stUserPUsedHypSampSize}\end{aligned}$$ In
 Equation ({reference-type="ref"
 reference="stUserPUsedHypSampSize"}), we examine exactly the fraction of
 two probabilities, 0.28 and 0.47, which we can write as
 $$\begin{aligned}
-P(\var{student} = uses\ \text{and}\ \var{parents} = used)
+P(student = uses\ \text{and}\ parents = used)
     \quad\text{and}\quad
-    P(\var{parents} = used).\end{aligned}$$ The fraction of these
+    P(parents = used).\end{aligned}$$ The fraction of these
 probabilities represents our general formula for conditional
 probability.
 
@@ -790,8 +790,8 @@ part (a) and Guided
 Practice {reference-type="ref"
 reference="drugUseProbOfParentsEqualNotGivenStudents"}(b), compute
 $$\begin{aligned}
-P(\text{\var{parents} = used}|\text{\var{student} = not})
-    + P(\text{\var{parents} = not}|\text{\var{student} = not})\end{aligned}$$
+P(\text{parents = used}|\text{student = not})
+    + P(\text{parents = not}|\text{student = not})\end{aligned}$$
 (c) Provide an intuitive argument to explain why the sum in (b) is
 1.[^27]
 
@@ -892,13 +892,13 @@ verify it using
 Table {reference-type="ref"
 reference="smallpoxProbabilityTable"}. We want to determine
 $$\begin{aligned}
-P(\text{\var{result} = lived and \var{inoculated} = no})\end{aligned}$$
+P(\text{result = lived and inoculated = no})\end{aligned}$$
 and we are given that $$\begin{aligned}
-P(\text{\var{result} = lived }|\text{ \var{inoculated} = no})=0.8588 \\
-P(\text{\var{inoculated} = no})=0.9608\end{aligned}$$ Among the
+P(\text{result = lived }|\text{ inoculated = no})=0.8588 \\
+P(\text{inoculated = no})=0.9608\end{aligned}$$ Among the
 96.08% of people who were not inoculated, 85.88% survived:
 $$\begin{aligned}
-P(\text{\var{result} = lived and \var{inoculated} = no}) = 0.8588\times 0.9608 = 0.8251\end{aligned}$$
+P(\text{result = lived and inoculated = no}) = 0.8588\times 0.9608 = 0.8251\end{aligned}$$
 This is equivalent to the General Multiplication Rule. We can confirm
 this probability in
 Table {reference-type="ref"
@@ -998,8 +998,8 @@ construct joint probabilities at the end of each branch in our tree by
 multiplying the numbers we come across as we move from left to right.
 These joint probabilities are computed using the General Multiplication
 Rule: $$\begin{aligned}
-&& P(\text{\var{inoculated} = yes and \var{result} = lived}) \\
-    &&\quad = P(\text{\var{inoculated} = yes})\times P(\text{\var{result} = lived}|\text{\var{inoculated} = yes}) \\
+&& P(\text{inoculated = yes and result = lived}) \\
+    &&\quad = P(\text{inoculated = yes})\times P(\text{result = lived}|\text{inoculated = yes}) \\
     &&\quad = 0.0392\times 0.9754=0.0382\end{aligned}$$
 
 Consider the midterm and final for a statistics class. Suppose 13% of
@@ -1013,11 +1013,11 @@ on the midterm
 
 
 The end-goal is to find
-$P(\text{\var{midterm} = A} | \text{\var{final} = A})$. To
+$P(\text{midterm = A} | \text{final = A})$. To
 calculate this conditional probability, we need the following
 probabilities: $$\begin{aligned}
-P(\text{\var{midterm} = A and \var{final} = A}) \qquad\text{and}\qquad
-P(\text{\var{final} = A})\end{aligned}$$ However, this
+P(\text{midterm = A and final = A}) \qquad\text{and}\qquad
+P(\text{final = A})\end{aligned}$$ However, this
 information is not provided, and it is not obvious how to calculate
 these probabilities. Since we aren't sure how to proceed, it is useful
 to organize the information into a tree diagram, as shown in
@@ -1034,15 +1034,15 @@ width="87%"}
 
 With the tree diagram constructed, we may compute the required
 probabilities: $$\begin{aligned}
-&&P(\text{\var{midterm} = A and \var{final} = A}) = 0.0611 \\
-&&P(\text{\underline{\color{black}\var{final} = A}})  \\
-&& \quad= P(\text{\var{midterm} = other and \underline{\color{black}\var{final} = A}}) + P(\text{\var{midterm} = A and \underline{\color{black}\var{final} = A}}) \\
+&&P(\text{midterm = A and final = A}) = 0.0611 \\
+&&P(\text{final = A})  \\
+&& \quad= P(\text{midterm = other and final = A}) + P(\text{midterm = A and final = A}) \\
 && \quad= 0.0611 + 0.0957 = 0.1568\end{aligned}$$ The marginal
 probability, $P($ = *A*$)$, was calculated by adding up all the joint
 probabilities on the right side of the tree that correspond to = *A*. We
 may now finally take the ratio of the two probabilities:
 $$\begin{aligned}
-P(\text{\var{midterm} = A} | \text{\var{final} = A}) &=& \frac{P(\text{\var{midterm} = A and \var{final} = A})}{P(\text{\var{final} = A})} \\
+P(\text{midterm = A} | \text{final = A}) &=& \frac{P(\text{midterm = A and final = A})}{P(\text{final = A})} \\
 &=& \frac{0.0611}{0.1568} = 0.3897\end{aligned}$$ The probability the
 student also earned an A on the midterm is about 0.39.
 
@@ -1630,16 +1630,16 @@ computations.
     reached.
 
 [^26]: \(a\)
-    $P(\text{\var{parent} = not} | \text{\var{student} = not})$.
+    $P(\text{parent = not} | \text{student = not})$.
     (b) Equation ({reference-type="ref"
     reference="condProbEq"}) for conditional probability indicates we
     should first find
-    $P(\text{\var{parents} = not and \var{student} = not})=0.32$
-    and $P(\text{\var{student} = not})=0.51$. Then the ratio
+    $P(\text{parents = not and student = not})=0.32$
+    and $P(\text{student = not})=0.51$. Then the ratio
     represents the conditional probability: $0.32/0.51 = 0.63$.
 
 [^27]: (a) This probability is
-    $\frac{P(\text{\var{parents} = used and \var{student} = not})}{P(\text{\var{student} = not})} = \frac{0.19}{0.51} = 0.37$.
+    $\frac{P(\text{parents = used and student = not})}{P(\text{student = not})} = \frac{0.19}{0.51} = 0.37$.
     (b) The total equals 1. (c) Under the condition the student does not
     use drugs, the parents must either use drugs or not. The complement
     still appears to work *when conditioning on the same information*.
@@ -1654,10 +1654,10 @@ computations.
     Organization. ISBN 92-4-156110-6.
 
 [^30]: $P($ = *died* $|$ =
-    *no*$) = \frac{P(\text{\var{result} = died and \var{inoculated} = no})}{P(\text{\var{inoculated} = no})} = \frac{0.1356}{0.9608} = 0.1411$.
+    *no*$) = \frac{P(\text{result = died and inoculated = no})}{P(\text{inoculated = no})} = \frac{0.1356}{0.9608} = 0.1411$.
 
 [^31]: $P($ = *died* $|$ =
-    *yes*$) = \frac{P(\text{\var{result} = died and \var{inoculated} = yes})}{P(\text{\var{inoculated} = yes})} = \frac{0.0010}{0.0392} = 0.0255$.
+    *yes*$) = \frac{P(\text{result = died and inoculated = yes})}{P(\text{inoculated = yes})} = \frac{0.0010}{0.0392} = 0.0255$.
     The death rate for individuals who were inoculated is only about
     1 in 40 while the death rate is about 1 in 7 for those who were not
     inoculated.
