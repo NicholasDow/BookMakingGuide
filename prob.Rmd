@@ -33,8 +33,7 @@ the next roll
 >**S3**: 100%. The outcome must be one of these numbers.
 
 **Q4**: What is the chance of not rolling a *2*
-
-> **S4**: Since the chance of rolling a *2* is $1/6$ or
+>**S4**: Since the chance of rolling a *2* is $1/6$ or
 >$16.\bar{6}\%$, the chance of not rolling a *2* must be
 ?$100\% - 16.\bar{6}\%=83.\bar{3}\%$ or $5/6$.
 
@@ -689,7 +688,7 @@ probabilities sum to 1.[^24]
 We can compute marginal probabilities using joint probabilities in
 simple cases. For example, the probability a random student from the
 study uses drugs is found by summing the outcomes from
-Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseDistribution"} where = *uses*: $$\begin{aligned}
 &&P(\text{\underline{\color{black}\var{student} = uses}}) \\
 && \quad =  P(\text{\var{parents} = used, \underline{\color{black}\var{student} = uses}}) + \\
