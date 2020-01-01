@@ -1,3 +1,4 @@
+
 Probability
 ===========
 
@@ -11,22 +12,21 @@ Defining probability {#basicsOfProbability}
 
 A "die", the singular of dice, is a cube with six faces numbered *1*,
 *2*, *3*, *4*, *5*, and *6*. What is the chance of getting *1* when
-rolling a die?[\[probOf1\]]{#probOf1 label="probOf1"} If the die is
+rolling a die? If the die is
 fair, then the chance of a *1* is as good as the chance of any other
 number. Since there are six outcomes, the chance must be 1-in-6 or,
 equivalently, $1/6$.
 
 What is the chance of getting a *1* or *2* in the next
-roll?[\[probOf1Or2\]]{#probOf1Or2 label="probOf1Or2"} *1* and *2*
+roll? *1* and *2*
 constitute two of the six equally likely possible outcomes, so the
 chance of getting one of these two outcomes must be $2/6 = 1/3$.
 
 What is the chance of getting either *1*, *2*, *3*, *4*, *5*, or *6* on
-the next roll?[\[probOf123456\]]{#probOf123456 label="probOf123456"}
+the next roll?
 100%. The outcome must be one of these numbers.
 
-What is the chance of not rolling a *2*?[\[probNot2\]]{#probNot2
-label="probNot2"} Since the chance of rolling a *2* is $1/6$ or
+What is the chance of not rolling a *2*?Since the chance of rolling a *2* is $1/6$ or
 $16.\bar{6}\%$, the chance of not rolling a *2* must be
 $100\% - 16.\bar{6}\%=83.\bar{3}\%$ or $5/6$.
 
@@ -36,8 +36,7 @@ equally likely outcomes and has probability $5/6$.
 
 Consider rolling two dice. If $1/6^{th}$ of the time the first die is a
 *1* and $1/6^{th}$ of those times the second die is a *1*, what is the
-chance of getting two *1*s?[\[probOf2Ones\]]{#probOf2Ones
-label="probOf2Ones"} If $16.\bar{6}$% of the time the first die is a *1*
+chance of getting two *1*s?If $16.\bar{6}$% of the time the first die is a *1*
 and $1/6^{th}$ of *those* times the second die is also a *1*, then the
 chance that both dice are *1* is $(1/6)\times (1/6)$ or $1/36$.
 
@@ -87,13 +86,12 @@ increases.
 
 Above we write $p$ as the probability of rolling a *1*. We can also
 write this probability as $$\begin{aligned}
-P(\text{rolling a \emph{1}})\end{aligned}$$ As we become more
+P(\text{rolling a 1})\end{aligned}$$ As we become more
 comfortable with this notation, we will abbreviate it further. For
 instance, if it is clear that the process is "rolling a die", we could
 abbreviate $P($rolling a *1*$)$ as $P($*1*$)$.
 
-[\[randomProcessExercise\]]{#randomProcessExercise
-label="randomProcessExercise"} Random processes include rolling a die
+Random processes include rolling a die
 and flipping a coin. (a) Think of another random process. (b) Describe
 all the possible outcomes of that process. For instance, rolling a die
 is a random process with potential outcomes *1*, *2*, \..., *6*.[^1]
@@ -101,7 +99,7 @@ is a random process with potential outcomes *1*, *2*, \..., *6*.[^1]
 What we think of as random processes are not necessarily random, but
 they may just be too difficult to understand exactly. The fourth example
 in the footnote solution to Guided
-Practice [\[randomProcessExercise\]](#randomProcessExercise){reference-type="ref"
+Practice {reference-type="ref"
 reference="randomProcessExercise"} suggests a roommate's behavior is a
 random process. However, even if a roommate's behavior is not truly
 random, modeling her behavior as a random process can still be useful.
@@ -122,12 +120,12 @@ Calculating the probability of disjoint outcomes is easy. When rolling a
 die, the outcomes *1* and *2* are disjoint, and we compute the
 probability that one of these outcomes will occur by adding their
 separate probabilities: $$\begin{aligned}
-P(\text{\emph{1} or \emph{2}}) = P(\text{\emph{1}})+P(\text{\emph{2}}) = 1/6 + 1/6 = 1/3\end{aligned}$$
+P(\text{1 or 2}) = P(\text{1})+P(\text{2}) = 1/6 + 1/6 = 1/3\end{aligned}$$
 What about the probability of rolling a *1*, *2*, *3*, *4*, *5*, or *6*?
 Here again, all of the outcomes are disjoint so we add the
 probabilities: $$\begin{aligned}
-&&P(\text{\emph{1} or \emph{2} or \emph{3} or \emph{4} or \emph{5} or \emph{6}}) \\
-    &&\quad= P(\text{\emph{1}})+P(\text{\emph{2}})+P(\text{\emph{3}})+P(\text{\emph{4}})+P(\text{\emph{5}})+P(\text{\emph{6}}) \\
+&&P(\text{1 or 2 or 3 or 4 or 5 or 6}) \\
+    &&\quad= P(\text{1})+P(\text{2})+P(\text{3})+P(\text{4})+P(\text{5})+P(\text{6}) \\
     &&\quad= 1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6 = 1.\end{aligned}$$ The
 guarantees the accuracy of this approach when the outcomes are disjoint.
 
@@ -144,7 +142,7 @@ Addition Rule for disjoint outcomes to determine $P($*1* or *4* or
 *5*$)$.[^2]
 
 In the data set in
-Chapter [\[introductionToData\]](#introductionToData){reference-type="ref"
+Chapter {reference-type="ref"
 reference="introductionToData"}, the variable described whether no
 number (labeled *none*), only one or more small numbers (*small*), or
 whether at least one big number appeared in an email (*big*). Of the
@@ -177,15 +175,14 @@ P(A\text{ or }B) = P(A) + P(B) = 1/3 + 1/3 = 2/3\end{aligned}$$
 \(a\) Verify the probability of event $A$, $P(A)$, is $1/3$ using the
 Addition Rule. (b) Do the same for event $B$.[^4]
 
-[\[exerExaminingDisjointSetsABD\]]{#exerExaminingDisjointSetsABD
-label="exerExaminingDisjointSetsABD"} (a) Using
+(a) Using
 Figure [1.2](#disjointSets){reference-type="ref"
 reference="disjointSets"} as a reference, what outcomes are represented
 by event $D$? (b) Are events $B$ and $D$ disjoint? (c) Are events $A$
 and $D$ disjoint?[^5]
 
 In Guided
-Practice [\[exerExaminingDisjointSetsABD\]](#exerExaminingDisjointSetsABD){reference-type="ref"
+Practice {reference-type="ref"
 reference="exerExaminingDisjointSetsABD"}, you confirmed $B$ and $D$
 from Figure [1.2](#disjointSets){reference-type="ref"
 reference="disjointSets"} are disjoint. Compute the probability that
@@ -195,7 +192,7 @@ either event $B$ or event $D$ occurs.[^6]
 
 Let's consider calculations for two events that are not disjoint in the
 context of a , represented in
-Table [\[deckOfCards\]](#deckOfCards){reference-type="ref"
+Table {reference-type="ref"
 reference="deckOfCards"}. If you are unfamiliar with the cards in a
 regular deck, please see the footnote.[^7]
 
@@ -244,8 +241,7 @@ P(A\text{ or } B) &=&P(\text{face card or }{\color{redcards}\diamondsuit})  \not
  &=& P(\text{face card}) + P({\color{redcards}\diamondsuit}) - P(\text{face card and }{\color{redcards}\diamondsuit}) \label{diamondFace} \\
  &=& 12/52 + 13/52 - 3/52 \notag \\
  &=& 22/52 = 11/26 \notag\end{aligned}$$
-Equation ([\[diamondFace\]](#diamondFace){reference-type="ref"
-reference="diamondFace"}) is an example of the .
+Equation ({reference-type="ref" reference="diamondFace"}) is an example of the .
 
 If $A$ and $B$ are any two events, disjoint or not, then the probability
 that at least one of them will occur is $$\begin{aligned}
@@ -262,13 +258,12 @@ $B) = 0$. (b) Using part (a), verify that the General Addition Rule
 simplifies to the simpler Addition Rule for disjoint events if $A$ and
 $B$ are disjoint.[^10]
 
-[\[emailSpamNumberVennExer\]]{#emailSpamNumberVennExer
-label="emailSpamNumberVennExer"} In the data set with 3,921 emails, 367
+In the data set with 3,921 emails, 367
 were spam, 2,827 contained some small numbers but no big numbers, and
 168 had both characteristics. Create a Venn diagram for this setup.[^11]
 
 \(a\) Use your Venn diagram from Guided
-Practice [\[emailSpamNumberVennExer\]](#emailSpamNumberVennExer){reference-type="ref"
+Practice {reference-type="ref"
 reference="emailSpamNumberVennExer"} to determine the probability a
 randomly drawn email from the data set is spam and had small numbers
 (but not big numbers). (b) What is the probability that the email had
@@ -277,7 +272,7 @@ either of these attributes?[^12]
 ### Probability distributions
 
 A is a table of all disjoint outcomes and their associated
-probabilities. Table [\[diceProb\]](#diceProb){reference-type="ref"
+probabilities. Table {reference-type="ref"
 reference="diceProb"} shows the probability distribution for the sum of
 two dice.
 
@@ -299,9 +294,8 @@ corresponding probabilities that satisfies three rules:
 
 3.  The probabilities must total 1.
 
-[\[usHouseholdIncomeDistsExercise\]]{#usHouseholdIncomeDistsExercise
-label="usHouseholdIncomeDistsExercise"}
-Table [\[usHouseholdIncomeDists\]](#usHouseholdIncomeDists){reference-type="ref"
+
+Table {reference-type="ref"
 reference="usHouseholdIncomeDists"} suggests three distributions for
 household income in the United States. Only one is correct. Which one
 must it be? What is wrong with the other two?[^13]
@@ -313,10 +307,10 @@ must it be? What is wrong with the other two?[^13]
                      \(c\)   0.28    0.27     0.29   0.16
 
   : Proposed distributions of US household incomes (Guided
-  Practice [\[usHouseholdIncomeDistsExercise\]](#usHouseholdIncomeDistsExercise){reference-type="ref"
+  Practice {reference-type="ref"
   reference="usHouseholdIncomeDistsExercise"}).[]{label="usHouseholdIncomeDists"}
 
-Chapter [\[introductionToData\]](#introductionToData){reference-type="ref"
+Chapter {reference-type="ref"
 reference="introductionToData"} emphasized the importance of plotting
 data to provide quick summaries. Probability distributions can also be
 summarized in a bar plot. For instance, the distribution of US household
@@ -324,7 +318,7 @@ incomes is shown in
 Figure [1.4](#usHouseholdIncomeDistBar){reference-type="ref"
 reference="usHouseholdIncomeDistBar"} as a bar plot.[^14] The
 probability distribution for the sum of two dice is shown in
-Table [\[diceProb\]](#diceProb){reference-type="ref"
+Table {reference-type="ref"
 reference="diceProb"} and plotted in
 Figure [1.5](#diceSumDist){reference-type="ref"
 reference="diceSumDist"}.
@@ -385,10 +379,8 @@ in $A$, it must be represented in $A^c$. We use the Addition Rule for
 disjoint events to apply Property (ii): $$\begin{aligned}
 P(A\text{ or }A^c) = P(A) + P(A^c)
 \label{complementDisjointEquation}\end{aligned}$$ Combining
-Equations ([\[complementSumTo1\]](#complementSumTo1){reference-type="ref"
-reference="complementSumTo1"})
-and ([\[complementDisjointEquation\]](#complementDisjointEquation){reference-type="ref"
-reference="complementDisjointEquation"}) yields a very useful
+Equations ({reference-type="ref" reference="complementSumTo1"})
+and ({reference-type="ref" reference="complementDisjointEquation"}) yields a very useful
 relationship between the probability of an event and its complement.
 
 The complement of event $A$ is denoted $A^c$, and $A^c$ represents all
@@ -403,12 +395,10 @@ complexity.
 
 Let $A$ represent the event where we roll two dice and their total is
 less than *12*. (a) What does the event $A^c$ represent? (b) Determine
-$P(A^c)$ from Table [\[diceProb\]](#diceProb){reference-type="ref"
-reference="diceProb"} on page . (c) Determine $P(A)$.[^17]
+$P(A^c)$ from Table {reference-type="ref" reference="diceProb"} on page . (c) Determine $P(A)$.[^17]
 
 Consider again the probabilities from
-Table [\[diceProb\]](#diceProb){reference-type="ref"
-reference="diceProb"} and rolling two dice. Find the following
+Table {reference-type="ref" reference="diceProb"} and rolling two dice. Find the following
 probabilities: (a) The sum of the dice is *not* *6*. (b) The sum is at
 least *4*, i.e. $\{$*4*, *5*, \..., *12*$\}$. (c) The sum is no more
 than *10*. That is, determine the probability of the event $D=\{$*2*,
@@ -424,14 +414,12 @@ processes -- knowing the coin was heads does not help determine the
 outcome of a die roll. On the other hand, stock prices usually move up
 or down together, so they are not independent.
 
-Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
-reference="probOf2Ones"} provides a basic example of two independent
+Example {reference-type="ref" reference="probOf2Ones"} provides a basic example of two independent
 processes: rolling two dice. We want to determine the probability that
 both will be *1*. Suppose one of the dice is red and the other white. If
 the outcome of the red die is a *1*, it provides no information about
 the outcome of the white die. We first encountered this same question in
-Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
-reference="probOf2Ones"} (page ), where we calculated the probability
+Example {reference-type="ref" reference="probOf2Ones"} (page ), where we calculated the probability
 using the following reasoning: $1/6^{th}$ of the time the red die is a
 *1*, and $1/6^{th}$ of *those* times the white die will also be *1*.
 This is illustrated in
@@ -448,20 +436,20 @@ width="65%"}
 
 What if there was also a blue die independent of the other two? What is
 the probability of rolling the three dice and getting all
-*1*s?[\[threeDice\]]{#threeDice label="threeDice"} The same logic
+*1*s? The same logic
 applies from
-Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
+Example {reference-type="ref"
 reference="probOf2Ones"}. If $1/36^{th}$ of the time the white and red
 dice are both *1*, then $1/6^{th}$ of *those* times the blue die will
 also be *1*, so multiply: $$\begin{aligned}
-P(white=\text{\small\emph{1} and } red=\text{\small\emph{1} and } blue=\text{\small\emph{1}})
-    &= P(white=\text{\small\emph{1}})\times P(red=\text{\small\emph{1}})\times P(blue=\text{\small\emph{1}}) \\
+P(white=\text{\small1 and } red=\text{\small1 and } blue=\text{\small1})
+    &= P(white=\text{\small1})\times P(red=\text{\small1})\times P(blue=\text{\small1}) \\
     &= (1/6)\times (1/6)\times (1/6)
     = 1/216\end{aligned}$$
 
-Examples [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
+Examples {reference-type="ref"
 reference="probOf2Ones"}
-and [\[threeDice\]](#threeDice){reference-type="ref"
+and {reference-type="ref"
 reference="threeDice"} illustrate what is called the Multiplication Rule
 for independent processes.
 
@@ -475,14 +463,14 @@ there are $k$ events $A_1$, \..., $A_k$ from $k$ independent processes,
 then the probability they all occur is $$\begin{aligned}
 P(A_1) \times  P(A_2)\times  \cdots \times  P(A_k)\end{aligned}$$
 
-[\[ex2Handedness\]]{#ex2Handedness label="ex2Handedness"} About 9% of
+ About 9% of
 people are left-handed. Suppose 2 people are selected at random from the
 U.S. population. Because the sample size of 2 is very small relative to
 the population, it is reasonable to assume these two people are
 independent. (a) What is the probability that both are left-handed?
 (b) What is the probability that both are right-handed?[^19]
 
-[\[ex5Handedness\]]{#ex5Handedness label="ex5Handedness"} Suppose 5
+ Suppose 5
 people are selected at random.[^20]
 
 1.  What is the probability that all are right-handed?
@@ -516,7 +504,7 @@ Sometimes we wonder if one outcome provides useful information about
 another outcome. The question we are asking is, are the occurrences of
 the two events independent? We say that two events $A$ and $B$ are
 independent if they satisfy
-Equation [\[eqForIndependentEvents\]](#eqForIndependentEvents){reference-type="eqref"
+Equation {reference-type="eqref"
 reference="eqForIndependentEvents"}.
 
 If we shuffle up a deck of cards and draw one, is the event that the
@@ -524,7 +512,7 @@ card is a heart independent of the event that the card is an ace? The
 probability the card is a heart is $1/4$ and the probability that it is
 an ace is $1/13$. The probability the card is the ace of hearts is
 $1/52$. We check whether
-Equation [\[eqForIndependentEvents\]](#eqForIndependentEvents){reference-type="ref"
+Equation {reference-type="ref"
 reference="eqForIndependentEvents"} is satisfied: $$\begin{aligned}
 P({\color{redcards}\heartsuit})\times P(\text{ace}) = \frac{1}{4}\times \frac{1}{13} = \frac{1}{52} 
                     = P({\color{redcards}\heartsuit}\text{ and ace})\end{aligned}$$
@@ -537,7 +525,7 @@ Conditional probability {#conditionalProbabilitySection}
 Are students more likely to use marijuana when their parents used drugs?
 The data set contains a sample of 445 cases with two variables, and ,
 and is summarized in
-Table [\[contTableOfParStDrugUse\]](#contTableOfParStDrugUse){reference-type="ref"
+Table {reference-type="ref"
 reference="contTableOfParStDrugUse"}.[^23] The variable is either *uses*
 or *not*, where a student is labeled as if she has recently used
 marijuana. The variable takes the value *used* if at least one of the
@@ -566,8 +554,7 @@ P(\text{\var{student} = \emph{uses} given \var{parents} = \emph{used}}) = \frac{
 
 A student is randomly selected from the study and she does not use
 drugs. What is the probability that at least one of her parents
-used?[\[drugUseProbOfParentsGivenStudents\]]{#drugUseProbOfParentsGivenStudents
-label="drugUseProbOfParentsGivenStudents"} If the student does not use
+used?If the student does not use
 drugs, then she is one of the 226 students in the second row. Of these
 226 students, 85 had at least one parent who used drugs:
 $$\begin{aligned}
@@ -575,7 +562,7 @@ P(\text{\var{parents} = \emph{used} given \var{student} = \emph{not}}) = \frac{8
 
 ### Marginal and joint probabilities {#marginalAndJointProbabilities}
 
-Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseProbTable"} includes row and column totals for each
 variable separately in the data set. These totals represent for the
 sample, which are the probabilities based on a single variable without
@@ -603,12 +590,12 @@ processes is called a *joint probability*.
 
 We use to summarize joint probabilities for the sample. These
 proportions are computed by dividing each count in
-Table [\[contTableOfParStDrugUse\]](#contTableOfParStDrugUse){reference-type="ref"
+Table {reference-type="ref"
 reference="contTableOfParStDrugUse"} by 445 to obtain the proportions in
-Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseProbTable"}. The joint probability distribution of the
 and variables is shown in
-Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseDistribution"}.
 
   Joint outcome         Probability
@@ -623,7 +610,7 @@ reference="drugUseDistribution"}.
   set.[]{label="drugUseDistribution"}
 
 Verify
-Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseDistribution"} represents a probability distribution:
 events are disjoint, all probabilities are non-negative, and the
 probabilities sum to 1.[^24]
@@ -631,7 +618,7 @@ probabilities sum to 1.[^24]
 We can compute marginal probabilities using joint probabilities in
 simple cases. For example, the probability a random student from the
 study uses drugs is found by summing the outcomes from
-Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
+Table {reference-type="ref"
 reference="drugUseDistribution"} where = *uses*: $$\begin{aligned}
 &&P(\text{\underline{\color{black}\var{student} = \emph{uses}}}) \\
 && \quad =  P(\text{\var{parents} = \emph{used}, \underline{\color{black}\var{student} = \emph{uses}}}) + \\
@@ -665,7 +652,7 @@ interest and the condition: $$\begin{aligned}
 vertical bar "$|$" is read as *given*.
 
 In
-Equation ([\[probStudentUsedIfParentsUsedInFormalNotation\]](#probStudentUsedIfParentsUsedInFormalNotation){reference-type="ref"
+Equation ({reference-type="ref"
 reference="probStudentUsedIfParentsUsedInFormalNotation"}), we computed
 the probability a student uses based on the condition that at least one
 parent used as a fraction: $$\begin{aligned}
@@ -681,7 +668,7 @@ joint probabilities may be provided. For example, disease rates are
 commonly listed in percentages rather than in a count format. We would
 like to be able to compute conditional probabilities even when no counts
 are available, and we use
-Equation ([\[ratioOfBothToRatioOfConditionalForParentsAndStudent\]](#ratioOfBothToRatioOfConditionalForParentsAndStudent){reference-type="ref"
+Equation ({reference-type="ref"
 reference="ratioOfBothToRatioOfConditionalForParentsAndStudent"}) as an
 example demonstrating this technique.
 
@@ -689,7 +676,7 @@ We considered only those cases that satisfied the condition, = *used*.
 Of these cases, the conditional probability was the fraction who
 represented the outcome of interest, = *uses*. Suppose we were provided
 only the information in
-Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref+page"
+Table {reference-type="ref+page"
 reference="drugUseProbTable"}, i.e. only probability data. Then if we
 took a sample of 1000 people, we would anticipate about 47% or
 $0.47\times 1000 = 470$ would meet our information criterion. Similarly,
@@ -700,7 +687,7 @@ P(\text{\var{student} = \emph{uses} } | \text{ \var{parents} = \emph{used}})
     &= \frac{\text{\# (\var{student} = \emph{uses} and \var{parents} = \emph{used})}}{\text{\# (\var{parents} = \emph{used})}} \notag \\
     &= \frac{280}{470} = \frac{0.28}{0.47} = 0.60
 \label{stUserPUsedHypSampSize}\end{aligned}$$ In
-Equation ([\[stUserPUsedHypSampSize\]](#stUserPUsedHypSampSize){reference-type="ref"
+Equation ({reference-type="ref"
 reference="stUserPUsedHypSampSize"}), we examine exactly the fraction of
 two probabilities, 0.28 and 0.47, which we can write as
 $$\begin{aligned}
@@ -715,20 +702,19 @@ condition $B$ is computed as the following: $$\begin{aligned}
 P(A | B) = \frac{P(A\text{ and }B)}{P(B)}
 \label{condProbEq}\end{aligned}$$
 
-[\[drugUseProbOfParentsEqualNotGivenStudents\]]{#drugUseProbOfParentsEqualNotGivenStudents
-label="drugUseProbOfParentsEqualNotGivenStudents"} (a) Write out the
+(a) Write out the
 following statement in conditional probability notation: "*The
 probability a random case has = *not* if it is known that = *not**".
 Notice that the condition is now based on the student, not the parent.
 (b) Determine the probability from part (a).
-Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref+page"
+Table {reference-type="ref+page"
 reference="drugUseProbTable"} may be helpful.[^26]
 
-[\[whyCondProbSumTo1\]]{#whyCondProbSumTo1 label="whyCondProbSumTo1"}
+
 (a) Determine the probability that one of the parents had used drugs if
 it is known the student does not use drugs. (b) Using the answers from
 part (a) and Guided
-Practice [\[drugUseProbOfParentsEqualNotGivenStudents\]](#drugUseProbOfParentsEqualNotGivenStudents){reference-type="ref"
+Practice {reference-type="ref"
 reference="drugUseProbOfParentsEqualNotGivenStudents"}(b), compute
 $$\begin{aligned}
 P(\text{\var{parents} = \emph{used}}|\text{\var{student} = \emph{not}})
@@ -751,9 +737,9 @@ Each case represents one person with two variables: and . The variable
 takes two levels: *yes* or *no*, indicating whether the person was
 inoculated or not. The variable has outcomes *lived* or *died*. These
 data are summarized in
-Tables [\[smallpoxContingencyTable\]](#smallpoxContingencyTable){reference-type="ref"
+Tables {reference-type="ref"
 reference="smallpoxContingencyTable"}
-and [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
+and {reference-type="ref"
 reference="smallpoxProbabilityTable"}.
 
   --------- --------- ------- ------ -------
@@ -778,18 +764,16 @@ reference="smallpoxProbabilityTable"}.
   : Table proportions for the data, computed by dividing each count by
   the table total, 6224.[]{label="smallpoxProbabilityTable"}
 
-[\[probDiedIfNotInoculated\]]{#probDiedIfNotInoculated
-label="probDiedIfNotInoculated"} Write out, in formal notation, the
+Write out, in formal notation, the
 probability a randomly selected person who was not inoculated died from
 smallpox, and find this probability.[^30]
 
 Determine the probability that an inoculated person died from smallpox.
 How does this result compare with the result of Guided
-Practice [\[probDiedIfNotInoculated\]](#probDiedIfNotInoculated){reference-type="ref"
+Practice {reference-type="ref"
 reference="probDiedIfNotInoculated"}?[^31]
 
-[\[SmallpoxInoculationObsExpExercise\]]{#SmallpoxInoculationObsExpExercise
-label="SmallpoxInoculationObsExpExercise"} The people of Boston
+The people of Boston
 self-selected whether or not to be inoculated. (a) Is this study
 observational or was this an experiment? (b) Can we infer any causal
 connection using these data? (c) What are some potential confounding
@@ -811,7 +795,7 @@ condition.
 
 This General Multiplication Rule is simply a rearrangement of the
 definition for conditional probability in
-Equation ([\[condProbEq\]](#condProbEq){reference-type="ref"
+Equation ({reference-type="ref"
 reference="condProbEq"}) on page .
 
 Consider the data set. Suppose we are given only two pieces of
@@ -820,7 +804,7 @@ residents who were not inoculated ended up surviving. How could we
 compute the probability that a resident was not inoculated and lived? We
 will compute our answer using the General Multiplication Rule and then
 verify it using
-Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
+Table {reference-type="ref"
 reference="smallpoxProbabilityTable"}. We want to determine
 $$\begin{aligned}
 P(\text{\var{result} = \emph{lived} and \var{inoculated} = \emph{no}})\end{aligned}$$
@@ -832,7 +816,7 @@ $$\begin{aligned}
 P(\text{\var{result} = \emph{lived} and \var{inoculated} = \emph{no}}) = 0.8588\times 0.9608 = 0.8251\end{aligned}$$
 This is equivalent to the General Multiplication Rule. We can confirm
 this probability in
-Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
+Table {reference-type="ref"
 reference="smallpoxProbabilityTable"} at the intersection of *no* and
 *lived* (with a small rounding error).
 
@@ -862,8 +846,7 @@ If two processes are independent, then knowing the outcome of one should
 provide no information about the other. We can show this is
 mathematically true using conditional probabilities.
 
-[\[condProbOfRollingA1AfterOne1\]]{#condProbOfRollingA1AfterOne1
-label="condProbOfRollingA1AfterOne1"} Let $X$ and $Y$ represent the
+Let $X$ and $Y$ represent the
 outcomes of rolling two dice. (a) What is the probability that the first
 die, $X$, is *1*? (b) What is the probability that both $X$ and $Y$ are
 *1*? (c) Use the formula for conditional probability to compute $P(Y =$
@@ -871,14 +854,14 @@ die, $X$, is *1*? (b) What is the probability that both $X$ and $Y$ are
 answer from part (c)? Explain.[^36]
 
 We can show in Guided
-Practice [\[condProbOfRollingA1AfterOne1\]](#condProbOfRollingA1AfterOne1){reference-type="ref"
+Practice {reference-type="ref"
 reference="condProbOfRollingA1AfterOne1"}(c) that the conditioning
 information has no influence by using the Multiplication Rule for
 independence processes: $$\begin{aligned}
-P(Y=\text{\emph{1}}|X=\text{\emph{1}})
-    &=& \frac{P(Y=\text{\emph{1} and }X=\text{\emph{1}})}{P(X=\text{\emph{1}})} \\
-    &=& \frac{P(Y=\text{\emph{1}})\times \color{oiGB}P(X=\text{\emph{1}})}{\color{oiGB}P(X=\text{\emph{1}})} \\
-    &=& P(Y=\text{\emph{1}}) \\\end{aligned}$$
+P(Y=\text{1}|X=\text{1})
+    &=& \frac{P(Y=\text{1 and }X=\text{1})}{P(X=\text{1})} \\
+    &=& \frac{P(Y=\text{1})\times \color{oiGB}P(X=\text{1})}{\color{oiGB}P(X=\text{1})} \\
+    &=& P(Y=\text{1}) \\\end{aligned}$$
 
 Ron is watching a roulette table in a casino and notices that the last
 five outcomes were *black*. He figures that the chances of getting
@@ -927,14 +910,13 @@ students who earned lower than an *A* on the midterm received an *A* on
 the final. You randomly pick up a final exam and notice the student
 received an *A*. What is the probability that this student earned an *A*
 on the midterm?
-[\[exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal\]]{#exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal
-label="exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal"}
+
 The end-goal is to find
-$P(\text{\var{midterm} = \emph{A}} | \text{\var{final} = \emph{A}})$. To
+$P(\text{\var{midterm} = A} | \text{\var{final} = A})$. To
 calculate this conditional probability, we need the following
 probabilities: $$\begin{aligned}
-P(\text{\var{midterm} = \emph{A} and \var{final} = \emph{A}}) \qquad\text{and}\qquad
-P(\text{\var{final} = \emph{A}})\end{aligned}$$ However, this
+P(\text{\var{midterm} = A and \var{final} = A}) \qquad\text{and}\qquad
+P(\text{\var{final} = A})\end{aligned}$$ However, this
 information is not provided, and it is not obvious how to calculate
 these probabilities. Since we aren't sure how to proceed, it is useful
 to organize the information into a tree diagram, as shown in
@@ -951,15 +933,15 @@ width="87%"}
 
 With the tree diagram constructed, we may compute the required
 probabilities: $$\begin{aligned}
-&&P(\text{\var{midterm} = \emph{A} and \var{final} = \emph{A}}) = 0.0611 \\
-&&P(\text{\underline{\color{black}\var{final} = \emph{A}}})  \\
-&& \quad= P(\text{\var{midterm} = \emph{other} and \underline{\color{black}\var{final} = \emph{A}}}) + P(\text{\var{midterm} = \emph{A} and \underline{\color{black}\var{final} = \emph{A}}}) \\
+&&P(\text{\var{midterm} = A and \var{final} = A}) = 0.0611 \\
+&&P(\text{\underline{\color{black}\var{final} = A}})  \\
+&& \quad= P(\text{\var{midterm} = \emph{other} and \underline{\color{black}\var{final} = A}}) + P(\text{\var{midterm} = A and \underline{\color{black}\var{final} = A}}) \\
 && \quad= 0.0611 + 0.0957 = 0.1568\end{aligned}$$ The marginal
 probability, $P($ = *A*$)$, was calculated by adding up all the joint
 probabilities on the right side of the tree that correspond to = *A*. We
 may now finally take the ratio of the two probabilities:
 $$\begin{aligned}
-P(\text{\var{midterm} = \emph{A}} | \text{\var{final} = \emph{A}}) &=& \frac{P(\text{\var{midterm} = \emph{A} and \var{final} = \emph{A}})}{P(\text{\var{final} = \emph{A}})} \\
+P(\text{\var{midterm} = A} | \text{\var{final} = A}) &=& \frac{P(\text{\var{midterm} = A and \var{final} = A})}{P(\text{\var{final} = A})} \\
 &=& \frac{0.0611}{0.1568} = 0.3897\end{aligned}$$ The probability the
 student also earned an A on the midterm is about 0.39.
 
@@ -980,7 +962,7 @@ enrolled students do not buy either book, 55% buy the textbook only, and
 25% buy both books, and these percentages are relatively constant from
 one term to another. If there are 100 students enrolled, how many books
 should the bookstore expect to sell to this
-class?[\[bookStoreSales\]]{#bookStoreSales label="bookStoreSales"}
+class?
 Around 20 students will not buy either book (0 books total), about 55
 will buy one book (55 books total), and approximately 25 will buy two
 books (totaling 50 books for these 25 students). The bookstore should
@@ -991,7 +973,7 @@ Would you be surprised if the bookstore sold slightly more or less than
 
 The textbook costs \$137 and the study guide \$33. How much revenue
 should the bookstore expect from this class of 100
-students?[\[bookStoreRev\]]{#bookStoreRev label="bookStoreRev"} About 55
+students? About 55
 students will just buy a textbook, providing revenue of
 $$\begin{aligned}
 \$137 \times  55 = \$7,535\end{aligned}$$ The roughly 25 students who
@@ -1010,7 +992,7 @@ student.[]{label="bookCostDist"}](figures/bookCostDist/bookCostDist.png){#bookCo
 width="69%"}
 
 What is the average revenue per student for this
-course?[\[revFromStudent\]]{#revFromStudent label="revFromStudent"} The
+course? The
 expected total revenue is \$11,785, and there are 100 students.
 Therefore the expected revenue per student is
 $\$11,785/100 =  \$117.85$.
@@ -1030,7 +1012,7 @@ and $x_3=\$170$, which occur with probabilities $0.20$, $0.55$, and
 $0.25$. The distribution of $X$ is summarized in
 Figure [1.11](#bookCostDist){reference-type="ref"
 reference="bookCostDist"} and
-Table [\[statSpendDist\]](#statSpendDist){reference-type="ref"
+Table {reference-type="ref"
 reference="statSpendDist"}.
 
   $i$            1       2       3      Total
@@ -1043,7 +1025,7 @@ reference="statSpendDist"}.
   student.[]{label="statSpendDist"}
 
 We computed the average outcome of $X$ as \$117.85 in
-Example [\[revFromStudent\]](#revFromStudent){reference-type="ref"
+Example {reference-type="ref"
 reference="revFromStudent"}. We call this average the of $X$, denoted by
 $E(X)$. The expected value of a random variable is computed by adding
 each outcome weighted by its probability: $$\begin{aligned}
@@ -1093,7 +1075,7 @@ expect to generate, you might also want to know the volatility
 (variability) in your revenue.
 
 The and can be used to describe the variability of a random variable.
-Section [\[variability\]](#variability){reference-type="ref"
+Section {reference-type="ref"
 reference="variability"} introduced a method for finding the variance
 and standard deviation for a data set. We first computed deviations from
 the mean ($x_i - \mu$), squared those deviations, and took an average to
@@ -1103,7 +1085,7 @@ corresponding probabilities, just like we did for the expectation. This
 weighted sum of squared deviations equals the variance, and we calculate
 the standard deviation by taking the square root of the variance, just
 as we did in
-Section [\[variability\]](#variability){reference-type="ref"
+Section {reference-type="ref"
 reference="variability"}.
 
 If $X$ takes outcomes $x_1$, \..., $x_k$ with probabilities $P(X=x_1)$,
@@ -1188,8 +1170,7 @@ expectation of the total time is equal to the sum of the expected
 individual times. More generally, the expectation of a sum of random
 variables is always the sum of the expectation for each random variable.
 
-[\[elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction\]]{#elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction
-label="elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction"} Elena is
+Elena is
 selling a TV at a cash auction and also intends to buy a toaster oven in
 the auction. If $X$ represents the profit for selling the TV and $Y$
 represents the cost of the toaster oven, write an equation that
@@ -1199,8 +1180,7 @@ Based on past auctions, Elena figures she should expect to make about
 \$175 on the TV and pay about \$23 for the toaster oven. In total, how
 much should she expect to make or spend?[^43]
 
-[\[explainWhyThereIsUncertaintyInTheSum\]]{#explainWhyThereIsUncertaintyInTheSum
-label="explainWhyThereIsUncertaintyInTheSum"} Would you be surprised if
+Would you be surprised if
 John's weekly commute wasn't exactly 90 minutes or if Elena didn't make
 exactly \$152? Explain.[^44]
 
@@ -1251,14 +1231,13 @@ in the stock value for $X$ and $Y$, this equation gives the change in
 value of Leonard's stock portfolio for the month. A positive value
 represents a gain, and a negative value represents a loss.
 
-[\[expectedChangeInLeonardsStockPortfolio\]]{#expectedChangeInLeonardsStockPortfolio
-label="expectedChangeInLeonardsStockPortfolio"} Suppose Google and Exxon
+Suppose Google and Exxon
 Mobil stocks have recently been rising 2.1% and 0.4% per month,
 respectively. Compute the expected change in Leonard's stock portfolio
 for next month.[^46]
 
 You should have found that Leonard expects a positive gain in Guided
-Practice [\[expectedChangeInLeonardsStockPortfolio\]](#expectedChangeInLeonardsStockPortfolio){reference-type="ref"
+Practice {reference-type="ref"
 reference="expectedChangeInLeonardsStockPortfolio"}. However, would you
 be surprised if he actually had a loss this month?[^47]
 
@@ -1269,7 +1248,7 @@ variables is helpful, but it is also important to have some sense of the
 uncertainty associated with the total outcome of that combination of
 random variables. The expected net gain or loss of Leonard's stock
 portfolio was considered in Guided
-Practice [\[expectedChangeInLeonardsStockPortfolio\]](#expectedChangeInLeonardsStockPortfolio){reference-type="ref"
+Practice {reference-type="ref"
 reference="expectedChangeInLeonardsStockPortfolio"}. However, there was
 no quantitative discussion of the volatility of this portfolio. For
 instance, while the average monthly gain might be about \$134 according
@@ -1289,7 +1268,7 @@ Just as we have done in many previous cases, we use the variance and
 standard deviation to describe the uncertainty associated with Leonard's
 monthly returns. To do so, the variances of each stock's monthly return
 will be useful, and these are shown in
-Table [\[sumStatOfGOOGXOM\]](#sumStatOfGOOGXOM){reference-type="ref"
+Table {reference-type="ref"
 reference="sumStatOfGOOGXOM"}. The stocks' returns are nearly
 independent.
 
@@ -1333,8 +1312,7 @@ found by taking the square root of the variance.
 
 Suppose John's daily commute has a standard deviation of 4 minutes. What
 is the uncertainty in his total commute time for the week?
-[\[sdOfJohnsCommuteWeeklyTime\]]{#sdOfJohnsCommuteWeeklyTime
-label="sdOfJohnsCommuteWeeklyTime"} The expression for John's commute
+The expression for John's commute
 time was $$\begin{aligned}
 X_1 + X_2 + X_3 + X_4 + X_5\end{aligned}$$ Each coefficient is 1, and
 the variance of each day's time is $4^2=16$. Thus, the variance of the
@@ -1345,15 +1323,14 @@ The standard deviation for John's weekly work commute time is about 9
 minutes.
 
 The computation in
-Example [\[sdOfJohnsCommuteWeeklyTime\]](#sdOfJohnsCommuteWeeklyTime){reference-type="ref"
+Example {reference-type="ref"
 reference="sdOfJohnsCommuteWeeklyTime"} relied on an important
 assumption: the commute time for each day is independent of the time on
 other days of that week. Do you think this is valid? Explain.[^48]
 
-[\[elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability\]]{#elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability
-label="elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability"}
+
 Consider Elena's two auctions from Guided
-Practice [\[elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction\]](#elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction){reference-type="ref"
+Practice {reference-type="ref"
 reference="elenaIsSellingATVAndBuyingAToasterOvenAtAnAuction"} on page .
 Suppose these auctions are approximately independent and the variability
 in auction prices associated with the TV and toaster oven can be
@@ -1361,7 +1338,7 @@ described using standard deviations of \$25 and \$8. Compute the
 standard deviation of Elena's net gain.[^49]
 
 Consider again Guided
-Practice [\[elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability\]](#elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability){reference-type="ref"
+Practice {reference-type="ref"
 reference="elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability"}.
 The negative coefficient for $Y$ in the linear combination was
 eliminated when we squared the coefficients. This generally holds true:
@@ -1429,7 +1406,7 @@ computations.
 [^10]: \(a\) If $A$ and $B$ are disjoint, $A$ and $B$ can never occur
     simultaneously. (b) If $A$ and $B$ are disjoint, then the last term
     of
-    Equation ([\[generalAdditionRule\]](#generalAdditionRule){reference-type="ref"
+    Equation ({reference-type="ref"
     reference="generalAdditionRule"}) is 0 (see part (a)) and we are
     left with the Addition Rule for disjoint events.
 
@@ -1469,7 +1446,7 @@ computations.
 [^17]: (a) The complement of $A$: when the total is equal to *12*.
     (b) $P(A^c) = 1/36$. (c) Use the probability of the complement from
     part (b), $P(A^c) = 1/36$, and
-    Equation ([\[complement\]](#complement){reference-type="ref"
+    Equation ({reference-type="ref"
     reference="complement"}): $P($less than
     *12*$) = 1 - P($*12*$) = 1 - 1/36 = 35/36$.
 
@@ -1529,7 +1506,7 @@ computations.
 
 [^26]: \(a\)
     $P(\text{\var{parent} = \emph{not}} | \text{\var{student} = \emph{not}})$.
-    (b) Equation ([\[condProbEq\]](#condProbEq){reference-type="ref"
+    (b) Equation ({reference-type="ref"
     reference="condProbEq"}) for conditional probability indicates we
     should first find
     $P(\text{\var{parents} = \emph{not} and \var{student} = \emph{not}})=0.32$
@@ -1564,7 +1541,7 @@ computations.
     part (c).
 
 [^33]: The answer is 0.0382, which can be verified using
-    Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
+    Table {reference-type="ref"
     reference="smallpoxProbabilityTable"}.
 
 [^34]: There were only two possible outcomes: *lived* or *died*. This
@@ -1575,14 +1552,14 @@ computations.
     for the "inoculated" and "not inoculated" groups, so it seems there
     is an association between and . However, as noted in the solution to
     Guided
-    Practice [\[SmallpoxInoculationObsExpExercise\]](#SmallpoxInoculationObsExpExercise){reference-type="ref"
+    Practice {reference-type="ref"
     reference="SmallpoxInoculationObsExpExercise"}, this is an
     observational study and we cannot be sure if there is a causal
     connection. (Further research has shown that inoculation is
     effective at reducing death rates.)
 
 [^36]: Brief solutions: (a) $1/6$. (b) $1/36$.
-    (c) $\frac{P(Y = \text{ \emph{1} and }X=\text{ \emph{1}})}{P(X=\text{ \emph{1}})} = \frac{1/36}{1/6} = 1/6$.
+    (c) $\frac{P(Y = \text{ 1 and }X=\text{ 1})}{P(X=\text{ 1})} = \frac{1/36}{1/6} = 1/6$.
     (d) The probability is the same as in part (c): $P(Y=1)=1/6$. The
     probability that $Y=1$ was unchanged by knowledge about $X$, which
     makes sense as $X$ and $Y$ are independent.
@@ -1603,7 +1580,7 @@ computations.
 
 [^39]: If they sell a little more or a little less, this should not be a
     surprise. Hopefully
-    Chapter [\[introductionToData\]](#introductionToData){reference-type="ref"
+    Chapter {reference-type="ref"
     reference="introductionToData"} helped make clear that there is
     natural variability in observed data. For example, if we would flip
     a coin 100 times, it will not usually come up heads exactly half the
