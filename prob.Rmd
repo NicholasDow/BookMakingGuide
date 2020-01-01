@@ -12,21 +12,29 @@ Defining probability {#basicsOfProbability}
 
 A "die", the singular of dice, is a cube with six faces numbered *1*,
 *2*, *3*, *4*, *5*, and *6*. What is the chance of getting *1* when
-rolling a die? If the die is
+rolling a die
+ 
+ If the die is
 fair, then the chance of a *1* is as good as the chance of any other
 number. Since there are six outcomes, the chance must be 1-in-6 or,
 equivalently, $1/6$.
 
 What is the chance of getting a *1* or *2* in the next
-roll? *1* and *2*
+roll
+ 
+ *1* and *2*
 constitute two of the six equally likely possible outcomes, so the
 chance of getting one of these two outcomes must be $2/6 = 1/3$.
 
 What is the chance of getting either *1*, *2*, *3*, *4*, *5*, or *6* on
-the next roll?
+the next roll
+ 
+
 100%. The outcome must be one of these numbers.
 
-What is the chance of not rolling a *2*?Since the chance of rolling a *2* is $1/6$ or
+What is the chance of not rolling a *2*
+ 
+Since the chance of rolling a *2* is $1/6$ or
 $16.\bar{6}\%$, the chance of not rolling a *2* must be
 $100\% - 16.\bar{6}\%=83.\bar{3}\%$ or $5/6$.
 
@@ -36,7 +44,9 @@ equally likely outcomes and has probability $5/6$.
 
 Consider rolling two dice. If $1/6^{th}$ of the time the first die is a
 *1* and $1/6^{th}$ of those times the second die is a *1*, what is the
-chance of getting two *1*s?If $16.\bar{6}$% of the time the first die is a *1*
+chance of getting two *1*s
+ 
+If $16.\bar{6}$% of the time the first die is a *1*
 and $1/6^{th}$ of *those* times the second die is also a *1*, then the
 chance that both dice are *1* is $(1/6)\times (1/6)$ or $1/36$.
 
@@ -121,7 +131,9 @@ die, the outcomes *1* and *2* are disjoint, and we compute the
 probability that one of these outcomes will occur by adding their
 separate probabilities: $$\begin{aligned}
 P(\text{1 or 2}) = P(\text{1})+P(\text{2}) = 1/6 + 1/6 = 1/3\end{aligned}$$
-What about the probability of rolling a *1*, *2*, *3*, *4*, *5*, or *6*?
+What about the probability of rolling a *1*, *2*, *3*, *4*, *5*, or *6*
+ 
+
 Here again, all of the outcomes are disjoint so we add the
 probabilities: $$\begin{aligned}
 &&P(\text{1 or 2 or 3 or 4 or 5 or 6}) \\
@@ -148,7 +160,9 @@ number (labeled *none*), only one or more small numbers (*small*), or
 whether at least one big number appeared in an email (*big*). Of the
 3,921 emails, 549 had no numbers, 2,827 had only one or more small
 numbers, and 545 had at least one big number. (a) Are the outcomes
-*none*, *small*, and *big* disjoint? (b) Determine the proportion of
+*none*, *small*, and *big* disjoint
+ 
+ (b) Determine the proportion of
 emails with value *small* and *big* separately. (c) Use the Addition
 Rule for disjoint outcomes to compute the probability a randomly
 selected email from the data set has a number in it, small or big.[^3]
@@ -178,8 +192,14 @@ Addition Rule. (b) Do the same for event $B$.[^4]
 (a) Using
 Figure [1.2](#disjointSets){reference-type="ref"
 reference="disjointSets"} as a reference, what outcomes are represented
-by event $D$? (b) Are events $B$ and $D$ disjoint? (c) Are events $A$
-and $D$ disjoint?[^5]
+by event $D$
+ 
+ (b) Are events $B$ and $D$ disjoint
+ 
+ (c) Are events $A$
+and $D$ disjoint
+ 
+[^5]
 
 In Guided
 Practice {reference-type="ref"
@@ -207,8 +227,12 @@ regular deck, please see the footnote.[^7]
   deck.[]{label="deckOfCards"}
 
 \(a\) What is the probability that a randomly selected card is a
-diamond? (b) What is the probability that a randomly selected card is a
-face card?[^8]
+diamond
+ 
+ (b) What is the probability that a randomly selected card is a
+face card
+ 
+[^8]
 
 are useful when outcomes can be categorized as "in" or "out" for two or
 three variables, attributes, or random processes. The Venn diagram in
@@ -228,7 +252,9 @@ Using the Venn diagram, verify $P($face card$) = 12/52=3/13$.[^9]
 
 Let $A$ represent the event that a randomly selected card is a diamond
 and $B$ represent the event that it is a face card. How do we compute
-$P(A$ or $B)$? Events $A$ and $B$ are not disjoint -- the cards
+$P(A$ or $B)$
+ 
+ Events $A$ and $B$ are not disjoint -- the cards
 $J\diamondsuit$, $Q\diamondsuit$, and $K\diamondsuit$ fall into both
 categories -- so we cannot use the Addition Rule for disjoint events.
 Instead we use the Venn diagram. We start by adding the probabilities of
@@ -267,7 +293,9 @@ Practice {reference-type="ref"
 reference="emailSpamNumberVennExer"} to determine the probability a
 randomly drawn email from the data set is spam and had small numbers
 (but not big numbers). (b) What is the probability that the email had
-either of these attributes?[^12]
+either of these attributes
+ 
+[^12]
 
 ### Probability distributions
 
@@ -298,7 +326,11 @@ corresponding probabilities that satisfies three rules:
 Table {reference-type="ref"
 reference="usHouseholdIncomeDists"} suggests three distributions for
 household income in the United States. Only one is correct. Which one
-must it be? What is wrong with the other two?[^13]
+must it be
+ 
+ What is wrong with the other two
+ 
+[^13]
 
     Income range (\$1000s)   0-25   25-50   50-100   100+
   ------------------------ ------ ------- -------- ------
@@ -362,7 +394,9 @@ events.[]{label="complementOfD"}](figures/complementOfD/complementOfD.png){#comp
 width="40%"}
 
 \(a\) Compute $P(D^c) = P($rolling a *1*, *4*, *5*, or *6*$)$. (b) What
-is $P(D) + P(D^c)$?[^15]
+is $P(D) + P(D^c)$
+ 
+[^15]
 
 Events $A=\{$*1*, *2*$\}$ and $B=\{$*4*, *6*$\}$ are shown in
 Figure [1.2](#disjointSets){reference-type="ref"
@@ -394,7 +428,9 @@ However, using the complement can save a lot of time as problems grow in
 complexity.
 
 Let $A$ represent the event where we roll two dice and their total is
-less than *12*. (a) What does the event $A^c$ represent? (b) Determine
+less than *12*. (a) What does the event $A^c$ represent
+ 
+ (b) Determine
 $P(A^c)$ from Table {reference-type="ref" reference="diceProb"} on page . (c) Determine $P(A)$.[^17]
 
 Consider again the probabilities from
@@ -434,9 +470,13 @@ many independent processes.
 *1*.[]{label="indepForRollingTwo1s"}](figures/indepForRollingTwo1s/indepForRollingTwo1s.png){#indepForRollingTwo1s
 width="65%"}
 
-What if there was also a blue die independent of the other two? What is
+What if there was also a blue die independent of the other two
+ 
+ What is
 the probability of rolling the three dice and getting all
-*1*s? The same logic
+*1*s
+ 
+ The same logic
 applies from
 Example {reference-type="ref"
 reference="probOf2Ones"}. If $1/36^{th}$ of the time the white and red
@@ -467,17 +507,27 @@ P(A_1) \times  P(A_2)\times  \cdots \times  P(A_k)\end{aligned}$$
 people are left-handed. Suppose 2 people are selected at random from the
 U.S. population. Because the sample size of 2 is very small relative to
 the population, it is reasonable to assume these two people are
-independent. (a) What is the probability that both are left-handed?
-(b) What is the probability that both are right-handed?[^19]
+independent. (a) What is the probability that both are left-handed
+ 
+
+(b) What is the probability that both are right-handed
+ 
+[^19]
 
  Suppose 5
 people are selected at random.[^20]
 
-1.  What is the probability that all are right-handed?
+1.  What is the probability that all are right-handed
+ 
 
-2.  What is the probability that all are left-handed?
 
-3.  What is the probability that not all of the people are right-handed?
+2.  What is the probability that all are left-handed
+ 
+
+
+3.  What is the probability that not all of the people are right-handed
+ 
+
 
 Suppose the variables and are independent, i.e. knowing someone's
 provides no useful information about their and vice-versa. Then we can
@@ -489,26 +539,38 @@ P(\text{right-handed and female}) &=& P(\text{right-handed}) \times  P(\text{fem
 Three people are selected at random.[^22]
 
 1.  What is the probability that the first person is male and
-    right-handed?
+    right-handed
+ 
+
 
 2.  What is the probability that the first two people are male and
-    right-handed?.
+    right-handed
+ 
+.
 
 3.  What is the probability that the third person is female and
-    left-handed?
+    left-handed
+ 
+
 
 4.  What is the probability that the first two people are male and
-    right-handed and the third person is female and left-handed?
+    right-handed and the third person is female and left-handed
+ 
+
 
 Sometimes we wonder if one outcome provides useful information about
 another outcome. The question we are asking is, are the occurrences of
-the two events independent? We say that two events $A$ and $B$ are
+the two events independent
+ 
+ We say that two events $A$ and $B$ are
 independent if they satisfy
 Equation {reference-type="eqref"
 reference="eqForIndependentEvents"}.
 
 If we shuffle up a deck of cards and draw one, is the event that the
-card is a heart independent of the event that the card is an ace? The
+card is a heart independent of the event that the card is an ace
+ 
+ The
 probability the card is a heart is $1/4$ and the probability that it is
 an ace is $1/13$. The probability the card is the ace of hearts is
 $1/52$. We check whether
@@ -522,7 +584,9 @@ event that the card is an ace are independent events.
 Conditional probability {#conditionalProbabilitySection}
 -----------------------
 
-Are students more likely to use marijuana when their parents used drugs?
+Are students more likely to use marijuana when their parents used drugs
+ 
+
 The data set contains a sample of 445 cases with two variables, and ,
 and is summarized in
 Table {reference-type="ref"
@@ -547,14 +611,18 @@ set.[]{label="drugUseVenn"}](figures/drugUseVenn/drugUseVenn.png){#drugUseVenn
 width="65%"}
 
 If at least one parent used drugs, what is the chance their child ()
-uses? We will estimate this probability using the data. Of the 210 cases
+uses
+ 
+ We will estimate this probability using the data. Of the 210 cases
 in this data set where = *used*, 125 represent cases where = *uses*:
 $$\begin{aligned}
 P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
 
 A student is randomly selected from the study and she does not use
 drugs. What is the probability that at least one of her parents
-used?If the student does not use
+used
+ 
+If the student does not use
 drugs, then she is one of the 226 students in the second row. Of these
 226 students, 85 had at least one parent who used drugs:
 $$\begin{aligned}
@@ -634,7 +702,9 @@ two variables to improve probability estimation.
 
 The probability that a random student from the study uses drugs is 0.49.
 Could we update this probability if we knew that this student's parents
-used drugs? Absolutely. To do so, we limit our view to only those 210
+used drugs
+ 
+ Absolutely. To do so, we limit our view to only those 210
 cases where parents used drugs and look at the fraction where the
 student uses drugs: $$\begin{aligned}
 P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
@@ -724,7 +794,9 @@ P(\text{\var{parents} = used}|\text{\var{student} = not})
 
 The data indicate that drug use of parents and children are associated.
 Does this mean the drug use of parents causes the drug use of the
-students?[^28]
+students
+ 
+[^28]
 
 ### Smallpox in Boston, 1721
 
@@ -771,14 +843,22 @@ smallpox, and find this probability.[^30]
 Determine the probability that an inoculated person died from smallpox.
 How does this result compare with the result of Guided
 Practice {reference-type="ref"
-reference="probDiedIfNotInoculated"}?[^31]
+reference="probDiedIfNotInoculated"}
+ 
+[^31]
 
 The people of Boston
 self-selected whether or not to be inoculated. (a) Is this study
-observational or was this an experiment? (b) Can we infer any causal
-connection using these data? (c) What are some potential confounding
+observational or was this an experiment
+ 
+ (b) Can we infer any causal
+connection using these data
+ 
+ (c) What are some potential confounding
 variables that might influence whether someone *lived* or *died* and
-also affect whether that person was inoculated?[^32]
+also affect whether that person was inoculated
+ 
+[^32]
 
 ### General multiplication rule
 
@@ -801,7 +881,9 @@ reference="condProbEq"}) on page .
 Consider the data set. Suppose we are given only two pieces of
 information: 96.08% of residents were not inoculated, and 85.88% of the
 residents who were not inoculated ended up surviving. How could we
-compute the probability that a resident was not inoculated and lived? We
+compute the probability that a resident was not inoculated and lived
+ 
+ We
 will compute our answer using the General Multiplication Rule and then
 verify it using
 Table {reference-type="ref"
@@ -825,7 +907,9 @@ to determine the probability that a person was both inoculated and
 lived.[^33]
 
 If 97.45% of the people who were inoculated lived, what proportion of
-inoculated people must have died?[^34]
+inoculated people must have died
+ 
+[^34]
 
 Let $A_1$, \..., $A_k$ represent all the disjoint outcomes for a
 variable or process. Then if $B$ is an event, possibly for another
@@ -838,7 +922,9 @@ P(A | B) = 1 - P(A^c | B)\end{aligned}$$
 
 Based on the probabilities computed above, does it appear that
 inoculation is effective at reducing the risk of death from
-smallpox?[^35]
+smallpox
+ 
+[^35]
 
 ### Independence considerations in conditional probability
 
@@ -848,10 +934,18 @@ mathematically true using conditional probabilities.
 
 Let $X$ and $Y$ represent the
 outcomes of rolling two dice. (a) What is the probability that the first
-die, $X$, is *1*? (b) What is the probability that both $X$ and $Y$ are
-*1*? (c) Use the formula for conditional probability to compute $P(Y =$
-*1* $| X =$ *1*$)$. (d) What is $P(Y=1)$? Is this different from the
-answer from part (c)? Explain.[^36]
+die, $X$, is *1*
+ 
+ (b) What is the probability that both $X$ and $Y$ are
+*1*
+ 
+ (c) Use the formula for conditional probability to compute $P(Y =$
+*1* $| X =$ *1*$)$. (d) What is $P(Y=1)$
+ 
+ Is this different from the
+answer from part (c)
+ 
+ Explain.[^36]
 
 We can show in Guided
 Practice {reference-type="ref"
@@ -866,7 +960,9 @@ P(Y=\text{1}|X=\text{1})
 Ron is watching a roulette table in a casino and notices that the last
 five outcomes were *black*. He figures that the chances of getting
 *black* six times in a row is very small (about $1/64$) and puts his
-paycheck on red. What is wrong with his reasoning?[^37]
+paycheck on red. What is wrong with his reasoning
+ 
+[^37]
 
 ### Tree diagrams
 
@@ -909,7 +1005,9 @@ students earned an *A* on the midterm. Of those students who earned an
 students who earned lower than an *A* on the midterm received an *A* on
 the final. You randomly pick up a final exam and notice the student
 received an *A*. What is the probability that this student earned an *A*
-on the midterm?
+on the midterm
+ 
+
 
 The end-goal is to find
 $P(\text{\var{midterm} = A} | \text{\var{final} = A})$. To
@@ -950,7 +1048,9 @@ successfully construct tree diagrams. Of those who can construct tree
 diagrams, 97% passed, while only 57% of those students who could not
 construct tree diagrams passed. (a) Organize this information into a
 tree diagram. (b) What is the probability that a randomly selected
-student passed? (c) Compute the probability a student is able to
+student passed
+ 
+ (c) Compute the probability a student is able to
 construct a tree diagram if it is known that she passed.[^38]
 
 Random variables {#randomVariablesSection}
@@ -962,18 +1062,24 @@ enrolled students do not buy either book, 55% buy the textbook only, and
 25% buy both books, and these percentages are relatively constant from
 one term to another. If there are 100 students enrolled, how many books
 should the bookstore expect to sell to this
-class?
+class
+ 
+
 Around 20 students will not buy either book (0 books total), about 55
 will buy one book (55 books total), and approximately 25 will buy two
 books (totaling 50 books for these 25 students). The bookstore should
 expect to sell about 105 books for this class.
 
 Would you be surprised if the bookstore sold slightly more or less than
-105 books?[^39]
+105 books
+ 
+[^39]
 
 The textbook costs \$137 and the study guide \$33. How much revenue
 should the bookstore expect from this class of 100
-students? About 55
+students
+ 
+ About 55
 students will just buy a textbook, providing revenue of
 $$\begin{aligned}
 \$137 \times  55 = \$7,535\end{aligned}$$ The roughly 25 students who
@@ -992,7 +1098,9 @@ student.[]{label="bookCostDist"}](figures/bookCostDist/bookCostDist.png){#bookCo
 width="69%"}
 
 What is the average revenue per student for this
-course? The
+course
+ 
+ The
 expected total revenue is \$11,785, and there are 100 students.
 Therefore the expected revenue per student is
 $\$11,785/100 =  \$117.85$.
@@ -1127,7 +1235,9 @@ supplement for \$41. From past experience, they know about 25% of
 chemistry students just buy the textbook while 60% buy both the textbook
 and supplement.[^41]
 
-1.  What proportion of students don't buy either book? Assume no
+1.  What proportion of students don't buy either book
+ 
+ Assume no
     students buy the supplement without the textbook.
 
 2.  Let $Y$ represent the revenue from a single student. Write out the
@@ -1158,7 +1268,9 @@ into pieces provides a framework for understanding each source of
 randomness and is useful for modeling $W$.
 
 It takes John an average of 18 minutes each day to commute to work. What
-would you expect his average commute time to be for the week? We were
+would you expect his average commute time to be for the week
+ 
+ We were
 told that the average (i.e. expected value) of the commute time is 18
 minutes per day: $E(X_i) = 18$. To get the expected time for the sum of
 the five days, we can add up the expected time for each individual day:
@@ -1178,11 +1290,15 @@ represents the net change in Elena's cash.[^42]
 
 Based on past auctions, Elena figures she should expect to make about
 \$175 on the TV and pay about \$23 for the toaster oven. In total, how
-much should she expect to make or spend?[^43]
+much should she expect to make or spend
+ 
+[^43]
 
 Would you be surprised if
 John's weekly commute wasn't exactly 90 minutes or if Elena didn't make
-exactly \$152? Explain.[^44]
+exactly \$152
+ 
+ Explain.[^44]
 
 Two important concepts concerning combinations of random variables have
 so far been introduced. First, a final value can sometimes be described
@@ -1239,7 +1355,9 @@ for next month.[^46]
 You should have found that Leonard expects a positive gain in Guided
 Practice {reference-type="ref"
 reference="expectedChangeInLeonardsStockPortfolio"}. However, would you
-be surprised if he actually had a loss this month?[^47]
+be surprised if he actually had a loss this month
+ 
+[^47]
 
 ### Variability in linear combinations of random variables
 
@@ -1311,7 +1429,9 @@ each other. The standard deviation of the linear combination may be
 found by taking the square root of the variance.
 
 Suppose John's daily commute has a standard deviation of 4 minutes. What
-is the uncertainty in his total commute time for the week?
+is the uncertainty in his total commute time for the week
+ 
+
 The expression for John's commute
 time was $$\begin{aligned}
 X_1 + X_2 + X_3 + X_4 + X_5\end{aligned}$$ Each coefficient is 1, and
@@ -1326,7 +1446,9 @@ The computation in
 Example {reference-type="ref"
 reference="sdOfJohnsCommuteWeeklyTime"} relied on an important
 assumption: the commute time for each day is independent of the time on
-other days of that week. Do you think this is valid? Explain.[^48]
+other days of that week. Do you think this is valid
+ 
+ Explain.[^48]
 
 
 Consider Elena's two auctions from Guided
@@ -1520,7 +1642,9 @@ computations.
     still appears to work *when conditioning on the same information*.
 
 [^28]: No. This was an observational study. Two potential confounding
-    variables include and . Can you think of others?
+    variables include and . Can you think of others
+ 
+
 
 [^29]: Fenner F. 1988. *Smallpox and Its Eradication (History of
     International Public Health, No. 6)*. Geneva: World Health
