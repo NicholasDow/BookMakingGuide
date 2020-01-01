@@ -688,7 +688,7 @@ probabilities sum to 1.[^24]
 We can compute marginal probabilities using joint probabilities in
 simple cases. For example, the probability a random student from the
 study uses drugs is found by summing the outcomes from
-Table {reference-type="ref"
+Table(#drugUseDistribution){reference-type="ref"
 reference="drugUseDistribution"} where = *uses*: $$\begin{aligned}
 &&P(\text{\underline{\color{black}\var{student} = uses}}) \\
 && \quad =  P(\text{\var{parents} = used, \underline{\color{black}\var{student} = uses}}) + \\
