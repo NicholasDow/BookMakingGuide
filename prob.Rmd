@@ -9,32 +9,32 @@ familiar terms using processes most people have seen before.
 
 Defining probability {#basicsOfProbability}
 --------------------
-
-A "die", the singular of dice, is a cube with six faces numbered *1*,
+## Intro Questions
+**Questions 1**: A "die", the singular of dice, is a cube with six faces numbered *1*,
 *2*, *3*, *4*, *5*, and *6*. What is the chance of getting *1* when
 rolling a die
- 
- If the die is
+
+** Solution 1**: If the die is
 fair, then the chance of a *1* is as good as the chance of any other
 number. Since there are six outcomes, the chance must be 1-in-6 or,
 equivalently, $1/6$.
 
-What is the chance of getting a *1* or *2* in the next
+**Questions 2**: What is the chance of getting a *1* or *2* in the next
 roll
  
- *1* and *2*
+** Solution 2**: *1* and *2*
 constitute two of the six equally likely possible outcomes, so the
 chance of getting one of these two outcomes must be $2/6 = 1/3$.
 
-What is the chance of getting either *1*, *2*, *3*, *4*, *5*, or *6* on
+**Questions 3**: What is the chance of getting either *1*, *2*, *3*, *4*, *5*, or *6* on
 the next roll
  
 
-100%. The outcome must be one of these numbers.
+** Solution 3**: 100%. The outcome must be one of these numbers.
 
-What is the chance of not rolling a *2*
+**Questions 4**: What is the chance of not rolling a *2*
  
-Since the chance of rolling a *2* is $1/6$ or
+** Solution 4**: Since the chance of rolling a *2* is $1/6$ or
 $16.\bar{6}\%$, the chance of not rolling a *2* must be
 $100\% - 16.\bar{6}\%=83.\bar{3}\%$ or $5/6$.
 
@@ -42,11 +42,11 @@ Alternatively, we could have noticed that not rolling a *2* is the same
 as getting a *1*, *3*, *4*, *5*, or *6*, which makes up five of the six
 equally likely outcomes and has probability $5/6$.
 
-Consider rolling two dice. If $1/6^{th}$ of the time the first die is a
+**Questions 5**: Consider rolling two dice. If $1/6^{th}$ of the time the first die is a
 *1* and $1/6^{th}$ of those times the second die is a *1*, what is the
 chance of getting two *1*s
  
-If $16.\bar{6}$% of the time the first die is a *1*
+** Solution 5**: If $16.\bar{6}$% of the time the first die is a *1*
 and $1/6^{th}$ of *those* times the second die is also a *1*, then the
 chance that both dice are *1* is $(1/6)\times (1/6)$ or $1/36$.
 
@@ -63,8 +63,9 @@ randomness. We often frame probability in terms of a giving rise to an .
 Rolling a die or flipping a coin is a seemingly random process and each
 gives rise to an outcome.
 
-The of an outcome is the proportion of times the outcome would occur if
-we observed the random process an infinite number of times.
+> Probability
+>> The **probability** of an outcome is the proportion of times the outcome would occur if
+>> we observed the random process an infinite number of times.
 
 Probability is defined as a proportion, and it always takes values
 between 0 and 1 (inclusively). It may also be displayed as a percentage
