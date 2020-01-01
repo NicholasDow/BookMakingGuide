@@ -9,46 +9,46 @@ familiar terms using processes most people have seen before.
 Defining probability {#basicsOfProbability}
 --------------------
 
-A "die", the singular of dice, is a cube with six faces numbered , , , ,
-, and . What is the chance of getting when rolling a
+A "die", the singular of dice, is a cube with six faces numbered 1, 2,
+3, 4, 5, and 6. What is the chance of getting 1 when rolling a
 die?[\[probOf1\]]{#probOf1 label="probOf1"} If the die is fair, then the
-chance of a is as good as the chance of any other number. Since there
+chance of a 1 is as good as the chance of any other number. Since there
 are six outcomes, the chance must be 1-in-6 or, equivalently, $1/6$.
 
-What is the chance of getting a or in the next
-roll?[\[probOf1Or2\]]{#probOf1Or2 label="probOf1Or2"} and constitute two
-of the six equally likely possible outcomes, so the chance of getting
-one of these two outcomes must be $2/6 = 1/3$.
+What is the chance of getting a 1 or 2 in the next
+roll?[\[probOf1Or2\]]{#probOf1Or2 label="probOf1Or2"} 1 and 2 constitute
+two of the six equally likely possible outcomes, so the chance of
+getting one of these two outcomes must be $2/6 = 1/3$.
 
-What is the chance of getting either , , , , , or on the next
+What is the chance of getting either 1, 2, 3, 4, 5, or 6 on the next
 roll?[\[probOf123456\]]{#probOf123456 label="probOf123456"} 100%. The
 outcome must be one of these numbers.
 
-What is the chance of not rolling a ?[\[probNot2\]]{#probNot2
-label="probNot2"} Since the chance of rolling a is $1/6$ or
-$16.\bar{6}\%$, the chance of not rolling a must be
+What is the chance of not rolling a 2?[\[probNot2\]]{#probNot2
+label="probNot2"} Since the chance of rolling a 2 is $1/6$ or
+$16.\bar{6}\%$, the chance of not rolling a 2 must be
 $100\% - 16.\bar{6}\%=83.\bar{3}\%$ or $5/6$.
 
-Alternatively, we could have noticed that not rolling a is the same as
-getting a , , , , or , which makes up five of the six equally likely
-outcomes and has probability $5/6$.
+Alternatively, we could have noticed that not rolling a 2 is the same as
+getting a 1, 3, 4, 5, or 6, which makes up five of the six equally
+likely outcomes and has probability $5/6$.
 
 Consider rolling two dice. If $1/6^{th}$ of the time the first die is a
-and $1/6^{th}$ of those times the second die is a , what is the chance
-of getting two s?[\[probOf2Ones\]]{#probOf2Ones label="probOf2Ones"} If
-$16.\bar{6}$% of the time the first die is a and $1/6^{th}$ of *those*
-times the second die is also a , then the chance that both dice are is
-$(1/6)\times (1/6)$ or $1/36$.
+1 and $1/6^{th}$ of those times the second die is a 1, what is the
+chance of getting two 1s?[\[probOf2Ones\]]{#probOf2Ones
+label="probOf2Ones"} If $16.\bar{6}$% of the time the first die is a 1
+and $1/6^{th}$ of *those* times the second die is also a 1, then the
+chance that both dice are 1 is $(1/6)\times (1/6)$ or $1/36$.
 
 ### Probability
 
 We use probability to build tools to describe and understand apparent
 randomness. We often frame probability in terms of a giving rise to an .
 
-  ------------- --------------- --------------
-  Roll a die    $\rightarrow$   , , , , , or
-  Flip a coin   $\rightarrow$   or
-  ------------- --------------- --------------
+  ------------- --------------- ---------------------
+  Roll a die    $\rightarrow$   1, 2, 3, 4, 5, or 6
+  Flip a coin   $\rightarrow$   H or T
+  ------------- --------------- ---------------------
 
 Rolling a die or flipping a coin is a seemingly random process and each
 gives rise to an outcome.
@@ -61,9 +61,9 @@ between 0 and 1 (inclusively). It may also be displayed as a percentage
 between 0% and 100%.
 
 Probability can be illustrated by rolling a die many times. Let
-$\hat{p}_n$ be the proportion of outcomes that are after the first $n$
+$\hat{p}_n$ be the proportion of outcomes that are 1 after the first $n$
 rolls. As the number of rolls increases, $\hat{p}_n$ will converge to
-the probability of rolling a , $p = 1/6$.
+the probability of rolling a 1, $p = 1/6$.
 Figure [1.1](#dieProp){reference-type="ref" reference="dieProp"} shows
 this convergence for 100,000 die rolls. The tendency of $\hat{p}_n$ to
 stabilize around $p$ is described by the .
@@ -84,18 +84,18 @@ in Figure [1.1](#dieProp){reference-type="ref" reference="dieProp"}.
 However, these deviations become smaller as the number of rolls
 increases.
 
-Above we write $p$ as the probability of rolling a . We can also write
+Above we write $p$ as the probability of rolling a 1. We can also write
 this probability as $$\begin{aligned}
-P(\text{rolling a \resp{1}})\end{aligned}$$ As we become more
-comfortable with this notation, we will abbreviate it further. For
-instance, if it is clear that the process is "rolling a die", we could
-abbreviate $P($rolling a $)$ as $P($$)$.
+P(\text{rolling a 1})\end{aligned}$$ As we become more comfortable with
+this notation, we will abbreviate it further. For instance, if it is
+clear that the process is "rolling a die", we could abbreviate
+$P($rolling a 1$)$ as $P($1$)$.
 
 [\[randomProcessExercise\]]{#randomProcessExercise
 label="randomProcessExercise"} Random processes include rolling a die
 and flipping a coin. (a) Think of another random process. (b) Describe
 all the possible outcomes of that process. For instance, rolling a die
-is a random process with potential outcomes , , \..., .[^1]
+is a random process with potential outcomes 1, 2, \..., 6.[^1]
 
 What we think of as random processes are not necessarily random, but
 they may just be too difficult to understand exactly. The fourth example
@@ -111,22 +111,22 @@ random.
 ### Disjoint or mutually exclusive outcomes
 
 Two outcomes are called or if they cannot both happen. For instance, if
-we roll a die, the outcomes and are disjoint since they cannot both
-occur. On the other hand, the outcomes and "rolling an odd number" are
-not disjoint since both occur if the outcome of the roll is a . The
+we roll a die, the outcomes 1 and 2 are disjoint since they cannot both
+occur. On the other hand, the outcomes 1 and "rolling an odd number" are
+not disjoint since both occur if the outcome of the roll is a 1. The
 terms *disjoint* and *mutually exclusive* are equivalent and
 interchangeable.
 
 Calculating the probability of disjoint outcomes is easy. When rolling a
-die, the outcomes and are disjoint, and we compute the probability that
-one of these outcomes will occur by adding their separate probabilities:
+die, the outcomes 1 and 2 are disjoint, and we compute the probability
+that one of these outcomes will occur by adding their separate
+probabilities: $$\begin{aligned}
+P(\text{1 or 2}) = P(\text{1})+P(\text{2}) = 1/6 + 1/6 = 1/3\end{aligned}$$
+What about the probability of rolling a 1, 2, 3, 4, 5, or 6? Here again,
+all of the outcomes are disjoint so we add the probabilities:
 $$\begin{aligned}
-P(\text{\resp{1} or \resp{2}}) = P(\text{\resp{1}})+P(\text{\resp{2}}) = 1/6 + 1/6 = 1/3\end{aligned}$$
-What about the probability of rolling a , , , , , or ? Here again, all
-of the outcomes are disjoint so we add the probabilities:
-$$\begin{aligned}
-&&P(\text{\resp{1} or \resp{2} or \resp{3} or \resp{4} or \resp{5} or \resp{6}}) \\
-    &&\quad= P(\text{\resp{1}})+P(\text{\resp{2}})+P(\text{\resp{3}})+P(\text{\resp{4}})+P(\text{\resp{5}})+P(\text{\resp{6}}) \\
+&&P(\text{1 or 2 or 3 or 4 or 5 or 6}) \\
+    &&\quad= P(\text{1})+P(\text{2})+P(\text{3})+P(\text{4})+P(\text{5})+P(\text{6}) \\
     &&\quad= 1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6 = 1.\end{aligned}$$ The
 guarantees the accuracy of this approach when the outcomes are disjoint.
 
@@ -137,28 +137,28 @@ disjoint outcomes $A_1$, \..., $A_k$, then the probability that one of
 these outcomes will occur is $$\begin{aligned}
 P(A_1) + P(A_2) + \cdots + P(A_k)\end{aligned}$$
 
-We are interested in the probability of rolling a , , or . (a) Explain
-why the outcomes , , and are disjoint. (b) Apply the Addition Rule for
-disjoint outcomes to determine $P($ or or $)$.[^2]
+We are interested in the probability of rolling a 1, 4, or 5. (a)
+Explain why the outcomes 1, 4, and 5 are disjoint. (b) Apply the
+Addition Rule for disjoint outcomes to determine $P($1 or 4 or 5$)$.[^2]
 
 In the data set in
 Chapter [\[introductionToData\]](#introductionToData){reference-type="ref"
 reference="introductionToData"}, the variable described whether no
-number (labeled ), only one or more small numbers (), or whether at
-least one big number appeared in an email (). Of the 3,921 emails, 549
-had no numbers, 2,827 had only one or more small numbers, and 545 had at
-least one big number. (a) Are the outcomes , , and disjoint? (b)
-Determine the proportion of emails with value and separately. (c) Use
-the Addition Rule for disjoint outcomes to compute the probability a
-randomly selected email from the data set has a number in it, small or
-big.[^3]
+number (labeled none), only one or more small numbers (small), or
+whether at least one big number appeared in an email (big). Of the 3,921
+emails, 549 had no numbers, 2,827 had only one or more small numbers,
+and 545 had at least one big number. (a) Are the outcomes none, small,
+and big disjoint? (b) Determine the proportion of emails with value
+small and big separately. (c) Use the Addition Rule for disjoint
+outcomes to compute the probability a randomly selected email from the
+data set has a number in it, small or big.[^3]
 
 Statisticians rarely work with individual outcomes and instead consider
 or of outcomes. Let $A$ represent the event where a die roll results in
-or and $B$ represent the event that the die roll is a or a . We write
-$A$ as the set of outcomes $\{$, $\}$ and $B=\{$, $\}$. These sets are
-commonly called . Because $A$ and $B$ have no elements in common, they
-are disjoint events. $A$ and $B$ are represented in
+1 or 2 and $B$ represent the event that the die roll is a 4 or a 6. We
+write $A$ as the set of outcomes $\{$1, 2$\}$ and $B=\{$4, 6$\}$. These
+sets are commonly called . Because $A$ and $B$ have no elements in
+common, they are disjoint events. $A$ and $B$ are represented in
 Figure [1.2](#disjointSets){reference-type="ref"
 reference="disjointSets"}.
 
@@ -197,12 +197,12 @@ Table [\[deckOfCards\]](#deckOfCards){reference-type="ref"
 reference="deckOfCards"}. If you are unfamiliar with the cards in a
 regular deck, please see the footnote.[^7]
 
-  -- -- -- -- -- -- -- -- -- -- -- -- --
-                                      
-                                      
-                                      
-                                      
-  -- -- -- -- -- -- -- -- -- -- -- -- --
+  ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ------------------ ----------------- ----------------- ----------------- -----------------
+  2$\clubsuit$      3$\clubsuit$      4$\clubsuit$      5$\clubsuit$      6$\clubsuit$      7$\clubsuit$      8$\clubsuit$      9$\clubsuit$      10$\clubsuit$      J$\clubsuit$      Q$\clubsuit$      K$\clubsuit$      A$\clubsuit$
+  2$\diamondsuit$   3$\diamondsuit$   4$\diamondsuit$   5$\diamondsuit$   6$\diamondsuit$   7$\diamondsuit$   8$\diamondsuit$   9$\diamondsuit$   10$\diamondsuit$   J$\diamondsuit$   Q$\diamondsuit$   K$\diamondsuit$   A$\diamondsuit$
+  2$\heartsuit$     3$\heartsuit$     4$\heartsuit$     5$\heartsuit$     6$\heartsuit$     7$\heartsuit$     8$\heartsuit$     9$\heartsuit$     10$\heartsuit$     J$\heartsuit$     Q$\heartsuit$     K$\heartsuit$     A$\heartsuit$
+  2$\spadesuit$     3$\spadesuit$     4$\spadesuit$     5$\spadesuit$     6$\spadesuit$     7$\spadesuit$     8$\spadesuit$     9$\spadesuit$     10$\spadesuit$     J$\spadesuit$     Q$\spadesuit$     K$\spadesuit$     A$\spadesuit$
+  ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ----------------- ------------------ ----------------- ----------------- ----------------- -----------------
 
   : Representations of the 52 unique cards in a
   deck.[]{label="deckOfCards"}
@@ -346,28 +346,28 @@ reference="bookCostDist"} on page .
 
 ### Complement of an event
 
-Rolling a die produces a value in the set $\{$, , , , , $\}$. This set
-of all possible outcomes is called the ($S$) for rolling a die. We often
-use the sample space to examine the scenario where an event does not
-occur.
+Rolling a die produces a value in the set $\{$1, 2, 3, 4, 5, 6$\}$. This
+set of all possible outcomes is called the ($S$) for rolling a die. We
+often use the sample space to examine the scenario where an event does
+not occur.
 
-Let $D=\{$, $\}$ represent the event that the outcome of a die roll is
-or . Then the of $D$ represents all outcomes in our sample space that
-are not in $D$, which is denoted by $D^c = \{$, , , $\}$. That is, $D^c$
-is the set of all possible outcomes not already included in $D$.
+Let $D=\{$2, 3$\}$ represent the event that the outcome of a die roll is
+2 or 3. Then the of $D$ represents all outcomes in our sample space that
+are not in $D$, which is denoted by $D^c = \{$1, 4, 5, 6$\}$. That is,
+$D^c$ is the set of all possible outcomes not already included in $D$.
 Figure [1.6](#complementOfD){reference-type="ref"
 reference="complementOfD"} shows the relationship between $D$, $D^c$,
 and the sample space $S$.
 
-![Event $D=\{$, $\}$ and its complement, $D^c = \{$, , , $\}$.
+![Event $D=\{$2, 3$\}$ and its complement, $D^c = \{$1, 4, 5, 6$\}$.
 $S$ represents the sample space, which is the set of all possible
 events.[]{label="complementOfD"}](appendix-probability/figures/complementOfD/complementOfD){#complementOfD
 width="40%"}
 
-\(a\) Compute $P(D^c) = P($rolling a , , , or $)$. (b) What is
+\(a\) Compute $P(D^c) = P($rolling a 1, 4, 5, or 6$)$. (b) What is
 $P(D) + P(D^c)$?[^15]
 
-Events $A=\{$, $\}$ and $B=\{$, $\}$ are shown in
+Events $A=\{$1, 2$\}$ and $B=\{$4, 6$\}$ are shown in
 Figure [1.2](#disjointSets){reference-type="ref"
 reference="disjointSets"} on page . (a) Write out what $A^c$ and $B^c$
 represent. (b) Compute $P(A^c)$ and $P(B^c)$. (c) Compute $P(A)+P(A^c)$
@@ -399,16 +399,17 @@ However, using the complement can save a lot of time as problems grow in
 complexity.
 
 Let $A$ represent the event where we roll two dice and their total is
-less than . (a) What does the event $A^c$ represent? (b) Determine
+less than 12. (a) What does the event $A^c$ represent? (b) Determine
 $P(A^c)$ from Table [\[diceProb\]](#diceProb){reference-type="ref"
 reference="diceProb"} on page . (c) Determine $P(A)$.[^17]
 
 Consider again the probabilities from
 Table [\[diceProb\]](#diceProb){reference-type="ref"
 reference="diceProb"} and rolling two dice. Find the following
-probabilities: (a) The sum of the dice is *not* . (b) The sum is at
-least , i.e. $\{$, , \..., $\}$. (c) The sum is no more than . That is,
-determine the probability of the event $D=\{$, , \..., $\}$.[^18]
+probabilities: (a) The sum of the dice is *not* 6. (b) The sum is at
+least 4, i.e. $\{$4, 5, \..., 12$\}$. (c) The sum is no more than 10.
+That is, determine the probability of the event $D=\{$2, 3, \...,
+10$\}$.[^18]
 
 ### Independence {#probabilityIndependence}
 
@@ -423,33 +424,33 @@ or down together, so they are not independent.
 Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
 reference="probOf2Ones"} provides a basic example of two independent
 processes: rolling two dice. We want to determine the probability that
-both will be . Suppose one of the dice is red and the other white. If
-the outcome of the red die is a , it provides no information about the
+both will be 1. Suppose one of the dice is red and the other white. If
+the outcome of the red die is a 1, it provides no information about the
 outcome of the white die. We first encountered this same question in
 Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
 reference="probOf2Ones"} (page ), where we calculated the probability
-using the following reasoning: $1/6^{th}$ of the time the red die is a ,
-and $1/6^{th}$ of *those* times the white die will also be . This is
+using the following reasoning: $1/6^{th}$ of the time the red die is a
+1, and $1/6^{th}$ of *those* times the white die will also be 1. This is
 illustrated in Figure [1.7](#indepForRollingTwo1s){reference-type="ref"
 reference="indepForRollingTwo1s"}. Because the rolls are independent,
 the probabilities of the corresponding outcomes can be multiplied to get
 the final answer: $(1/6)\times(1/6)=1/36$. This can be generalized to
 many independent processes.
 
-![$1/6^{th}$ of the time, the first roll is a . Then $1/6^{th}$ of
+![$1/6^{th}$ of the time, the first roll is a 1. Then $1/6^{th}$ of
 *those* times, the second roll will also be a
-.[]{label="indepForRollingTwo1s"}](appendix-probability/figures/indepForRollingTwo1s/indepForRollingTwo1s){#indepForRollingTwo1s
+1.[]{label="indepForRollingTwo1s"}](appendix-probability/figures/indepForRollingTwo1s/indepForRollingTwo1s){#indepForRollingTwo1s
 width="65%"}
 
 What if there was also a blue die independent of the other two? What is
 the probability of rolling the three dice and getting all
-s?[\[threeDice\]]{#threeDice label="threeDice"} The same logic applies
+1s?[\[threeDice\]]{#threeDice label="threeDice"} The same logic applies
 from Example [\[probOf2Ones\]](#probOf2Ones){reference-type="ref"
 reference="probOf2Ones"}. If $1/36^{th}$ of the time the white and red
-dice are both , then $1/6^{th}$ of *those* times the blue die will also
-be , so multiply: $$\begin{aligned}
-P(white=\text{\small\resp{1} and } red=\text{\small\resp{1} and } blue=\text{\small\resp{1}})
-    &= P(white=\text{\small\resp{1}})\times P(red=\text{\small\resp{1}})\times P(blue=\text{\small\resp{1}}) \\
+dice are both 1, then $1/6^{th}$ of *those* times the blue die will also
+be 1, so multiply: $$\begin{aligned}
+P(white=\text{\small1 and } red=\text{\small1 and } blue=\text{\small1})
+    &= P(white=\text{\small1})\times P(red=\text{\small1})\times P(blue=\text{\small1}) \\
     &= (1/6)\times (1/6)\times (1/6)
     = 1/216\end{aligned}$$
 
@@ -532,18 +533,18 @@ Are students more likely to use marijuana when their parents used drugs?
 The data set contains a sample of 445 cases with two variables, and ,
 and is summarized in
 Table [\[contTableOfParStDrugUse\]](#contTableOfParStDrugUse){reference-type="ref"
-reference="contTableOfParStDrugUse"}.[^23] The variable is either or ,
-where a student is labeled as if she has recently used marijuana. The
-variable takes the value if at least one of the parents used drugs,
-including alcohol.
+reference="contTableOfParStDrugUse"}.[^23] The variable is either uses
+or not, where a student is labeled as if she has recently used
+marijuana. The variable takes the value used if at least one of the
+parents used drugs, including alcohol.
 
-  --------- ------- ----- ----- ------- -- --
-                                           
-                                  Total    
-                      125    94     219    
-  \[0pt\]              85   141     226    
-            Total     210   235     445    
-  --------- ------- ----- ----- ------- -- --
+  --------- ------- ------ ----- ------- -- --
+                                            
+                      used   not   Total    
+            uses       125    94     219    
+  \[0pt\]   not         85   141     226    
+            Total      210   235     445    
+  --------- ------- ------ ----- ------- -- --
 
   : Contingency table summarizing the data
   set.[]{label="contTableOfParStDrugUse"}
@@ -554,9 +555,9 @@ width="65%"}
 
 If at least one parent used drugs, what is the chance their child ()
 uses? We will estimate this probability using the data. Of the 210 cases
-in this data set where = , 125 represent cases where = :
+in this data set where = used, 125 represent cases where = uses:
 $$\begin{aligned}
-P(\text{\var{student} = \resp{uses} given \var{parents} = \resp{used}}) = \frac{125}{210} = 0.60\end{aligned}$$
+P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
 
 A student is randomly selected from the study and she does not use
 drugs. What is the probability that at least one of her parents
@@ -565,7 +566,7 @@ label="drugUseProbOfParentsGivenStudents"} If the student does not use
 drugs, then she is one of the 226 students in the second row. Of these
 226 students, 85 had at least one parent who used drugs:
 $$\begin{aligned}
-P(\text{\var{parents} = \resp{used} given \var{student} = \resp{not}}) = \frac{85}{226} = 0.376\end{aligned}$$
+P(\text{\var{parents} = used given \var{student} = not}) = \frac{85}{226} = 0.376\end{aligned}$$
 
 ### Marginal and joint probabilities {#marginalAndJointProbabilities}
 
@@ -575,18 +576,18 @@ variable separately in the data set. These totals represent for the
 sample, which are the probabilities based on a single variable without
 conditioning on any other variables. For instance, a probability based
 solely on the variable is a marginal probability: $$\begin{aligned}
-P(\text{\var{student} = \resp{uses}}) = \frac{219}{445} = 0.492\end{aligned}$$
+P(\text{\var{student} = uses}) = \frac{219}{445} = 0.492\end{aligned}$$
 A probability of outcomes for two or more variables or processes is
 called a : $$\begin{aligned}
-P(\text{\var{student} = \resp{uses} and \var{parents} = \resp{not}}) = \frac{94}{445} = 0.21\end{aligned}$$
+P(\text{\var{student} = uses and \var{parents} = not}) = \frac{94}{445} = 0.21\end{aligned}$$
 It is common to substitute a comma for "and" in a joint probability,
 although either is acceptable.
 
-               :      :   Total
-  ------- ------ ------ -------
-  :         0.28   0.21    0.49
-  :         0.19   0.32    0.51
-  Total     0.47   0.53    1.00
+             : used   : not   Total
+  -------- -------- ------- -------
+  : uses       0.28    0.21    0.49
+  : not        0.19    0.32    0.51
+  Total        0.47    0.53    1.00
 
   : Probability table summarizing parental and student drug
   use.[]{label="drugUseProbTable"}
@@ -605,13 +606,13 @@ and variables is shown in
 Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
 reference="drugUseDistribution"}.
 
-  Joint outcome    Probability
-  --------------- -------------
-  = , =               0.28
-  = , =               0.19
-  = , =               0.21
-  = , =               0.32
-  Total               1.00
+  Joint outcome     Probability
+  ---------------- -------------
+  = used, = uses       0.28
+  = used, = not        0.19
+  = not, = uses        0.21
+  = not, = not         0.32
+  Total                1.00
 
   : A joint probability distribution for the data
   set.[]{label="drugUseDistribution"}
@@ -626,10 +627,10 @@ We can compute marginal probabilities using joint probabilities in
 simple cases. For example, the probability a random student from the
 study uses drugs is found by summing the outcomes from
 Table [\[drugUseDistribution\]](#drugUseDistribution){reference-type="ref"
-reference="drugUseDistribution"} where = : $$\begin{aligned}
-&&P(\text{\underline{\color{black}\var{student} = \resp{uses}}}) \\
-&& \quad =  P(\text{\var{parents} = \resp{used}, \underline{\color{black}\var{student} = \resp{uses}}}) + \\
-&& \quad \quad \quad \quad P(\text{\var{parents} = \resp{not}, \underline{\color{black}\var{student} = \resp{uses}}}) \\
+reference="drugUseDistribution"} where = uses: $$\begin{aligned}
+&&P(\text{\underline{\color{black}\var{student} = uses}}) \\
+&& \quad =  P(\text{\var{parents} = used, \underline{\color{black}\var{student} = uses}}) + \\
+&& \quad \quad \quad \quad P(\text{\var{parents} = not, \underline{\color{black}\var{student} = uses}}) \\
 && \quad = 0.28 + 0.21 = 0.49\end{aligned}$$
 
 ### Defining conditional probability
@@ -644,16 +645,16 @@ Could we update this probability if we knew that this student's parents
 used drugs? Absolutely. To do so, we limit our view to only those 210
 cases where parents used drugs and look at the fraction where the
 student uses drugs: $$\begin{aligned}
-P(\text{\var{student} = \resp{uses} given \var{parents} = \resp{used}}) = \frac{125}{210} = 0.60\end{aligned}$$
+P(\text{\var{student} = uses given \var{parents} = used}) = \frac{125}{210} = 0.60\end{aligned}$$
 We call this a because we computed the probability under a condition: =
-. There are two parts to a conditional probability, and the . It is
+used. There are two parts to a conditional probability, and the . It is
 useful to think of the condition as information we know to be true, and
 this information usually can be described as a known outcome or event.
 
 We separate the text inside our probability notation into the outcome of
 interest and the condition: $$\begin{aligned}
-&& P(\text{\var{student} = \resp{uses} given \var{parents} = \resp{used}}) \notag \\
-&& = P(\text{\var{student} = \resp{uses} } | \text{ \var{parents} = \resp{used}}) = \frac{125}{210} = 0.60
+&& P(\text{\var{student} = uses given \var{parents} = used}) \notag \\
+&& = P(\text{\var{student} = uses } | \text{ \var{parents} = used}) = \frac{125}{210} = 0.60
 \label{probStudentUsedIfParentsUsedInFormalNotation}\end{aligned}$$ The
 vertical bar "$|$" is read as *given*.
 
@@ -662,11 +663,11 @@ Equation ([\[probStudentUsedIfParentsUsedInFormalNotation\]](#probStudentUsedIf
 reference="probStudentUsedIfParentsUsedInFormalNotation"}), we computed
 the probability a student uses based on the condition that at least one
 parent used as a fraction: $$\begin{aligned}
-&& P(\text{\var{student} = \resp{uses} } | \text{ \var{parents} = \resp{used}}) \notag \\
-&&\quad = \frac{\text{\# times \var{student} = \resp{uses} and \var{parents} = \resp{used}}}{\text{\# times \var{parents} = \resp{used}}} \label{ratioOfBothToRatioOfConditionalForParentsAndStudent} \\
+&& P(\text{\var{student} = uses } | \text{ \var{parents} = used}) \notag \\
+&&\quad = \frac{\text{\# times \var{student} = uses and \var{parents} = used}}{\text{\# times \var{parents} = used}} \label{ratioOfBothToRatioOfConditionalForParentsAndStudent} \\
 &&\quad = \frac{125}{210} = 0.60 \notag\end{aligned}$$ We considered
-only those cases that met the condition, = , and then we computed the
-ratio of those cases that satisfied our outcome of interest, the
+only those cases that met the condition, = used, and then we computed
+the ratio of those cases that satisfied our outcome of interest, the
 student uses.
 
 Counts are not always available for data, and instead only marginal and
@@ -678,10 +679,10 @@ Equation ([\[ratioOfBothToRatioOfConditionalForParentsAndStudent\]](#ratioOfBot
 reference="ratioOfBothToRatioOfConditionalForParentsAndStudent"}) as an
 example demonstrating this technique.
 
-We considered only those cases that satisfied the condition, = . Of
+We considered only those cases that satisfied the condition, = used. Of
 these cases, the conditional probability was the fraction who
-represented the outcome of interest, = . Suppose we were provided only
-the information in
+represented the outcome of interest, = uses. Suppose we were provided
+only the information in
 Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref+page"
 reference="drugUseProbTable"}, i.e. only probability data. Then if we
 took a sample of 1000 people, we would anticipate about 47% or
@@ -689,17 +690,17 @@ $0.47\times 1000 = 470$ would meet our information criterion. Similarly,
 we would expect about 28% or $0.28\times 1000 = 280$ to meet both the
 information criterion and represent our outcome of interest. Thus, the
 conditional probability could be computed: $$\begin{aligned}
-P(\text{\var{student} = \resp{uses} } | \text{ \var{parents} = \resp{used}})
-    &= \frac{\text{\# (\var{student} = \resp{uses} and \var{parents} = \resp{used})}}{\text{\# (\var{parents} = \resp{used})}} \notag \\
+P(\text{\var{student} = uses } | \text{ \var{parents} = used})
+    &= \frac{\text{\# (\var{student} = uses and \var{parents} = used)}}{\text{\# (\var{parents} = used)}} \notag \\
     &= \frac{280}{470} = \frac{0.28}{0.47} = 0.60
 \label{stUserPUsedHypSampSize}\end{aligned}$$ In
 Equation ([\[stUserPUsedHypSampSize\]](#stUserPUsedHypSampSize){reference-type="ref"
 reference="stUserPUsedHypSampSize"}), we examine exactly the fraction of
 two probabilities, 0.28 and 0.47, which we can write as
 $$\begin{aligned}
-P(\var{student} = \resp{uses}\ \text{and}\ \var{parents} = \resp{used})
+P(\var{student} = uses\ \text{and}\ \var{parents} = used)
     \quad\text{and}\quad
-    P(\var{parents} = \resp{used}).\end{aligned}$$ The fraction of these
+    P(\var{parents} = used).\end{aligned}$$ The fraction of these
 probabilities represents our general formula for conditional
 probability.
 
@@ -711,9 +712,9 @@ P(A | B) = \frac{P(A\text{ and }B)}{P(B)}
 [\[drugUseProbOfParentsEqualNotGivenStudents\]]{#drugUseProbOfParentsEqualNotGivenStudents
 label="drugUseProbOfParentsEqualNotGivenStudents"} (a) Write out the
 following statement in conditional probability notation: "*The
-probability a random case has = if it is known that =* ". Notice that
-the condition is now based on the student, not the parent. (b) Determine
-the probability from part (a).
+probability a random case has = not if it is known that = not*". Notice
+that the condition is now based on the student, not the parent.
+(b) Determine the probability from part (a).
 Table [\[drugUseProbTable\]](#drugUseProbTable){reference-type="ref+page"
 reference="drugUseProbTable"} may be helpful.[^26]
 
@@ -724,8 +725,8 @@ part (a) and Guided
 Practice [\[drugUseProbOfParentsEqualNotGivenStudents\]](#drugUseProbOfParentsEqualNotGivenStudents){reference-type="ref"
 reference="drugUseProbOfParentsEqualNotGivenStudents"}(b), compute
 $$\begin{aligned}
-P(\text{\var{parents} = \resp{used}}|\text{\var{student} = \resp{not}})
-    + P(\text{\var{parents} = \resp{not}}|\text{\var{student} = \resp{not}})\end{aligned}$$
+P(\text{\var{parents} = used}|\text{\var{student} = not})
+    + P(\text{\var{parents} = not}|\text{\var{student} = not})\end{aligned}$$
 (c) Provide an intuitive argument to explain why the sum in (b) is
 1.[^27]
 
@@ -741,8 +742,9 @@ believed that inoculation, which involves exposing a person to the
 disease in a controlled form, could reduce the likelihood of death.
 
 Each case represents one person with two variables: and . The variable
-takes two levels: or , indicating whether the person was inoculated or
-not. The variable has outcomes or . These data are summarized in
+takes two levels: yes or no, indicating whether the person was
+inoculated or not. The variable has outcomes lived or died. These data
+are summarized in
 Tables [\[smallpoxContingencyTable\]](#smallpoxContingencyTable){reference-type="ref"
 reference="smallpoxContingencyTable"}
 and [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
@@ -750,9 +752,9 @@ reference="smallpoxProbabilityTable"}.
 
   --------- ------- ----- ------ -------
                                  
-                                   Total
-                      238   5136    5374
-  \[0pt\]               6    844     850
+                      yes     no   Total
+            lived     238   5136    5374
+  \[0pt\]   died        6    844     850
             Total     244   5980    6224
   --------- ------- ----- ------ -------
 
@@ -761,9 +763,9 @@ reference="smallpoxProbabilityTable"}.
 
   --------- ------- -------- -------- --------
                                       
-                                         Total
-                      0.0382   0.8252   0.8634
-  \[0pt\]             0.0010   0.1356   0.1366
+                         yes       no    Total
+            lived     0.0382   0.8252   0.8634
+  \[0pt\]   died      0.0010   0.1356   0.1366
             Total     0.0392   0.9608   1.0000
   --------- ------- -------- -------- --------
 
@@ -785,8 +787,8 @@ label="SmallpoxInoculationObsExpExercise"} The people of Boston
 self-selected whether or not to be inoculated. (a) Is this study
 observational or was this an experiment? (b) Can we infer any causal
 connection using these data? (c) What are some potential confounding
-variables that might influence whether someone or and also affect
-whether that person was inoculated?[^32]
+variables that might influence whether someone lived or died and also
+affect whether that person was inoculated?[^32]
 
 ### General multiplication rule
 
@@ -815,21 +817,21 @@ verify it using
 Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
 reference="smallpoxProbabilityTable"}. We want to determine
 $$\begin{aligned}
-P(\text{\var{result} = \resp{lived} and \var{inoculated} = \resp{no}})\end{aligned}$$
+P(\text{\var{result} = lived and \var{inoculated} = no})\end{aligned}$$
 and we are given that $$\begin{aligned}
-P(\text{\var{result} = \resp{lived} }|\text{ \var{inoculated} = \resp{no}})=0.8588 \\
-P(\text{\var{inoculated} = \resp{no}})=0.9608\end{aligned}$$ Among the
-96.08% of people who were not inoculated, 85.88% survived:
-$$\begin{aligned}
-P(\text{\var{result} = \resp{lived} and \var{inoculated} = \resp{no}}) = 0.8588\times 0.9608 = 0.8251\end{aligned}$$
+P(\text{\var{result} = lived }|\text{ \var{inoculated} = no})=0.8588 \\
+P(\text{\var{inoculated} = no})=0.9608\end{aligned}$$ Among the 96.08%
+of people who were not inoculated, 85.88% survived: $$\begin{aligned}
+P(\text{\var{result} = lived and \var{inoculated} = no}) = 0.8588\times 0.9608 = 0.8251\end{aligned}$$
 This is equivalent to the General Multiplication Rule. We can confirm
 this probability in
 Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
-reference="smallpoxProbabilityTable"} at the intersection of and (with a
-small rounding error).
+reference="smallpoxProbabilityTable"} at the intersection of no and
+lived (with a small rounding error).
 
-Use $P($ = $) = 0.0392$ and $P($ = $|$ = $) = 0.9754$ to determine the
-probability that a person was both inoculated and lived.[^33]
+Use $P($ = yes$) = 0.0392$ and $P($ = lived $|$ = yes$) = 0.9754$ to
+determine the probability that a person was both inoculated and
+lived.[^33]
 
 If 97.45% of the people who were inoculated lived, what proportion of
 inoculated people must have died?[^34]
@@ -856,9 +858,9 @@ mathematically true using conditional probabilities.
 [\[condProbOfRollingA1AfterOne1\]]{#condProbOfRollingA1AfterOne1
 label="condProbOfRollingA1AfterOne1"} Let $X$ and $Y$ represent the
 outcomes of rolling two dice. (a) What is the probability that the first
-die, $X$, is ? (b) What is the probability that both $X$ and $Y$ are ?
-(c) Use the formula for conditional probability to compute $P(Y =$
-$| X =$ $)$. (d) What is $P(Y=1)$? Is this different from the answer
+die, $X$, is 1? (b) What is the probability that both $X$ and $Y$ are 1?
+(c) Use the formula for conditional probability to compute $P(Y =$ 1
+$| X =$ 1$)$. (d) What is $P(Y=1)$? Is this different from the answer
 from part (c)? Explain.[^36]
 
 We can show in Guided
@@ -866,15 +868,15 @@ Practice [\[condProbOfRollingA1AfterOne1\]](#condProbOfRollingA1AfterOne1){refe
 reference="condProbOfRollingA1AfterOne1"}(c) that the conditioning
 information has no influence by using the Multiplication Rule for
 independence processes: $$\begin{aligned}
-P(Y=\text{\resp{1}}|X=\text{\resp{1}})
-    &=& \frac{P(Y=\text{\resp{1} and }X=\text{\resp{1}})}{P(X=\text{\resp{1}})} \\
-    &=& \frac{P(Y=\text{\resp{1}})\times \color{oiGB}P(X=\text{\resp{1}})}{\color{oiGB}P(X=\text{\resp{1}})} \\
-    &=& P(Y=\text{\resp{1}}) \\\end{aligned}$$
+P(Y=\text{1}|X=\text{1})
+    &=& \frac{P(Y=\text{1 and }X=\text{1})}{P(X=\text{1})} \\
+    &=& \frac{P(Y=\text{1})\times \color{oiGB}P(X=\text{1})}{\color{oiGB}P(X=\text{1})} \\
+    &=& P(Y=\text{1}) \\\end{aligned}$$
 
 Ron is watching a roulette table in a casino and notices that the last
-five outcomes were . He figures that the chances of getting six times in
-a row is very small (about $1/64$) and puts his paycheck on red. What is
-wrong with his reasoning?[^37]
+five outcomes were black. He figures that the chances of getting black
+six times in a row is very small (about $1/64$) and puts his paycheck on
+red. What is wrong with his reasoning?[^37]
 
 ### Tree diagrams
 
@@ -882,9 +884,9 @@ are a tool to organize outcomes and probabilities around the structure
 of the data. They are most useful when two or more processes occur in a
 sequence and each process is conditioned on its predecessors.
 
-The data fit this description. We see the population as split by : and .
-Following this split, survival rates were observed for each group. This
-structure is reflected in the shown in
+The data fit this description. We see the population as split by : yes
+and no. Following this split, survival rates were observed for each
+group. This structure is reflected in the shown in
 Figure [1.9](#smallpoxTreeDiagram){reference-type="ref"
 reference="smallpoxTreeDiagram"}. The first branch for is said to be the
 branch while the other branches are .
@@ -896,38 +898,38 @@ width="93%"}
 Tree diagrams are annotated with marginal and conditional probabilities,
 as shown in Figure [1.9](#smallpoxTreeDiagram){reference-type="ref"
 reference="smallpoxTreeDiagram"}. This tree diagram splits the smallpox
-data by into the and groups with respective marginal probabilities
-0.0392 and 0.9608. The secondary branches are conditioned on the first,
-so we assign conditional probabilities to these branches. For example,
-the top branch in
+data by into the yes and no groups with respective marginal
+probabilities 0.0392 and 0.9608. The secondary branches are conditioned
+on the first, so we assign conditional probabilities to these branches.
+For example, the top branch in
 Figure [1.9](#smallpoxTreeDiagram){reference-type="ref"
-reference="smallpoxTreeDiagram"} is the probability that = conditioned
-on the information that = . We may (and usually do) construct joint
-probabilities at the end of each branch in our tree by multiplying the
-numbers we come across as we move from left to right. These joint
-probabilities are computed using the General Multiplication Rule:
-$$\begin{aligned}
-&& P(\text{\var{inoculated} = \resp{yes} and \var{result} = \resp{lived}}) \\
-    &&\quad = P(\text{\var{inoculated} = \resp{yes}})\times P(\text{\var{result} = \resp{lived}}|\text{\var{inoculated} = \resp{yes}}) \\
+reference="smallpoxTreeDiagram"} is the probability that = lived
+conditioned on the information that = yes. We may (and usually do)
+construct joint probabilities at the end of each branch in our tree by
+multiplying the numbers we come across as we move from left to right.
+These joint probabilities are computed using the General Multiplication
+Rule: $$\begin{aligned}
+&& P(\text{\var{inoculated} = yes and \var{result} = lived}) \\
+    &&\quad = P(\text{\var{inoculated} = yes})\times P(\text{\var{result} = lived}|\text{\var{inoculated} = yes}) \\
     &&\quad = 0.0392\times 0.9754=0.0382\end{aligned}$$
 
 Consider the midterm and final for a statistics class. Suppose 13% of
-students earned an on the midterm. Of those students who earned an on
-the midterm, 47% received an on the final, and 11% of the students who
-earned lower than an on the midterm received an on the final. You
-randomly pick up a final exam and notice the student received an . What
-is the probability that this student earned an on the midterm?
+students earned an A on the midterm. Of those students who earned an A
+on the midterm, 47% received an A on the final, and 11% of the students
+who earned lower than an A on the midterm received an A on the final.
+You randomly pick up a final exam and notice the student received an A.
+What is the probability that this student earned an A on the midterm?
 [\[exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal\]]{#exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal
 label="exerciseForTreeDiagramOfStudentGettingAOnMidtermGivenThatSheGotAOnFinal"}
 The end-goal is to find
-$P(\text{\var{midterm} = \resp{A}} | \text{\var{final} = \resp{A}})$. To
-calculate this conditional probability, we need the following
-probabilities: $$\begin{aligned}
-P(\text{\var{midterm} = \resp{A} and \var{final} = \resp{A}}) \qquad\text{and}\qquad
-P(\text{\var{final} = \resp{A}})\end{aligned}$$ However, this
-information is not provided, and it is not obvious how to calculate
-these probabilities. Since we aren't sure how to proceed, it is useful
-to organize the information into a tree diagram, as shown in
+$P(\text{\var{midterm} = A} | \text{\var{final} = A})$. To calculate
+this conditional probability, we need the following probabilities:
+$$\begin{aligned}
+P(\text{\var{midterm} = A and \var{final} = A}) \qquad\text{and}\qquad
+P(\text{\var{final} = A})\end{aligned}$$ However, this information is
+not provided, and it is not obvious how to calculate these
+probabilities. Since we aren't sure how to proceed, it is useful to
+organize the information into a tree diagram, as shown in
 Figure [1.10](#testTree){reference-type="ref" reference="testTree"}.
 When constructing a tree diagram, variables provided with marginal
 probabilities are often used to create the tree's primary branches; in
@@ -941,15 +943,15 @@ width="87%"}
 
 With the tree diagram constructed, we may compute the required
 probabilities: $$\begin{aligned}
-&&P(\text{\var{midterm} = \resp{A} and \var{final} = \resp{A}}) = 0.0611 \\
-&&P(\text{\underline{\color{black}\var{final} = \resp{A}}})  \\
-&& \quad= P(\text{\var{midterm} = \resp{other} and \underline{\color{black}\var{final} = \resp{A}}}) + P(\text{\var{midterm} = \resp{A} and \underline{\color{black}\var{final} = \resp{A}}}) \\
+&&P(\text{\var{midterm} = A and \var{final} = A}) = 0.0611 \\
+&&P(\text{\underline{\color{black}\var{final} = A}})  \\
+&& \quad= P(\text{\var{midterm} = other and \underline{\color{black}\var{final} = A}}) + P(\text{\var{midterm} = A and \underline{\color{black}\var{final} = A}}) \\
 && \quad= 0.0611 + 0.0957 = 0.1568\end{aligned}$$ The marginal
-probability, $P($ = $)$, was calculated by adding up all the joint
-probabilities on the right side of the tree that correspond to = . We
+probability, $P($ = A$)$, was calculated by adding up all the joint
+probabilities on the right side of the tree that correspond to = A. We
 may now finally take the ratio of the two probabilities:
 $$\begin{aligned}
-P(\text{\var{midterm} = \resp{A}} | \text{\var{final} = \resp{A}}) &=& \frac{P(\text{\var{midterm} = \resp{A} and \var{final} = \resp{A}})}{P(\text{\var{final} = \resp{A}})} \\
+P(\text{\var{midterm} = A} | \text{\var{final} = A}) &=& \frac{P(\text{\var{midterm} = A and \var{final} = A})}{P(\text{\var{final} = A})} \\
 &=& \frac{0.0611}{0.1568} = 0.3897\end{aligned}$$ The probability the
 student also earned an A on the midterm is about 0.39.
 
@@ -1360,32 +1362,33 @@ computed for a linear combination, but they do impact the expected value
 computations.
 
 [^1]: Here are four examples. (i) Whether someone gets sick in the next
-    month or not is an apparently random process with outcomes and .
-    (ii) We can *generate* a random process by randomly picking a person
-    and measuring that person's height. The outcome of this process will
-    be a positive number. (iii) Whether the stock market goes up or down
-    next week is a seemingly random process with possible outcomes , ,
-    and . Alternatively, we could have used the percent change in the
-    stock market as a numerical outcome. (iv) Whether your roommate
-    cleans her dishes tonight probably seems like a random process with
-    possible outcomes and .
+    month or not is an apparently random process with outcomes sick and
+    not. (ii) We can *generate* a random process by randomly picking a
+    person and measuring that person's height. The outcome of this
+    process will be a positive number. (iii) Whether the stock market
+    goes up or down next week is a seemingly random process with
+    possible outcomes up, down, and no\_. Alternatively, we could have
+    used the percent change in the stock market as a numerical outcome.
+    (iv) Whether your roommate cleans her dishes tonight probably seems
+    like a random process with possible outcomes cleans\_ and leaves\_.
 
 [^2]: \(a\) The random process is a die roll, and at most one of these
     outcomes can come up. This means they are disjoint outcomes.
-    (b) $P($ or or
-    $) = P($$)+P($$)+P($$) = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = \frac{1}{2}$
+    (b) $P($1 or 4 or
+    5$) = P($1$)+P($4$)+P($5$) = \frac{1}{6} + \frac{1}{6} + \frac{1}{6} = \frac{3}{6} = \frac{1}{2}$
 
 [^3]: \(a\) Yes. Each email is categorized in only one level of . (b)
     Small: $\frac{2827}{3921} = 0.721$. Big: $\frac{545}{3921} = 0.139$.
-    (c) $P($ or $) = P($$) + P($$) = 0.721 + 0.139 = 0.860$.
+    (c) $P($small or
+    big$) = P($small$) + P($big$) = 0.721 + 0.139 = 0.860$.
 
-[^4]: \(a\) $P(A) = P($ or
-    $) = P($$) + P($$) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}$.
+[^4]: \(a\) $P(A) = P($1 or
+    2$) = P($1$) + P($2$) = \frac{1}{6} + \frac{1}{6} = \frac{2}{6} = \frac{1}{3}$.
     (b) Similarly, $P(B) = 1/3$.
 
-[^5]: (a) Outcomes and . (b) Yes, events $B$ and $D$ are disjoint
+[^5]: (a) Outcomes 2 and 3. (b) Yes, events $B$ and $D$ are disjoint
     because they share no outcomes. (c) The events $A$ and $D$ share an
-    outcome in common, , and so are not disjoint.
+    outcome in common, 2, and so are not disjoint.
 
 [^6]: Since $B$ and $D$ are disjoint events, use the Addition Rule:
     $P(B$ or
@@ -1393,12 +1396,13 @@ computations.
 
 [^7]: The 52 cards are split into four : $\clubsuit$ (club),
     $\diamondsuit$ (diamond), $\heartsuit$ (heart), $\spadesuit$
-    (spade). Each suit has its 13 cards labeled: , , \..., , (jack),
-    (queen), (king), and (ace). Thus, each card is a unique combination
-    of a suit and a label, e.g. and . The 12 cards represented by the
-    jacks, queens, and kings are called . The cards that are
-    $\diamondsuit$ or $\heartsuit$ are typically colored red while the
-    other two suits are typically colored black.
+    (spade). Each suit has its 13 cards labeled: 2, 3, \..., 10, J
+    (jack), Q (queen), K (king), and A (ace). Thus, each card is a
+    unique combination of a suit and a label, e.g. 4$\heartsuit$ and
+    J$\clubsuit$. The 12 cards represented by the jacks, queens, and
+    kings are called . The cards that are $\diamondsuit$ or $\heartsuit$
+    are typically colored red while the other two suits are typically
+    colored black.
 
 [^8]: \(a\) There are 52 cards and 13 diamonds. If the cards are
     thoroughly shuffled, each card has an equal chance of being drawn,
@@ -1446,26 +1450,26 @@ computations.
     $P(D)=\frac{1}{6} + \frac{1}{6} = 1/3$. Since $D$ and $D^c$ are
     disjoint, $P(D) + P(D^c) = 1$.
 
-[^16]: Brief solutions: (a) $A^c=\{$, , , $\}$ and $B^c=\{$, , , $\}$.
-    (b) Noting that each outcome is disjoint, add the individual outcome
-    probabilities to get $P(A^c)=2/3$ and $P(B^c)=2/3$.
+[^16]: Brief solutions: (a) $A^c=\{$3, 4, 5, 6$\}$ and $B^c=\{$1, 2, 3,
+    5$\}$. (b) Noting that each outcome is disjoint, add the individual
+    outcome probabilities to get $P(A^c)=2/3$ and $P(B^c)=2/3$.
     (c) $A$ and $A^c$ are disjoint, and the same is true of
     $B$ and $B^c$. Therefore, $P(A) + P(A^c) = 1$ and
     $P(B) + P(B^c) = 1$.
 
-[^17]: (a) The complement of $A$: when the total is equal to .
+[^17]: (a) The complement of $A$: when the total is equal to 12.
     (b) $P(A^c) = 1/36$. (c) Use the probability of the complement from
     part (b), $P(A^c) = 1/36$, and
     Equation ([\[complement\]](#complement){reference-type="ref"
     reference="complement"}): $P($less than
-    $) = 1 - P($$) = 1 - 1/36 = 35/36$.
+    12$) = 1 - P($12$) = 1 - 1/36 = 35/36$.
 
-[^18]: (a) First find $P($$)=5/36$, then use the complement: $P($not
-    $) = 1 - P($$) = 31/36$. (b) First find the complement, which
-    requires much less effort: $P($ or $)=1/36+2/36=1/12$. Then
+[^18]: (a) First find $P($6$)=5/36$, then use the complement: $P($not
+    6$) = 1 - P($6$) = 31/36$. (b) First find the complement, which
+    requires much less effort: $P($2 or 3$)=1/36+2/36=1/12$. Then
     calculate $P(B) = 1-P(B^c) = 1-1/12 = 11/12$. (c) As before, finding
     the complement is the clever way to determine $P(D)$. First find
-    $P(D^c) = P($ or $)=2/36 + 1/36=1/12$. Then calculate
+    $P(D^c) = P($11 or 12$)=2/36 + 1/36=1/12$. Then calculate
     $P(D) = 1 - P(D^c) = 11/12$.
 
 [^19]: \(a\) The probability the first person is left-handed is $0.09$,
@@ -1479,26 +1483,26 @@ computations.
     part (a), the probability that both will be right-handed is
     $0.91\times 0.91 = 0.8281$.
 
-[^20]: (a) The abbreviations and are used for right-handed and
+[^20]: (a) The abbreviations RH and LH are used for right-handed and
     left-handed, respectively. Since each are independent, we apply the
     Multiplication Rule for independent processes: $$\begin{aligned}
-    P(\text{all five are \resp{RH}})
-    &= P(\text{first = \resp{RH}, second = \resp{RH}, ..., fifth = \resp{RH}}) \\
-    &= P(\text{first = \resp{RH}})\times P(\text{second = \resp{RH}})\times  \dots \times P(\text{fifth = \resp{RH}}) \\
+    P(\text{all five are RH})
+    &= P(\text{first = RH, second = RH, ..., fifth = RH}) \\
+    &= P(\text{first = RH})\times P(\text{second = RH})\times  \dots \times P(\text{fifth = RH}) \\
     &= 0.91\times 0.91\times 0.91\times 0.91\times 0.91 = 0.624\end{aligned}$$
 
     (b) Using the same reasoning as in (a),
     $0.09\times 0.09\times 0.09\times 0.09\times 0.09 = 0.0000059$
 
-    (c) Use the complement, $P($all five are $)$, to answer this
+    (c) Use the complement, $P($all five are RH$)$, to answer this
     question: $$\begin{aligned}
-    P(\text{not all \resp{RH}})
-        = 1 - P(\text{all \resp{RH}})
+    P(\text{not all RH})
+        = 1 - P(\text{all RH})
         = 1 - 0.624 = 0.376\end{aligned}$$
 
-[^21]: The actual proportion of the U.S. population that is is about
-    50%, and so we use 0.5 for the probability of sampling a woman.
-    However, this probability does differ in other countries.
+[^21]: The actual proportion of the U.S. population that is female is
+    about 50%, and so we use 0.5 for the probability of sampling a
+    woman. However, this probability does differ in other countries.
 
 [^22]: Brief answers are provided. (a) This can be written in
     probability notation as $P($a randomly selected person is male and
@@ -1515,16 +1519,16 @@ computations.
     reached.
 
 [^26]: \(a\)
-    $P(\text{\var{parent} = \resp{not}} | \text{\var{student} = \resp{not}})$.
-    (b) Equation ([\[condProbEq\]](#condProbEq){reference-type="ref"
+    $P(\text{\var{parent} = not} | \text{\var{student} = not})$. (b)
+    Equation ([\[condProbEq\]](#condProbEq){reference-type="ref"
     reference="condProbEq"}) for conditional probability indicates we
     should first find
-    $P(\text{\var{parents} = \resp{not} and \var{student} = \resp{not}})=0.32$
-    and $P(\text{\var{student} = \resp{not}})=0.51$. Then the ratio
-    represents the conditional probability: $0.32/0.51 = 0.63$.
+    $P(\text{\var{parents} = not and \var{student} = not})=0.32$ and
+    $P(\text{\var{student} = not})=0.51$. Then the ratio represents the
+    conditional probability: $0.32/0.51 = 0.63$.
 
 [^27]: (a) This probability is
-    $\frac{P(\text{\var{parents} = \resp{used} and \var{student} = \resp{not}})}{P(\text{\var{student} = \resp{not}})} = \frac{0.19}{0.51} = 0.37$.
+    $\frac{P(\text{\var{parents} = used and \var{student} = not})}{P(\text{\var{student} = not})} = \frac{0.19}{0.51} = 0.37$.
     (b) The total equals 1. (c) Under the condition the student does not
     use drugs, the parents must either use drugs or not. The complement
     still appears to work *when conditioning on the same information*.
@@ -1536,11 +1540,11 @@ computations.
     International Public Health, No. 6)*. Geneva: World Health
     Organization. ISBN 92-4-156110-6.
 
-[^30]: $P($ = $|$ =
-    $) = \frac{P(\text{\var{result} = \resp{died} and \var{inoculated} = \resp{no}})}{P(\text{\var{inoculated} = \resp{no}})} = \frac{0.1356}{0.9608} = 0.1411$.
+[^30]: $P($ = died $|$ =
+    no$) = \frac{P(\text{\var{result} = died and \var{inoculated} = no})}{P(\text{\var{inoculated} = no})} = \frac{0.1356}{0.9608} = 0.1411$.
 
-[^31]: $P($ = $|$ =
-    $) = \frac{P(\text{\var{result} = \resp{died} and \var{inoculated} = \resp{yes}})}{P(\text{\var{inoculated} = \resp{yes}})} = \frac{0.0010}{0.0392} = 0.0255$.
+[^31]: $P($ = died $|$ =
+    yes$) = \frac{P(\text{\var{result} = died and \var{inoculated} = yes})}{P(\text{\var{inoculated} = yes})} = \frac{0.0010}{0.0392} = 0.0255$.
     The death rate for individuals who were inoculated is only about
     1 in 40 while the death rate is about 1 in 7 for those who were not
     inoculated.
@@ -1554,8 +1558,8 @@ computations.
     Table [\[smallpoxProbabilityTable\]](#smallpoxProbabilityTable){reference-type="ref"
     reference="smallpoxProbabilityTable"}.
 
-[^34]: There were only two possible outcomes: or . This means that 100%
-    - 97.45% = 2.55% of the people who were inoculated died.
+[^34]: There were only two possible outcomes: lived or died. This means
+    that 100% - 97.45% = 2.55% of the people who were inoculated died.
 
 [^35]: The samples are large relative to the difference in death rates
     for the "inoculated" and "not inoculated" groups, so it seems there
@@ -1568,7 +1572,7 @@ computations.
     effective at reducing death rates.)
 
 [^36]: Brief solutions: (a) $1/6$. (b) $1/36$.
-    (c) $\frac{P(Y = \text{ \resp{1} and }X=\text{ \resp{1}})}{P(X=\text{ \resp{1}})} = \frac{1/36}{1/6} = 1/6$.
+    (c) $\frac{P(Y = \text{ 1 and }X=\text{ 1})}{P(X=\text{ 1})} = \frac{1/36}{1/6} = 1/6$.
     (d) The probability is the same as in part (c): $P(Y=1)=1/6$. The
     probability that $Y=1$ was unchanged by knowledge about $X$, which
     makes sense as $X$ and $Y$ are independent.
@@ -1605,14 +1609,14 @@ computations.
     square-root of the variance listed on in the total on the last line:
     $\sigma = \sqrt{Var(Y)} = \$69.28$.
 
-                   $i$ (scenario)       1 ()     2 ()      3 ()                   Total
-      --------------------------- ---------- -------- --------- -----------------------
-                            $y_i$       0.00   159.00    200.00 
-                       $P(Y=y_i)$       0.15     0.25      0.60 
-             $y_i\times P(Y=y_i)$       0.00    39.75    120.00         $E(Y) = 159.75$
-                       $y_i-E(Y)$    -159.75    -0.75     40.25 
-                   $(y_i-E(Y))^2$   25520.06     0.56   1620.06 
-        $(y_i-E(Y))^2\times P(Y)$     3828.0      0.1     972.0   $Var(Y) \approx 4800$
+                   $i$ (scenario)   1 (noBook)   2 (textbook)   3 (both)                   Total
+      --------------------------- ------------ -------------- ---------- -----------------------
+                            $y_i$         0.00         159.00     200.00 
+                       $P(Y=y_i)$         0.15           0.25       0.60 
+             $y_i\times P(Y=y_i)$         0.00          39.75     120.00         $E(Y) = 159.75$
+                       $y_i-E(Y)$      -159.75          -0.75      40.25 
+                   $(y_i-E(Y))^2$     25520.06           0.56    1620.06 
+        $(y_i-E(Y))^2\times P(Y)$       3828.0            0.1      972.0   $Var(Y) \approx 4800$
 
 [^42]: She will make $X$ dollars on the TV but spend $Y$ dollars on the
     toaster oven: $X-Y$.
